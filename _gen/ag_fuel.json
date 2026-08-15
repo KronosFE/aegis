@@ -1,0 +1,2581 @@
+[
+ {
+  "slug": "fuel-supply-overview",
+  "title": "The Aegis Fuel Supply at a Glance",
+  "cat": "fuel-supply",
+  "lede": "Aegis burns deuterium and helium-3; the helium-3 is bred on Earth by the Hyperion breeder, closing a fully domestic fuel loop.",
+  "body": [
+   [
+    "h2",
+    "One fuel loop, two machines"
+   ],
+   [
+    "p",
+    "The burner (Aegis) runs the deuterium–helium-3 (D–<sup>3</sup>He) reaction. Deuterium is drawn from ordinary water and is effectively unlimited. Helium-3 is the scarce partner, and Aegis does not mine it or import it: it is produced as a by-product of the breeder (Hyperion), whose bred tritium decays into helium-3 on a fixed physical clock. This pairing is the reason Aegis can be described as a <b>sovereign</b> power source."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 130\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><rect x=\"6\" y=\"42\" width=\"120\" height=\"54\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"66.0\" y=\"63.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">D from water</text><text x=\"66.0\" y=\"81.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">deuterium</text><line x1=\"128\" y1=\"69.0\" x2=\"150\" y2=\"69.0\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"152\" y=\"42\" width=\"120\" height=\"54\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"212.0\" y=\"63.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Hyperion</text><text x=\"212.0\" y=\"81.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">breeds tritium</text><line x1=\"274\" y1=\"69.0\" x2=\"296\" y2=\"69.0\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"298\" y=\"42\" width=\"120\" height=\"54\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"358.0\" y=\"63.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">T &#8594; <sup>3</sup>He</text><text x=\"358.0\" y=\"81.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">beta decay</text><line x1=\"420\" y1=\"69.0\" x2=\"442\" y2=\"69.0\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"444\" y=\"42\" width=\"120\" height=\"54\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"504.0\" y=\"63.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Aegis burn</text><text x=\"504.0\" y=\"81.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">D&#8211;<sup>3</sup>He</text></svg>"
+   ],
+   [
+    "h3",
+    "Why the pairing matters"
+   ],
+   [
+    "p",
+    "The burner is at design stage. It is being perfected now, while the breeder is built (breeder construction begins Q2 2027; first-of-a-kind first tritium is expected around 2030; the first test burner follows around 2032). By the time a fielded burner needs a steady helium-3 stream, the breeder fleet is intended to be supplying it. Nothing in the burner fuel story depends on lunar mining or on a hardware net-gain claim that has not yet been demonstrated."
+   ],
+   [
+    "ul",
+    [
+     "Deuterium: from water, abundant, non-strategic",
+     "Helium-3: bred on Earth via tritium decay in Hyperion",
+     "Primary reaction is aneutronic; a small 5.44% neutron fraction comes from side reactions",
+     "Charged fusion products enable direct energy conversion"
+    ]
+   ],
+   [
+    "p",
+    "The pages in this section trace each link: the physics of the fuel, where each isotope comes from, how it is stored and handled, how the supply is secured, and the honest limits of what has and has not yet been built."
+   ]
+  ],
+  "related": [
+   [
+    "d3he-fuel-cycle",
+    "The D–3He Fuel Cycle"
+   ],
+   [
+    "breeder-burner-link",
+    "The Breeder–Burner Link"
+   ],
+   [
+    "helium-3-from-the-breeder",
+    "Helium-3 from Hyperion"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "d3he-fuel-cycle",
+  "title": "The D–3He Fuel Cycle",
+  "cat": "fuel-supply",
+  "lede": "The deuterium–helium-3 reaction releases 18.3 MeV almost entirely as charged particles, which is what makes direct energy conversion and low neutron output possible.",
+  "body": [
+   [
+    "h2",
+    "The primary reaction"
+   ],
+   [
+    "p",
+    "The reaction Aegis is built around is D + <sup>3</sup>He &#8594; <sup>4</sup>He (3.6 MeV) + p (14.7 MeV). Both products are charged: an alpha particle and a proton. Because charged particles are confined and steered by magnetic and electric fields, their energy can be recovered by direct energy conversion rather than only as heat. This is the physical basis for the burner's efficiency and low-signature operation."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 170\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">PRIMARY CHANNEL &#183; ANEUTRONIC</text><rect x=\"60\" y=\"60\" width=\"150\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"135.0\" y=\"84.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">D + <sup>3</sup>He</text><text x=\"135.0\" y=\"102.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">reactants</text><line x1=\"214\" y1=\"90\" x2=\"300\" y2=\"90\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"257.0\" y=\"84.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">18.3 MeV</text><rect x=\"304\" y=\"40\" width=\"150\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"379.0\" y=\"56.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\"><sup>4</sup>He</text><text x=\"379.0\" y=\"74.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">3.6 MeV</text><rect x=\"304\" y=\"104\" width=\"150\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"379.0\" y=\"120.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">proton</text><text x=\"379.0\" y=\"138.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">14.7 MeV</text></svg>"
+   ],
+   [
+    "h3",
+    "Why it is not perfectly aneutronic"
+   ],
+   [
+    "p",
+    "A pure D–<sup>3</sup>He plasma still contains deuterium, and deuterium reacts with itself. The D–D side reactions produce tritium and helium-3, and one D–D branch and the subsequent D–T reaction release neutrons. In the Aegis design point this shows up as a neutron fraction of <b>5.44%</b> of total fusion power — low, but not zero. The fuel cycle and shielding are designed around this honest number, not around an idealized aneutronic claim."
+   ],
+   [
+    "ul",
+    [
+     "Primary: D + <sup>3</sup>He &#8594; <sup>4</sup>He + p (charged, 18.3 MeV)",
+     "Side: D + D &#8594; T + p and D + D &#8594; <sup>3</sup>He + n",
+     "Follow-on: D + T &#8594; <sup>4</sup>He + n (14.1 MeV)",
+     "Net neutron fraction at the design point: 5.44%"
+    ]
+   ],
+   [
+    "p",
+    "The consequence for supply is important: the burner consumes helium-3 and deuterium and returns helium-4 ash. It does not breed its own fuel. Every kilogram of helium-3 must come from outside the machine — which is exactly the role the breeder fills."
+   ]
+  ],
+  "related": [
+   [
+    "side-reactions-dd",
+    "D–D Side Reactions"
+   ],
+   [
+    "proton-fuel-product",
+    "The Proton Product & DEC"
+   ],
+   [
+    "neutron-fraction-and-fuel-choice",
+    "Neutron Fraction & Fuel Choice"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "why-helium-3",
+  "title": "Why Helium-3 Is the Burner's Fuel",
+  "cat": "fuel-supply",
+  "lede": "Helium-3 lets the burner run a mostly-aneutronic reaction with charged products, trading extreme fuel scarcity for low neutron damage and direct conversion.",
+  "body": [
+   [
+    "h2",
+    "The trade the burner makes"
+   ],
+   [
+    "p",
+    "Every fusion fuel is a compromise. D–T is easy to ignite but throws 80% of its energy into 14 MeV neutrons, which activate structures and demand heavy shielding and remote handling. D–<sup>3</sup>He is far harder to burn — it needs higher temperatures and better confinement — but its primary channel is aneutronic and its products are charged. Aegis accepts the harder physics to gain a cleaner, lower-signature machine suited to fixed installations."
+   ],
+   [
+    "ul",
+    [
+     "Low neutron output &#8594; less activation, lighter shielding, longer component life",
+     "Charged products &#8594; direct energy conversion is possible",
+     "No tritium as a primary fuel in the burner &#8594; a smaller radiological inventory on site",
+     "Cost: helium-3 is scarce and must be bred"
+    ]
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">FUEL TRADE-OFF</text><rect x=\"40\" y=\"50\" width=\"120\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#6E7D8F\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"74.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">D&#8211;T</text><text x=\"100.0\" y=\"92.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">easy burn / 80% neutrons</text><rect x=\"270\" y=\"50\" width=\"120\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"330.0\" y=\"74.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">D&#8211;<sup>3</sup>He</text><text x=\"330.0\" y=\"92.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">hard burn / low neutron</text><rect x=\"500\" y=\"50\" width=\"120\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#6E7D8F\" stroke-width=\"1.5\"/><text x=\"560.0\" y=\"74.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">p&#8211;<sup>11</sup>B</text><text x=\"560.0\" y=\"92.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">hardest / aneutronic</text><text x=\"330\" y=\"140\" text-anchor=\"middle\" fill=\"#9FB1C4\" font-size=\"11\">Aegis chooses the middle: clean enough, reachable in a tandem mirror</text></svg>"
+   ],
+   [
+    "h3",
+    "Why the tandem mirror suits it"
+   ],
+   [
+    "p",
+    "D–<sup>3</sup>He rewards a device that can hold a very hot, well-confined central plasma and recover charged-particle energy at the ends. The tandem mirror does both: high-field end plugs (26.49 T) build an electrostatic barrier that holds ions in the central cell, and the expanding field at the ends spreads the escaping charged flux for direct conversion. The fuel choice and the machine geometry are chosen together."
+   ],
+   [
+    "p",
+    "The catch is supply. p–<sup>11</sup>B is even cleaner but presently unreachable; D–<sup>3</sup>He is reachable but needs a helium-3 source. Solving that source problem on Earth is the entire point of the breeder–burner pairing."
+   ]
+  ],
+  "related": [
+   [
+    "d3he-fuel-cycle",
+    "The D–3He Fuel Cycle"
+   ],
+   [
+    "helium-3-scarcity",
+    "Helium-3 Scarcity"
+   ],
+   [
+    "breeder-burner-link",
+    "The Breeder–Burner Link"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "helium-3-from-the-breeder",
+  "title": "Helium-3 from the Hyperion Breeder",
+  "cat": "fuel-supply",
+  "lede": "Hyperion breeds tritium; that tritium decays into helium-3 at a fixed rate, making the breeder a helium-3 generator on a 12.3-year clock.",
+  "body": [
+   [
+    "h2",
+    "The breeder is a helium-3 factory"
+   ],
+   [
+    "p",
+    "Hyperion is a D–T spherical tokamak whose main product line is tritium — a design-point yield in the ~4 kg/yr class, with the tritium breeding ratio treated as a design lever across 1.1, 1.5, and 1.8. Tritium is radioactive and decays into helium-3. So a store of bred tritium is, over time, a store of helium-3 in the making. Hyperion's design-point helium-3 output is in the <b>~1.97 kg/yr</b> class as this decay proceeds."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">HELIUM-3 SUPPLY PATH</text><rect x=\"30\" y=\"60\" width=\"140\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"83.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Hyperion</text><text x=\"100.0\" y=\"101.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">D&#8211;T breeder</text><line x1=\"172\" y1=\"89\" x2=\"250\" y2=\"89\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"211.0\" y=\"83.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">bred T</text><rect x=\"254\" y=\"60\" width=\"150\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"329.0\" y=\"83.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Tritium store</text><text x=\"329.0\" y=\"101.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">~4 kg/yr class</text><line x1=\"406\" y1=\"89\" x2=\"486\" y2=\"89\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"446.0\" y=\"83.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">&#946; decay</text><rect x=\"490\" y=\"60\" width=\"150\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"565.0\" y=\"83.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\"><sup>3</sup>He</text><text x=\"565.0\" y=\"101.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">~1.97 kg/yr class</text></svg>"
+   ],
+   [
+    "h3",
+    "Two products, one stream"
+   ],
+   [
+    "p",
+    "This means Hyperion serves two customers at once. Some bred tritium can be used directly (tritium is itself a valuable product for the breeder line), and the fraction allowed to decay yields helium-3 for the burner. The split between held tritium and decayed helium-3 is an inventory decision, not a physics constraint — it is set by how much helium-3 the burner fleet needs and when."
+   ],
+   [
+    "ul",
+    [
+     "Breeder product: bred tritium (~4 kg/yr class) plus 14 MeV neutrons",
+     "Decay product: helium-3 (~1.97 kg/yr class)",
+     "Half-life fixes the conversion rate; no separation reaction is needed to make helium-3",
+     "The tritium/helium-3 split is set by fleet demand"
+    ]
+   ],
+   [
+    "p",
+    "No part of this requires the burner to be operating, and none of it claims hardware net gain. The breeder is built first (construction from Q2 2027, first tritium ~2030), and the helium-3 inventory begins accumulating from that point, ahead of the first test burner around 2032."
+   ]
+  ],
+  "related": [
+   [
+    "tritium-decay-to-helium-3",
+    "Tritium Decay to Helium-3"
+   ],
+   [
+    "helium-3-yield-from-hyperion",
+    "Helium-3 Yield from Hyperion"
+   ],
+   [
+    "breeder-burner-link",
+    "The Breeder–Burner Link"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "tritium-decay-to-helium-3",
+  "title": "Tritium Decay to Helium-3",
+  "cat": "fuel-supply",
+  "lede": "Tritium beta-decays to helium-3 with a 12.32-year half-life, a fixed physical process that turns a tritium inventory into a helium-3 inventory.",
+  "body": [
+   [
+    "h2",
+    "The beta decay"
+   ],
+   [
+    "p",
+    "Tritium (<sup>3</sup>H) is unstable. It undergoes beta-minus decay: <sup>3</sup>H &#8594; <sup>3</sup>He + e<sup>&#8722;</sup> + &#957;&#772;. A neutron in the tritium nucleus converts to a proton, emitting an electron and an antineutrino, leaving helium-3. The decay energy is low — about 18.6 keV maximum electron energy — so the process is easy to shield and produces no penetrating gamma radiation. The half-life is <b>12.32 years</b>."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 175\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">BETA-MINUS DECAY</text><circle cx=\"120\" cy=\"95\" r=\"34\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"120\" y=\"92\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"14\"><sup>3</sup>H</text><text x=\"120\" y=\"108\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"9\">tritium</text><line x1=\"158\" y1=\"95\" x2=\"300\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"229.0\" y=\"89.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">12.32 yr half-life</text><circle cx=\"360\" cy=\"95\" r=\"34\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.6\"/><text x=\"360\" y=\"92\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"14\"><sup>3</sup>He</text><text x=\"360\" y=\"108\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"9\">helium-3</text><text x=\"470\" y=\"80\" fill=\"#9FB1C4\" font-size=\"11\">+ e&#8722; (&#8804;18.6 keV)</text><text x=\"470\" y=\"105\" fill=\"#9FB1C4\" font-size=\"11\">+ antineutrino</text></svg>"
+   ],
+   [
+    "h3",
+    "What the half-life implies"
+   ],
+   [
+    "p",
+    "A 12.32-year half-life means roughly 5.5% of a tritium inventory converts to helium-3 each year. This is slow and steady — an advantage for supply planning, because the conversion cannot run away or stall. A tritium store put aside today is a predictable helium-3 store tomorrow. It also means helium-3 accumulates whether or not any machine is running, so the breeder can build a helium-3 reserve before the first burner needs it."
+   ],
+   [
+    "ul",
+    [
+     "Reaction: <sup>3</sup>H &#8594; <sup>3</sup>He + e<sup>&#8722;</sup> + antineutrino",
+     "Half-life: 12.32 years (~5.5% conversion per year)",
+     "Decay energy low (&#8804;18.6 keV), no gamma emission",
+     "Conversion is passive and predictable — good for inventory planning"
+    ]
+   ],
+   [
+    "p",
+    "This decay is the single physical fact that makes a terrestrial helium-3 supply possible at all. Every other terrestrial source of helium-3 traces back to the same process happening somewhere else."
+   ]
+  ],
+  "related": [
+   [
+    "helium-3-from-the-breeder",
+    "Helium-3 from Hyperion"
+   ],
+   [
+    "helium-3-inventory-management",
+    "Helium-3 Inventory Management"
+   ],
+   [
+    "helium-3-global-context",
+    "Helium-3 in Global Context"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "breeder-burner-link",
+  "title": "The Breeder–Burner Link",
+  "cat": "fuel-supply",
+  "lede": "The breeder makes the helium-3 the burner needs; the burner gives the breeder's helium-3 a purpose — a deliberately coupled two-machine system.",
+  "body": [
+   [
+    "h2",
+    "Two machines, one system"
+   ],
+   [
+    "p",
+    "Kronos does not treat the breeder (Hyperion) and the burner (Aegis / MetroVolt) as separate products that happen to share a company. They are engineered as a coupled system. The breeder is a source of tritium, helium-3, and 14 MeV neutrons; the burner is a consumer of helium-3 and a producer of firm electric power. Neither is complete without the other: a burner with no helium-3 source cannot be fielded at scale, and a breeder with no helium-3 customer under-uses one of its products."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 165\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">COUPLED SYSTEM</text><rect x=\"40\" y=\"55\" width=\"180\" height=\"70\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"130.0\" y=\"84.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">BREEDER (Hyperion)</text><text x=\"130.0\" y=\"102.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">source: T, <sup>3</sup>He, neutrons</text><line x1=\"224\" y1=\"80\" x2=\"436\" y2=\"80\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"330.0\" y=\"74.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">helium-3</text><line x1=\"436\" y1=\"105\" x2=\"224\" y2=\"105\" stroke=\"#6E7D8F\" stroke-width=\"1.3\" stroke-dasharray=\"4 3\" marker-end=\"url(#ah)\"/><text x=\"330\" y=\"122\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10\">demand signal &#183; fleet planning</text><rect x=\"440\" y=\"55\" width=\"180\" height=\"70\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"530.0\" y=\"84.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">BURNER (Aegis)</text><text x=\"530.0\" y=\"102.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">consumer: firm power</text></svg>"
+   ],
+   [
+    "h3",
+    "Sequencing"
+   ],
+   [
+    "p",
+    "The link also sets the build order. The breeder is built first because it makes the fuel: construction begins Q2 2027 and first-of-a-kind first tritium is expected around 2030. Helium-3 then accumulates by decay while the burner is still being perfected on paper and in simulation. The first test burner follows around 2032. By the time burners are fielded in numbers, a breeder fleet is intended to be running ahead of them as the fuel foundry."
+   ],
+   [
+    "ul",
+    [
+     "Breeder is the fuel source; burner is the fuel consumer",
+     "Build order: breeder first, then test burner (~2032)",
+     "Helium-3 reserve accumulates by decay during the gap",
+     "Fleet planning couples breeder count to burner demand"
+    ]
+   ],
+   [
+    "p",
+    "This is why the burner's fuel supply is presented honestly as a design-stage story. The physics of the link is settled; the hardware is being built in the right order to make it real, and no step claims a net-gain result that has not been shown."
+   ]
+  ],
+  "related": [
+   [
+    "helium-3-from-the-breeder",
+    "Helium-3 from Hyperion"
+   ],
+   [
+    "breeder-fleet-feeds-burner-fleet",
+    "Breeder Fleet Feeds Burner Fleet"
+   ],
+   [
+    "supply-security",
+    "Supply Security"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "deuterium-supply",
+  "title": "Deuterium Supply",
+  "cat": "fuel-supply",
+  "lede": "Deuterium, the burner's other fuel, is a stable isotope of hydrogen extracted from ordinary water and available in effectively unlimited quantity.",
+  "body": [
+   [
+    "h2",
+    "The easy half of the fuel"
+   ],
+   [
+    "p",
+    "Deuterium (<sup>2</sup>H or D) is a stable, naturally occurring isotope of hydrogen with one proton and one neutron. It makes up about 156 parts per million of all hydrogen on Earth, which means every litre of ordinary water contains a small but recoverable amount. Because the oceans hold an enormous mass of hydrogen, the practical supply of deuterium is effectively inexhaustible and is not a strategic or scarce material."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 155\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">DEUTERIUM RECOVERY</text><rect x=\"40\" y=\"55\" width=\"150\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"115.0\" y=\"78.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Seawater</text><text x=\"115.0\" y=\"96.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">H&#8322;O + HDO</text><line x1=\"192\" y1=\"84\" x2=\"270\" y2=\"84\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"231.0\" y=\"78.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">enrich</text><rect x=\"274\" y=\"55\" width=\"150\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"349.0\" y=\"78.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Heavy water</text><text x=\"349.0\" y=\"96.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">D&#8322;O</text><line x1=\"426\" y1=\"84\" x2=\"504\" y2=\"84\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"465.0\" y=\"78.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">electrolysis</text><rect x=\"508\" y=\"55\" width=\"130\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"573.0\" y=\"78.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">D&#8322; gas</text><text x=\"573.0\" y=\"96.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">burner fuel</text></svg>"
+   ],
+   [
+    "h3",
+    "Extraction"
+   ],
+   [
+    "p",
+    "Deuterium is concentrated by well-established industrial processes. Chemical exchange (such as the Girdler sulfide process) and water distillation enrich water in the heavier HDO and D<sub>2</sub>O forms; electrolysis then liberates deuterium gas. These are mature technologies used for decades to make heavy water for other purposes. Nothing about Aegis requires a new deuterium industry — only access to an existing one."
+   ],
+   [
+    "ul",
+    [
+     "Deuterium is stable and non-radioactive",
+     "Natural abundance ~156 ppm of hydrogen",
+     "Extracted from water by exchange, distillation, and electrolysis",
+     "Supply is effectively unlimited and non-strategic"
+    ]
+   ],
+   [
+    "p",
+    "This is why the burner's fuel-security conversation is really a helium-3 conversation. Deuterium is the reliable, abundant partner; the scarce, bred partner is helium-3. The two are stored, conditioned, and injected together, but their supply chains could not be more different."
+   ]
+  ],
+  "related": [
+   [
+    "deuterium-extraction-heavy-water",
+    "Deuterium from Heavy Water"
+   ],
+   [
+    "deuterium-helium-3-mix-ratio",
+    "The D–3He Mix Ratio"
+   ],
+   [
+    "helium-3-scarcity",
+    "Helium-3 Scarcity"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "helium-3-scarcity",
+  "title": "Helium-3 Scarcity",
+  "cat": "fuel-supply",
+  "lede": "Helium-3 is one of the rarest usable isotopes on Earth; its scarcity is the central fact the breeder–burner pairing is designed to overcome.",
+  "body": [
+   [
+    "h2",
+    "How rare it is"
+   ],
+   [
+    "p",
+    "Helium-3 makes up only about 1.38 parts per million of natural helium, and helium itself is a trace gas. There is no ore, no mine, and no large natural reservoir of pure helium-3 on Earth. Almost all terrestrial helium-3 in use today comes from the decay of tritium that was itself manufactured — historically in nuclear weapons programs. Because that tritium production has largely stopped, the existing supply is a slowly shrinking legacy stock."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">TERRESTRIAL HELIUM-3</text><rect x=\"40\" y=\"60\" width=\"580\" height=\"30\" fill=\"none\" stroke=\"#3A4756\" stroke-width=\"1\"/><rect x=\"40\" y=\"60\" width=\"2.5\" height=\"30\" fill=\"#D4AD5C\"/><text x=\"52\" y=\"80\" fill=\"#D4AD5C\" font-size=\"11\"><sup>3</sup>He &#8776; 1.38 ppm of helium</text><text x=\"40\" y=\"118\" fill=\"#9FB1C4\" font-size=\"11\">No ore. No mine. Supply = whatever tritium has decayed somewhere.</text><text x=\"40\" y=\"138\" fill=\"#6E7D8F\" font-size=\"10.5\">Sources: weapons-tritium decay (declining), natural-gas traces, and &#8212; deliberately &#8212; a fusion breeder.</text></svg>"
+   ],
+   [
+    "h3",
+    "Why scarcity is the design problem"
+   ],
+   [
+    "p",
+    "Any programme that wants to burn D–<sup>3</sup>He at scale runs straight into this wall: there simply is not enough helium-3 in circulation to fuel a fleet of generators. Some proposals answer this by looking to the Moon, where solar wind has implanted helium-3 in the regolith over billions of years. Kronos treats lunar helium-3 as a genuine long-term supplement, not a near-term dependency."
+   ],
+   [
+    "ul",
+    [
+     "Abundance ~1.38 ppm of a trace gas — no natural reservoir",
+     "Legacy supply is decaying weapons tritium — and it is shrinking",
+     "Demand from quantum, medical, and security uses already competes",
+     "A fusion breeder is a purpose-built, renewable terrestrial source"
+    ]
+   ],
+   [
+    "p",
+    "The breeder is Kronos's answer to scarcity. Instead of competing for a fixed legacy stock, Hyperion manufactures fresh tritium that decays into helium-3, turning a scarce isotope into a produced one. That is what makes a burner fleet conceivable at all."
+   ]
+  ],
+  "related": [
+   [
+    "helium-3-from-the-breeder",
+    "Helium-3 from Hyperion"
+   ],
+   [
+    "lunar-helium-3",
+    "Lunar Helium-3"
+   ],
+   [
+    "helium-3-global-context",
+    "Helium-3 in Global Context"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "helium-3-inventory-management",
+  "title": "Helium-3 Inventory Management",
+  "cat": "fuel-supply",
+  "lede": "Because helium-3 arrives slowly by decay, the supply is managed as an inventory — a reserve built ahead of demand rather than produced on demand.",
+  "body": [
+   [
+    "h2",
+    "A reserve, not a tap"
+   ],
+   [
+    "p",
+    "Helium-3 cannot be produced faster by turning a dial: it appears at the fixed rate set by tritium's 12.32-year half-life. That makes helium-3 supply an inventory-management problem. The breeder builds a tritium store, a chosen fraction is allowed to decay, and the resulting helium-3 is accumulated as a reserve. Burners draw down that reserve. The system is planned around stock and flow, not instantaneous production."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 185\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">STOCK BUILDS AHEAD OF DEMAND</text><polyline points=\"40,140 140,128 240,110 340,86 440,60 560,40\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><line x1=\"40\" y1=\"150\" x2=\"620\" y2=\"150\" stroke=\"#3A4756\"/><line x1=\"40\" y1=\"150\" x2=\"40\" y2=\"40\" stroke=\"#3A4756\"/><text x=\"330\" y=\"172\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10\">time &#8594; (breeder running)</text><text x=\"20\" y=\"95\" fill=\"#6E7D8F\" font-size=\"10\" transform=\"rotate(-90 20 95)\"><sup>3</sup>He reserve</text><line x1=\"360\" y1=\"40\" x2=\"360\" y2=\"150\" stroke=\"#9FB1C4\" stroke-dasharray=\"4 3\"/><text x=\"366\" y=\"52\" fill=\"#9FB1C4\" font-size=\"10\">first burner draw</text></svg>"
+   ],
+   [
+    "h3",
+    "The levers"
+   ],
+   [
+    "p",
+    "Three levers set the helium-3 reserve. First, how many breeders run and at what tritium breeding ratio (the lever spans 1.1, 1.5, and 1.8). Second, what fraction of bred tritium is held for decay versus sold or used directly as tritium. Third, the timing — because decay is passive, starting the breeder early (construction from Q2 2027) means a reserve exists before the first test burner around 2032."
+   ],
+   [
+    "ul",
+    [
+     "Supply rate is fixed by half-life — plan by stock and flow",
+     "Reserve is built ahead of demand, during the breeder-first period",
+     "Tritium-held vs helium-3-decayed split is an inventory decision",
+     "Breeding-ratio lever (1.1 / 1.5 / 1.8) scales the source rate"
+    ]
+   ],
+   [
+    "p",
+    "Managed this way, the slowness of decay becomes a strength: the supply is predictable years in advance and cannot be disrupted by a single event, because most of the future helium-3 already exists as tritium in store."
+   ]
+  ],
+  "related": [
+   [
+    "tritium-decay-to-helium-3",
+    "Tritium Decay to Helium-3"
+   ],
+   [
+    "startup-fuel-inventory",
+    "Startup Fuel Inventory"
+   ],
+   [
+    "fuel-accountancy",
+    "Fuel Accountancy"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "fuel-storage-and-handling",
+  "title": "Fuel Storage and Handling",
+  "cat": "fuel-supply",
+  "lede": "Deuterium and helium-3 are light, non-corrosive gases stored cryogenically or as hydrides; helium-3 handling is dominated by containment against loss, not radiation.",
+  "body": [
+   [
+    "h2",
+    "Two gases, two regimes"
+   ],
+   [
+    "p",
+    "The burner's two fuels are both light gases, but they are handled differently. Deuterium is a hydrogen isotope and can be stored as compressed gas, as a cryogenic liquid, or absorbed in metal hydride beds that release it on gentle heating. Helium-3 is a noble gas — chemically inert, non-radioactive, and impossible to store as a hydride — so it is kept as compressed or cryogenic gas in leak-tight vessels."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 130\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><rect x=\"6\" y=\"42\" width=\"120\" height=\"54\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"66.0\" y=\"63.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Metal hydride</text><text x=\"66.0\" y=\"81.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">D&#8322; storage</text><line x1=\"128\" y1=\"69.0\" x2=\"150\" y2=\"69.0\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"152\" y=\"42\" width=\"120\" height=\"54\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"212.0\" y=\"63.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Cryo / compressed</text><text x=\"212.0\" y=\"81.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\"><sup>3</sup>He storage</text><line x1=\"274\" y1=\"69.0\" x2=\"296\" y2=\"69.0\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"298\" y=\"42\" width=\"120\" height=\"54\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"358.0\" y=\"63.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Conditioning</text><text x=\"358.0\" y=\"81.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">mix &amp; purity</text><line x1=\"420\" y1=\"69.0\" x2=\"442\" y2=\"69.0\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"444\" y=\"42\" width=\"120\" height=\"54\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"504.0\" y=\"63.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Injection</text><text x=\"504.0\" y=\"81.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">central cell</text></svg>"
+   ],
+   [
+    "h3",
+    "The dominant concern: loss, not exposure"
+   ],
+   [
+    "p",
+    "Helium-3 itself is not a radiological hazard — it is stable and inert. The governing concern in its handling is preventing loss. Because it is scarce and bred at a fixed rate, an accidental venting is a supply loss that cannot be quickly replaced. Systems therefore emphasize leak-tight, double-contained vessels, helium-3-specific leak detection, and closed transfer. The radiological handling that does exist sits on the breeder side, around the tritium that helium-3 comes from."
+   ],
+   [
+    "ul",
+    [
+     "Deuterium: compressed gas, cryogenic liquid, or metal-hydride beds",
+     "Helium-3: leak-tight compressed or cryogenic gas (inert, no hydride)",
+     "Helium-3 handling optimizes against loss, not against exposure",
+     "Tritium's radiological handling is a breeder-side concern"
+    ]
+   ],
+   [
+    "p",
+    "This split keeps the burner's on-site radiological inventory small. Aegis stores and burns a mostly-clean fuel; the more demanding tritium handling stays where the tritium is made."
+   ]
+  ],
+  "related": [
+   [
+    "cryogenic-fuel-storage",
+    "Cryogenic Fuel Storage"
+   ],
+   [
+    "tritium-handling-and-safety",
+    "Tritium Handling & Safety"
+   ],
+   [
+    "fuel-conditioning",
+    "Fuel Conditioning"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "tritium-handling-and-safety",
+  "title": "Tritium Handling and Safety",
+  "cat": "fuel-supply",
+  "lede": "Tritium handling is a breeder-side discipline; because the burner's helium-3 comes from decayed tritium, tritium safety underpins the whole supply chain.",
+  "body": [
+   [
+    "h2",
+    "Where the radiological work lives"
+   ],
+   [
+    "p",
+    "Tritium is the one radioactive isotope in the breeder–burner fuel story. It is a low-energy beta emitter — its radiation cannot penetrate skin — but it is a hazard if inhaled or ingested, and it is highly mobile because it behaves chemically like hydrogen and can permeate metals. Handling it safely is a mature engineering discipline: multiple containment barriers, tritium-compatible materials, atmosphere detritiation systems, and continuous monitoring."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">CONTAINMENT (BREEDER SIDE)</text><rect x=\"40\" y=\"55\" width=\"130\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"105.0\" y=\"79.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Bred T</text><text x=\"105.0\" y=\"97.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">primary barrier</text><rect x=\"200\" y=\"55\" width=\"130\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"265.0\" y=\"79.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Secondary</text><text x=\"265.0\" y=\"97.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">glovebox / vault</text><rect x=\"360\" y=\"55\" width=\"130\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"425.0\" y=\"79.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Detritiation</text><text x=\"425.0\" y=\"97.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">room air cleanup</text><rect x=\"520\" y=\"55\" width=\"110\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"575.0\" y=\"79.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Monitor</text><text x=\"575.0\" y=\"97.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">continuous</text><text x=\"330\" y=\"140\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">Multiple barriers keep bred tritium contained until it decays to inert helium-3.</text></svg>"
+   ],
+   [
+    "h3",
+    "Why it matters to the burner"
+   ],
+   [
+    "p",
+    "The burner does not use tritium as a primary fuel, so a fielded Aegis site carries a much smaller radiological inventory than the breeder. But the burner's fuel supply is built on tritium: the helium-3 it burns is what tritium becomes. Reliable, safe tritium handling on the breeder side is therefore a precondition for the burner's fuel to exist at all. When tritium is held for decay, safe long-term containment is the mechanism that converts it to helium-3."
+   ],
+   [
+    "ul",
+    [
+     "Tritium is a low-energy beta emitter — internal hazard, mobile",
+     "Handled by layered containment, detritiation, and monitoring",
+     "Burner site inventory is small; the tritium work is breeder-side",
+     "Safe long-term containment is how held tritium becomes helium-3"
+    ]
+   ],
+   [
+    "p",
+    "In short, the fuel loop trades a demanding-but-mature tritium discipline at the breeder for a clean fuel at the burner. The safety burden is concentrated where the expertise and infrastructure sit."
+   ]
+  ],
+  "related": [
+   [
+    "tritium-decay-to-helium-3",
+    "Tritium Decay to Helium-3"
+   ],
+   [
+    "no-tritium-fuel-in-burner",
+    "No Tritium Fuel in the Burner"
+   ],
+   [
+    "fuel-storage-and-handling",
+    "Fuel Storage & Handling"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "helium-3-purity-requirements",
+  "title": "Helium-3 Purity Requirements",
+  "cat": "fuel-supply",
+  "lede": "Fusion-grade helium-3 must be separated from ordinary helium-4 and other gases; even small contamination changes plasma behavior and fuel accounting.",
+  "body": [
+   [
+    "h2",
+    "Why purity matters"
+   ],
+   [
+    "p",
+    "The burner plasma is tuned to a specific fuel mix. Contaminants dilute the reacting species, radiate energy away, and shift the plasma's effective charge. Helium-4 is the chief concern: it is chemically identical to helium-3 and cannot be removed by chemistry, only by isotope separation. Other light gases — residual hydrogen, deuterium, nitrogen — must also be held to low levels. Purity is specified because impurities cost confinement and confuse fuel accounting."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 185\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">PURITY = SEPARATION</text><rect x=\"60\" y=\"55\" width=\"80\" height=\"90\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.6\"/><text x=\"100\" y=\"105\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\"><sup>3</sup>He</text><text x=\"100\" y=\"160\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"9.5\">wanted</text><line x1=\"150\" y1=\"100\" x2=\"230\" y2=\"100\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"190.0\" y=\"94.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">reject</text><rect x=\"240\" y=\"70\" width=\"70\" height=\"26\" fill=\"none\" stroke=\"#6E7D8F\"/><text x=\"275\" y=\"88\" text-anchor=\"middle\" fill=\"#9FB1C4\" font-size=\"10.5\"><sup>4</sup>He</text><rect x=\"240\" y=\"104\" width=\"70\" height=\"26\" fill=\"none\" stroke=\"#6E7D8F\"/><text x=\"275\" y=\"122\" text-anchor=\"middle\" fill=\"#9FB1C4\" font-size=\"10.5\">H&#8322; / D&#8322;</text><text x=\"360\" y=\"105\" fill=\"#9FB1C4\" font-size=\"11\">Only isotope separation removes <sup>4</sup>He.</text></svg>"
+   ],
+   [
+    "h3",
+    "Where impurity comes from"
+   ],
+   [
+    "p",
+    "Helium-3 from tritium decay is intrinsically clean at birth, but it accumulates alongside the parent tritium and any helium-4 already present, and it can pick up gases during storage and transfer. Recovered helium-3 from a burner's exhaust is mixed with the helium-4 ash the reaction produces. So purity is maintained by separation both upstream (before delivery) and downstream (in exhaust processing)."
+   ],
+   [
+    "ul",
+    [
+     "Helium-4 dilutes fuel and cannot be removed chemically",
+     "Impurities radiate energy and raise effective charge",
+     "Decay-born helium-3 is clean but co-located with tritium and <sup>4</sup>He",
+     "Purity is enforced by isotope separation, upstream and downstream"
+    ]
+   ],
+   [
+    "p",
+    "Specifying and verifying purity is therefore tied directly to the isotope-separation and fuel-accounting systems described elsewhere in this section."
+   ]
+  ],
+  "related": [
+   [
+    "isotope-separation",
+    "Isotope Separation"
+   ],
+   [
+    "fuel-quality-assurance",
+    "Fuel Quality Assurance"
+   ],
+   [
+    "helium-4-ash-management",
+    "Helium-4 Ash Management"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "isotope-separation",
+  "title": "Isotope Separation",
+  "cat": "fuel-supply",
+  "lede": "Separating helium-3 from helium-4 relies on their small mass difference, using cryogenic distillation and related physical methods rather than chemistry.",
+  "body": [
+   [
+    "h2",
+    "Same element, different mass"
+   ],
+   [
+    "p",
+    "Helium-3 and helium-4 are the same element, so no chemical reaction can tell them apart. They differ only in mass — three versus four nucleons — and separation exploits that difference physically. The principal method is cryogenic distillation: at temperatures near the boiling point of helium, the lighter helium-3 is slightly more volatile and concentrates in the vapor. Repeated stages enrich it to fusion grade."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 185\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">CRYOGENIC DISTILLATION</text><rect x=\"150\" y=\"40\" width=\"60\" height=\"120\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.6\"/><text x=\"180\" y=\"30\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">column</text><text x=\"180\" y=\"58\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"11\"><sup>3</sup>He rich</text><text x=\"180\" y=\"150\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"11\"><sup>4</sup>He rich</text><line x1=\"120\" y1=\"100\" x2=\"148\" y2=\"60\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><line x1=\"120\" y1=\"100\" x2=\"148\" y2=\"140\" stroke=\"#6E7D8F\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"60\" y=\"103\" fill=\"#9FB1C4\" font-size=\"10.5\">He feed</text><line x1=\"212\" y1=\"55\" x2=\"300\" y2=\"55\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"256.0\" y=\"49.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">product</text><text x=\"310\" y=\"58\" fill=\"#E6ECF2\" font-size=\"11\">fusion-grade <sup>3</sup>He</text><text x=\"310\" y=\"150\" fill=\"#6E7D8F\" font-size=\"10.5\">vent / reuse <sup>4</sup>He</text></svg>"
+   ],
+   [
+    "h3",
+    "Other handles"
+   ],
+   [
+    "p",
+    "Besides distillation, the mass difference can be exploited by superfluid and phase-separation effects at very low temperature, and by diffusion and thermal-gradient methods. In practice a fusion fuel plant combines coarse bulk separation with fine polishing stages to reach the required helium-3 purity. The energy and hardware cost of separation is why purity specifications are set no tighter than the plasma actually needs."
+   ],
+   [
+    "ul",
+    [
+     "No chemical route — separation is purely physical",
+     "Cryogenic distillation is the primary method",
+     "Superfluid, diffusion, and thermal methods supplement it",
+     "Multi-stage cascades reach fusion-grade purity"
+    ]
+   ],
+   [
+    "p",
+    "Separation appears twice in the fuel cycle: upstream, when decay-born helium-3 is cleaned of helium-4 before delivery, and downstream, when helium-3 is recovered from burner exhaust that is full of helium-4 ash."
+   ]
+  ],
+  "related": [
+   [
+    "helium-3-purity-requirements",
+    "Helium-3 Purity Requirements"
+   ],
+   [
+    "helium-4-ash-management",
+    "Helium-4 Ash Management"
+   ],
+   [
+    "fuel-recycling-in-the-central-cell",
+    "Fuel Recycling"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "fuel-injection-system",
+  "title": "The Fuel Injection System",
+  "cat": "fuel-supply",
+  "lede": "Fuel enters the central cell as gas or frozen pellets, replacing what the plasma burns and controlling density and the deuterium–helium-3 ratio in real time.",
+  "body": [
+   [
+    "h2",
+    "Feeding the central cell"
+   ],
+   [
+    "p",
+    "A burning plasma consumes fuel and must be continuously refuelled. In the tandem mirror the reacting plasma lives in the central cell, so that is where fuel is delivered. Two methods are used together: gas puffing, which admits neutral gas at the plasma edge, and pellet injection, which fires small frozen pellets deep into the plasma where the density is highest. Gas puffing is fast and fine; pellets place fuel where edge fuelling cannot reach."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 175\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">REFUELLING THE CENTRAL CELL</text><rect x=\"120\" y=\"80\" width=\"420\" height=\"40\" rx=\"20\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.6\"/><text x=\"330\" y=\"105\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"11\">central cell plasma</text><line x1=\"60\" y1=\"70\" x2=\"120\" y2=\"88\" stroke=\"#9FB1C4\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"90.0\" y=\"73.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">pellet</text><line x1=\"60\" y1=\"130\" x2=\"120\" y2=\"112\" stroke=\"#9FB1C4\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"90.0\" y=\"115.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">gas puff</text><circle cx=\"90\" cy=\"100\" r=\"4\" fill=\"#D4AD5C\"/><text x=\"560\" y=\"104\" fill=\"#6E7D8F\" font-size=\"10\">density &amp; D:<sup>3</sup>He control</text></svg>"
+   ],
+   [
+    "h3",
+    "Control, not just supply"
+   ],
+   [
+    "p",
+    "Injection is a control system, not merely a feed pipe. By adjusting the rate and location of gas and pellets, operators set the plasma density and hold the deuterium-to-helium-3 ratio at its target. Because the two fuels burn at different rates and helium-3 is the scarce one, precise, well-metered injection is directly tied to fuel economy: over-feeding helium-3 wastes a bred resource, under-feeding it cools the burn."
+   ],
+   [
+    "ul",
+    [
+     "Gas puffing: fast edge fuelling and fine density trim",
+     "Pellet injection: deep fuelling where edge gas cannot reach",
+     "Injection sets both density and the D:<sup>3</sup>He ratio",
+     "Metering helium-3 precisely is a fuel-economy requirement"
+    ]
+   ],
+   [
+    "p",
+    "The injection system is instrumented and closed-loop, tied to the density and composition diagnostics so the fuel mix stays on target through the burn. It is one of the main places the burner's control brain touches the fuel supply."
+   ]
+  ],
+  "related": [
+   [
+    "deuterium-helium-3-mix-ratio",
+    "The D–3He Mix Ratio"
+   ],
+   [
+    "fueling-rate-and-burn-fraction",
+    "Fuelling Rate & Burn Fraction"
+   ],
+   [
+    "fuel-cycle-instrumentation-and-monitoring",
+    "Fuel-Cycle Instrumentation"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "deuterium-helium-3-mix-ratio",
+  "title": "The Deuterium–Helium-3 Mix Ratio",
+  "cat": "fuel-supply",
+  "lede": "The ratio of deuterium to helium-3 sets the balance between fusion power and neutron production, and is chosen to keep the neutron fraction low.",
+  "body": [
+   [
+    "h2",
+    "A dial between power and cleanliness"
+   ],
+   [
+    "p",
+    "The fuel mix is not simply one-to-one. The deuterium-to-helium-3 ratio is a design choice with a real trade-off. More deuterium raises the rate of D–D and D–T side reactions, which increases neutron output; more helium-3 favors the clean primary channel but demands more of the scarce isotope and higher temperatures to burn. The Aegis design point places this ratio where the neutron fraction settles at <b>5.44%</b> of fusion power."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">THE MIX-RATIO TRADE-OFF</text><line x1=\"60\" y1=\"120\" x2=\"600\" y2=\"120\" stroke=\"#3A4756\"/><text x=\"60\" y=\"145\" fill=\"#6E7D8F\" font-size=\"10\">more D &#8594; more neutrons</text><text x=\"600\" y=\"145\" text-anchor=\"end\" fill=\"#6E7D8F\" font-size=\"10\">more <sup>3</sup>He &#8594; cleaner, harder</text><circle cx=\"300\" cy=\"120\" r=\"8\" fill=\"#D4AD5C\"/><line x1=\"300\" y1=\"60\" x2=\"300\" y2=\"110\" stroke=\"#D4AD5C\" stroke-dasharray=\"3 3\"/><text x=\"300\" y=\"52\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">Aegis design point &#183; f_n = 5.44%</text></svg>"
+   ],
+   [
+    "h3",
+    "Why not maximize helium-3?"
+   ],
+   [
+    "p",
+    "In principle pushing the mix toward pure helium-3 would minimize neutrons. In practice this raises the required temperature and the helium-3 demand, and a mirror plasma still contains deuterium that reacts with itself regardless. The chosen ratio is a balance: low enough neutron fraction to keep the machine clean and long-lived, while remaining reachable in the tandem-mirror configuration and economical in its use of bred helium-3."
+   ],
+   [
+    "ul",
+    [
+     "Ratio trades fusion power against neutron production",
+     "Excess deuterium raises D–D and D–T neutron channels",
+     "Excess helium-3 is cleaner but harder to burn and scarcer",
+     "Design point: neutron fraction 5.44% at the chosen ratio"
+    ]
+   ],
+   [
+    "p",
+    "Because the ratio is set by injection, it is maintained actively during the burn. Diagnostics track the actual in-plasma composition and the control system trims injection to hold the target — the mix ratio is enforced, not assumed."
+   ]
+  ],
+  "related": [
+   [
+    "fuel-injection-system",
+    "The Fuel Injection System"
+   ],
+   [
+    "neutron-fraction-and-fuel-choice",
+    "Neutron Fraction & Fuel Choice"
+   ],
+   [
+    "side-reactions-dd",
+    "D–D Side Reactions"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "side-reactions-dd",
+  "title": "D–D Side Reactions",
+  "cat": "fuel-supply",
+  "lede": "Deuterium reacting with itself is the main source of neutrons in the burner; understanding these side channels explains the 5.44% neutron fraction.",
+  "body": [
+   [
+    "h2",
+    "Deuterium cannot ignore itself"
+   ],
+   [
+    "p",
+    "Even in a fuel optimized for the clean D–<sup>3</sup>He channel, deuterium nuclei collide with each other. The D–D reaction has two branches of nearly equal probability: D + D &#8594; T + p, and D + D &#8594; <sup>3</sup>He + n (2.45 MeV neutron). The first branch produces tritium, which then reacts with deuterium (D + T &#8594; <sup>4</sup>He + n) to release a 14.1 MeV neutron. These are the channels that keep the burner from being perfectly aneutronic."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">D–D BRANCHES AND FOLLOW-ON</text><rect x=\"40\" y=\"50\" width=\"120\" height=\"50\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"79.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">D + D</text><line x1=\"164\" y1=\"60\" x2=\"240\" y2=\"50\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"244\" y=\"30\" width=\"150\" height=\"40\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"319.0\" y=\"44.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">T + p</text><text x=\"319.0\" y=\"62.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">branch A</text><line x1=\"164\" y1=\"90\" x2=\"240\" y2=\"110\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"244\" y=\"90\" width=\"180\" height=\"40\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"334.0\" y=\"104.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\"><sup>3</sup>He + n (2.45 MeV)</text><text x=\"334.0\" y=\"122.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">branch B</text><line x1=\"320\" y1=\"70\" x2=\"410\" y2=\"70\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"430\" y=\"50\" width=\"180\" height=\"40\" rx=\"6\" fill=\"none\" stroke=\"#6E7D8F\" stroke-width=\"1.5\"/><text x=\"520.0\" y=\"64.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">D+T&#8594;<sup>4</sup>He+n (14.1 MeV)</text><text x=\"520.0\" y=\"82.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">follow-on</text></svg>"
+   ],
+   [
+    "h3",
+    "From channels to the 5.44% number"
+   ],
+   [
+    "p",
+    "Adding up the neutron-producing channels — the D–D branch that makes a neutron directly, plus the D–T reaction fed by the tritium from the other branch — against the total fusion power gives the neutron fraction. At the Aegis design point this sums to 5.44%. It is a computed consequence of the fuel mix and plasma conditions, not a target set independently. Change the mix or the temperature and the fraction moves."
+   ],
+   [
+    "ul",
+    [
+     "D–D branch A: D + D &#8594; T + p",
+     "D–D branch B: D + D &#8594; <sup>3</sup>He + n (2.45 MeV)",
+     "Follow-on: D + T &#8594; <sup>4</sup>He + n (14.1 MeV)",
+     "Sum of neutron channels / total power = 5.44%"
+    ]
+   ],
+   [
+    "p",
+    "One useful by-product: branch A and branch B both make useful fuel — tritium and helium-3 — inside the burner itself. This does not close the fuel cycle (the amounts are small and the burn consumes far more helium-3 than it makes), but it is a real, if minor, internal contribution."
+   ]
+  ],
+  "related": [
+   [
+    "d3he-fuel-cycle",
+    "The D–3He Fuel Cycle"
+   ],
+   [
+    "neutron-fraction-and-fuel-choice",
+    "Neutron Fraction & Fuel Choice"
+   ],
+   [
+    "deuterium-helium-3-mix-ratio",
+    "The D–3He Mix Ratio"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "neutron-fraction-and-fuel-choice",
+  "title": "Neutron Fraction and Fuel Choice",
+  "cat": "fuel-supply",
+  "lede": "The 5.44% neutron fraction is the honest cost of running D–3He in a real plasma, and it shapes shielding, materials, and maintenance.",
+  "body": [
+   [
+    "h2",
+    "Low, but not zero"
+   ],
+   [
+    "p",
+    "Marketing a fusion fuel as aneutronic invites the assumption that it produces no neutrons. That is not true for D–<sup>3</sup>He in a real device, and Aegis does not claim it. The design point carries a neutron fraction of 5.44% of total fusion power — a large reduction from D–T's roughly 80%, but a real number that the machine is engineered around. Being honest about it is what lets the shielding and materials be sized correctly."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 135\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">NEUTRON FRACTION, HONESTLY</text><rect x=\"60\" y=\"60\" width=\"240\" height=\"34\" fill=\"none\" stroke=\"#6E7D8F\"/><rect x=\"60\" y=\"60\" width=\"192\" height=\"34\" fill=\"#6E7D8F\" opacity=\"0.35\"/><text x=\"60\" y=\"112\" fill=\"#9FB1C4\" font-size=\"11\">D&#8211;T: ~80% of power as neutrons</text><rect x=\"360\" y=\"60\" width=\"240\" height=\"34\" fill=\"none\" stroke=\"#D4AD5C\"/><rect x=\"360\" y=\"60\" width=\"13\" height=\"34\" fill=\"#D4AD5C\"/><text x=\"360\" y=\"112\" fill=\"#D4AD5C\" font-size=\"11\">D&#8211;<sup>3</sup>He (Aegis): 5.44%</text></svg>"
+   ],
+   [
+    "h3",
+    "What 5.44% buys and costs"
+   ],
+   [
+    "p",
+    "The low fraction is why Aegis suits fixed installations: less neutron flux means less activation of structures, lighter shielding than a D–T machine of similar output, longer component life, and a smaller waste and maintenance burden. But 5.44% is not nothing. It still requires neutron shielding, activation-aware material choices, and a maintenance plan. The design treats the neutron fraction as a real engineering input rather than rounding it to zero."
+   ],
+   [
+    "ul",
+    [
+     "5.44% vs ~80% for D–T — a large but incomplete reduction",
+     "Enables lighter shielding and longer component life",
+     "Still requires shielding and activation-aware materials",
+     "Sized from the honest number, not an idealized claim"
+    ]
+   ],
+   [
+    "p",
+    "The fuel choice and the neutron fraction are inseparable. Choosing D–<sup>3</sup>He is choosing a machine whose whole shielding, materials, and maintenance philosophy follows from 5.44% — and choosing to plan a helium-3 supply to feed it."
+   ]
+  ],
+  "related": [
+   [
+    "side-reactions-dd",
+    "D–D Side Reactions"
+   ],
+   [
+    "why-helium-3",
+    "Why Helium-3 Is the Fuel"
+   ],
+   [
+    "helium-4-ash-management",
+    "Helium-4 Ash Management"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "fuel-cycle-closure",
+  "title": "Fuel-Cycle Closure",
+  "cat": "fuel-supply",
+  "lede": "The burner's fuel cycle is deliberately open: it consumes bred helium-3 and returns helium-4 ash, and closure is achieved only at the two-machine system level.",
+  "body": [
+   [
+    "h2",
+    "The burner does not close its own cycle"
+   ],
+   [
+    "p",
+    "A D–T reactor is often designed to breed its own tritium and approach self-sufficiency. The burner is different, and honestly so: it consumes helium-3 and deuterium and produces helium-4 ash plus power. Its internal side reactions make a trace of tritium and helium-3, but far less than it burns. On its own, the burner's fuel cycle is open — it is a net consumer of helium-3."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 165\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">OPEN AT THE MACHINE, CLOSED AT THE SYSTEM</text><rect x=\"40\" y=\"60\" width=\"150\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"115.0\" y=\"84.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Breeder</text><text x=\"115.0\" y=\"102.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">makes <sup>3</sup>He</text><line x1=\"192\" y1=\"90\" x2=\"270\" y2=\"90\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"231.0\" y=\"84.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\"><sup>3</sup>He</text><rect x=\"274\" y=\"60\" width=\"150\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"349.0\" y=\"84.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Burner</text><text x=\"349.0\" y=\"102.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">burns D+<sup>3</sup>He</text><line x1=\"426\" y1=\"90\" x2=\"504\" y2=\"90\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"465.0\" y=\"84.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\"><sup>4</sup>He ash</text><rect x=\"508\" y=\"60\" width=\"120\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"568.0\" y=\"84.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Exhaust</text><text x=\"568.0\" y=\"102.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">+ power</text><text x=\"330\" y=\"145\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">Closure exists at the SYSTEM level, not inside the burner.</text></svg>"
+   ],
+   [
+    "h3",
+    "Closure at the system level"
+   ],
+   [
+    "p",
+    "Where closure does apply is across the breeder–burner system. The breeder manufactures helium-3 from bred tritium; the burner consumes it. Deuterium is drawn from an effectively unlimited external source. Helium-4 ash is exhausted, and any helium-3 not fully burned is recovered and recycled. The loop that matters — helium-3 in, helium-4 out — is balanced by production at the breeder, not by breeding inside the burner."
+   ],
+   [
+    "ul",
+    [
+     "Burner is a net helium-3 consumer — cycle open at the machine",
+     "Products: helium-4 ash, power, trace T and <sup>3</sup>He",
+     "Deuterium supplied externally and abundantly",
+     "System closes when breeder production matches burner demand"
+    ]
+   ],
+   [
+    "p",
+    "Framing closure honestly is important: it makes clear why the breeder is not optional. The burner cannot be run at scale without a matching helium-3 source, which is precisely the breeder's role in the coupled system."
+   ]
+  ],
+  "related": [
+   [
+    "breeder-burner-link",
+    "The Breeder–Burner Link"
+   ],
+   [
+    "fuel-recycling-in-the-central-cell",
+    "Fuel Recycling"
+   ],
+   [
+    "fuel-accountancy",
+    "Fuel Accountancy"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "tritium-breeding-ratio-lever",
+  "title": "The Tritium Breeding Ratio Lever",
+  "cat": "fuel-supply",
+  "lede": "In the breeder, the tritium breeding ratio is a design lever spanning 1.1, 1.5, and 1.8 — and it directly sets how fast helium-3 can be supplied.",
+  "body": [
+   [
+    "h2",
+    "One number, two consequences"
+   ],
+   [
+    "p",
+    "The tritium breeding ratio (TBR) measures how many tritium atoms the breeder's blanket produces per tritium atom consumed in its D–T reaction. Hyperion treats TBR as a design lever explored across three values: 1.1, 1.5, and 1.8. A higher ratio means more surplus tritium beyond what the breeder needs to sustain itself — and that surplus is exactly what decays into the helium-3 the burner runs on."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 185\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">BREEDING-RATIO LEVER</text><rect x=\"80\" y=\"120\" width=\"100\" height=\"30\" fill=\"#D4AD5C\" opacity=\"0.5\" stroke=\"#D4AD5C\"/><text x=\"130\" y=\"167\" text-anchor=\"middle\" fill=\"#9FB1C4\" font-size=\"11\">TBR 1.1</text><rect x=\"280\" y=\"80\" width=\"100\" height=\"70\" fill=\"#D4AD5C\" opacity=\"0.5\" stroke=\"#D4AD5C\"/><text x=\"330\" y=\"167\" text-anchor=\"middle\" fill=\"#9FB1C4\" font-size=\"11\">TBR 1.5</text><rect x=\"480\" y=\"45\" width=\"100\" height=\"105\" fill=\"#D4AD5C\" opacity=\"0.5\" stroke=\"#D4AD5C\"/><text x=\"530\" y=\"167\" text-anchor=\"middle\" fill=\"#9FB1C4\" font-size=\"11\">TBR 1.8</text><text x=\"40\" y=\"40\" fill=\"#D4AD5C\" font-size=\"11\">surplus tritium &#8594; <sup>3</sup>He supply rate</text></svg>"
+   ],
+   [
+    "h3",
+    "Lever, not a claim"
+   ],
+   [
+    "p",
+    "It is important that TBR is presented as a lever, not as a single settled value. The physics of achieving a high, net-positive breeding ratio in a real blanket — including the difference between a local breeding figure and a whole-system net after losses — is an open engineering question that the breeder programme is designed to resolve. The three values bracket the plausible range; the helium-3 supply story scales with wherever it lands."
+   ],
+   [
+    "ul",
+    [
+     "TBR = tritium atoms produced per atom consumed",
+     "Explored as a lever at 1.1, 1.5, and 1.8",
+     "Surplus above self-sufficiency becomes helium-3 by decay",
+     "Net vs local breeding is an open question the breeder resolves"
+    ]
+   ],
+   [
+    "p",
+    "For the burner, the practical reading is simple: the breeder's breeding-ratio choice is one of the main dials that sets how large and how fast the helium-3 reserve can grow, and therefore how many burners a breeder fleet can feed."
+   ]
+  ],
+  "related": [
+   [
+    "helium-3-inventory-management",
+    "Helium-3 Inventory Management"
+   ],
+   [
+    "helium-3-yield-from-hyperion",
+    "Helium-3 Yield from Hyperion"
+   ],
+   [
+    "breeder-fleet-feeds-burner-fleet",
+    "Breeder Fleet Feeds Burner Fleet"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "helium-3-yield-from-hyperion",
+  "title": "Helium-3 Yield from Hyperion",
+  "cat": "fuel-supply",
+  "lede": "At its design point the breeder yields helium-3 in the ~1.97 kg/yr class as bred tritium decays, alongside its ~4 kg/yr-class tritium output.",
+  "body": [
+   [
+    "h2",
+    "The design-point numbers"
+   ],
+   [
+    "p",
+    "Hyperion's frozen design point pairs a tritium output in the <b>~4 kg/yr class</b> with a helium-3 output in the <b>~1.97 kg/yr class</b>. These are not two independent products so much as one material seen at two points in time: tritium is what the breeder makes, and helium-3 is what a portion of that tritium becomes as it decays on its 12.32-year clock."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 170\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">HYPERION DESIGN-POINT YIELDS</text><rect x=\"60\" y=\"55\" width=\"180\" height=\"64\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"150.0\" y=\"81.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Tritium</text><text x=\"150.0\" y=\"99.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">~4 kg/yr class</text><line x1=\"244\" y1=\"87\" x2=\"360\" y2=\"87\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"302.0\" y=\"81.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">&#946; decay over time</text><rect x=\"400\" y=\"55\" width=\"200\" height=\"64\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"500.0\" y=\"81.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Helium-3</text><text x=\"500.0\" y=\"99.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">~1.97 kg/yr class</text><text x=\"330\" y=\"150\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">Plus ~14 MeV neutrons as a third product line.</text></svg>"
+   ],
+   [
+    "h3",
+    "How to read the figures"
+   ],
+   [
+    "p",
+    "These are per-unit, design-point figures for a single breeder at its reference operating condition. They scale with the number of breeders in the fleet and with the tritium breeding ratio chosen (the 1.1 / 1.5 / 1.8 lever). They are simulation and design outputs for a machine not yet built: construction begins Q2 2027 and first-of-a-kind first tritium is expected around 2030. No hardware net-gain result is claimed ahead of that milestone."
+   ],
+   [
+    "ul",
+    [
+     "Tritium: ~4 kg/yr class per unit at the design point",
+     "Helium-3: ~1.97 kg/yr class per unit as tritium decays",
+     "Also produces 14 MeV neutrons as a third product",
+     "Design/simulation figures; first tritium ~2030, not yet built"
+    ]
+   ],
+   [
+    "p",
+    "For fleet planning the helium-3 figure is the one that governs how many burners a given number of breeders can feed. It is the throughput of the fuel foundry."
+   ]
+  ],
+  "related": [
+   [
+    "tritium-yield-from-hyperion",
+    "Tritium Yield from Hyperion"
+   ],
+   [
+    "tritium-breeding-ratio-lever",
+    "The Breeding-Ratio Lever"
+   ],
+   [
+    "breeder-fleet-feeds-burner-fleet",
+    "Breeder Fleet Feeds Burner Fleet"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "tritium-yield-from-hyperion",
+  "title": "Tritium Yield from Hyperion",
+  "cat": "fuel-supply",
+  "lede": "The breeder's ~4 kg/yr-class tritium output is both a product in its own right and the reservoir from which the burner's helium-3 is drawn.",
+  "body": [
+   [
+    "h2",
+    "Tritium as reservoir and product"
+   ],
+   [
+    "p",
+    "Hyperion's headline output is tritium — a design-point yield in the ~4 kg/yr class, produced when 14 MeV fusion neutrons breed tritium in a lithium-bearing blanket. Tritium is directly useful: it is a valuable isotope for the breeder line on its own terms. But for the burner it plays a second role, as the reservoir that decays into helium-3."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">TRITIUM PRODUCTION PATH</text><rect x=\"30\" y=\"55\" width=\"140\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"78.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Fusion n</text><text x=\"100.0\" y=\"96.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">14 MeV</text><line x1=\"172\" y1=\"84\" x2=\"240\" y2=\"84\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"244\" y=\"55\" width=\"150\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"319.0\" y=\"78.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Li blanket</text><text x=\"319.0\" y=\"96.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">breeds T</text><line x1=\"396\" y1=\"84\" x2=\"464\" y2=\"84\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"430.0\" y=\"78.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">T</text><rect x=\"468\" y=\"55\" width=\"160\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"548.0\" y=\"78.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Tritium store</text><text x=\"548.0\" y=\"96.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">~4 kg/yr class</text></svg>"
+   ],
+   [
+    "h3",
+    "The held-versus-decayed decision"
+   ],
+   [
+    "p",
+    "Because tritium is both a saleable product and the precursor to helium-3, every unit of bred tritium poses a choice: use or sell it now as tritium, or hold it and let it become helium-3 for the burner. This split is an inventory decision set by fleet demand, and it is reversible in planning — tritium held for decay simply becomes helium-3 at the fixed half-life rate. The two product lines share one source stream."
+   ],
+   [
+    "ul",
+    [
+     "~4 kg/yr-class tritium bred in a lithium blanket by 14 MeV neutrons",
+     "Tritium is a direct product and the helium-3 precursor",
+     "Held vs decayed split set by fleet demand",
+     "Breeding ratio (1.1 / 1.5 / 1.8) scales the yield"
+    ]
+   ],
+   [
+    "p",
+    "Understanding the tritium yield is therefore prerequisite to understanding helium-3 supply: helium-3 can never exceed what the tritium reservoir provides, and the reservoir's size is set here."
+   ]
+  ],
+  "related": [
+   [
+    "helium-3-yield-from-hyperion",
+    "Helium-3 Yield from Hyperion"
+   ],
+   [
+    "tritium-decay-to-helium-3",
+    "Tritium Decay to Helium-3"
+   ],
+   [
+    "tritium-breeding-ratio-lever",
+    "The Breeding-Ratio Lever"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "supply-security",
+  "title": "Supply Security",
+  "cat": "fuel-supply",
+  "lede": "Because both fuels are made domestically — deuterium from water, helium-3 from a home-built breeder — the burner's fuel supply is sovereign and resistant to disruption.",
+  "body": [
+   [
+    "h2",
+    "Fuel that cannot be embargoed"
+   ],
+   [
+    "p",
+    "A fixed installation's power is only as resilient as its fuel. Fuels that must be imported, mined, or bought on a contested market are a vulnerability. The burner's fuel avoids that: deuterium comes from ordinary water, and helium-3 is bred at home by the breeder rather than sourced from a scarce, competed-for global stock. Both inputs are domestic, which is the technical meaning of sovereign power in the Aegis context."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">SOVEREIGN FUEL LOOP</text><rect x=\"40\" y=\"55\" width=\"160\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"120.0\" y=\"79.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Water</text><text x=\"120.0\" y=\"97.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">&#8594; deuterium</text><rect x=\"250\" y=\"55\" width=\"160\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"330.0\" y=\"79.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Home breeder</text><text x=\"330.0\" y=\"97.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">&#8594; helium-3</text><line x1=\"202\" y1=\"85\" x2=\"248\" y2=\"85\" stroke=\"#3A4756\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><line x1=\"412\" y1=\"85\" x2=\"470\" y2=\"85\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"441.0\" y=\"79.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">fuel</text><rect x=\"474\" y=\"55\" width=\"160\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"554.0\" y=\"79.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Aegis</text><text x=\"554.0\" y=\"97.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">firm power</text><text x=\"330\" y=\"140\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">No import, no mine, no contested market in the loop.</text></svg>"
+   ],
+   [
+    "h3",
+    "Layers of resilience"
+   ],
+   [
+    "p",
+    "Security comes from several features acting together. The helium-3 reserve is built ahead of demand, so most future fuel already exists in store. Deuterium is effectively unlimited. The breeder can be sited within the same jurisdiction as the burners it feeds. And because helium-3 arrives by slow decay, the supply is predictable years out and cannot be interrupted by a single event upstream."
+   ],
+   [
+    "ul",
+    [
+     "Both fuels are domestically produced — no import dependency",
+     "Helium-3 reserve is pre-built, not produced on demand",
+     "Deuterium is abundant and non-strategic",
+     "Predictable supply is inherently disruption-resistant"
+    ]
+   ],
+   [
+    "p",
+    "This is a design-stage promise resting on a built breeder. The security is real only once the breeder fleet exists and is producing — which is why the programme builds the breeder first and treats lunar helium-3 as a supplement, not a crutch."
+   ]
+  ],
+  "related": [
+   [
+    "breeder-burner-link",
+    "The Breeder–Burner Link"
+   ],
+   [
+    "fuel-supply-redundancy",
+    "Fuel Supply Redundancy"
+   ],
+   [
+    "fuel-supply-risk-and-mitigation",
+    "Supply Risk & Mitigation"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "lunar-helium-3",
+  "title": "Lunar Helium-3 as a Long-Term Supplement",
+  "cat": "fuel-supply",
+  "lede": "The Moon holds solar-wind helium-3 in its regolith; Kronos treats it as a genuine long-term supplement to breeder-made helium-3, not a near-term dependency.",
+  "body": [
+   [
+    "h2",
+    "Where lunar helium-3 comes from"
+   ],
+   [
+    "p",
+    "For billions of years the solar wind has streamed helium-3 into the Moon's surface, implanting it in the regolith. With no atmosphere or magnetic field to deflect it, the Moon has accumulated helium-3 that Earth largely lacks. Concentrations are low — parts per billion by mass — so recovery means heating large volumes of regolith, but the total resource is large and, unlike Earth's legacy tritium stock, it is not shrinking."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">LUNAR RESOURCE</text><circle cx=\"140\" cy=\"100\" r=\"55\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.6\"/><text x=\"140\" y=\"104\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"12\">Moon</text><line x1=\"240\" y1=\"30\" x2=\"222\" y2=\"70\" stroke=\"#D4AD5C\" stroke-width=\"1\"/><line x1=\"270\" y1=\"30\" x2=\"252\" y2=\"70\" stroke=\"#D4AD5C\" stroke-width=\"1\"/><line x1=\"300\" y1=\"30\" x2=\"282\" y2=\"70\" stroke=\"#D4AD5C\" stroke-width=\"1\"/><line x1=\"330\" y1=\"30\" x2=\"312\" y2=\"70\" stroke=\"#D4AD5C\" stroke-width=\"1\"/><line x1=\"360\" y1=\"30\" x2=\"342\" y2=\"70\" stroke=\"#D4AD5C\" stroke-width=\"1\"/><text x=\"300\" y=\"24\" fill=\"#D4AD5C\" font-size=\"10.5\">solar wind &#8594; implanted <sup>3</sup>He</text><text x=\"240\" y=\"140\" fill=\"#9FB1C4\" font-size=\"11\">Regolith: ppb-level, but vast and not declining.</text></svg>"
+   ],
+   [
+    "h3",
+    "How Kronos treats it — honestly"
+   ],
+   [
+    "p",
+    "Lunar helium-3 is a real long-term supplement, but it is not the near-term supply. Recovering it requires lunar surface operations and transport that do not yet exist, and the programme deliberately does not depend on them. The breeder is the primary, proven-in-principle terrestrial source. Lunar helium-3 becomes relevant only later, as a way to expand supply beyond what a breeder fleet alone can produce, on a horizon of roughly the late 2030s and beyond."
+   ],
+   [
+    "ul",
+    [
+     "Solar wind implants helium-3 in lunar regolith over billions of years",
+     "Concentrations are ppb-level but the total resource is large",
+     "Recovery needs lunar operations that do not yet exist",
+     "A long-term supplement to breeder helium-3, not a near-term crutch"
+    ]
+   ],
+   [
+    "p",
+    "The honest framing matters: the burner's fuel case stands on the breeder alone. Lunar helium-3 is upside, sequenced far behind the terrestrial supply, and nothing in the near-term plan assumes it."
+   ]
+  ],
+  "related": [
+   [
+    "helium-3-scarcity",
+    "Helium-3 Scarcity"
+   ],
+   [
+    "helium-3-vs-lunar-comparison",
+    "Breeder vs Lunar Helium-3"
+   ],
+   [
+    "helium-3-global-context",
+    "Helium-3 in Global Context"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "fuel-supply-chain-map",
+  "title": "The Fuel Supply Chain, End to End",
+  "cat": "fuel-supply",
+  "lede": "From water and lithium at the breeder to a burning plasma at the installation, the fuel supply chain has a small number of well-defined links.",
+  "body": [
+   [
+    "h2",
+    "The whole chain in one view"
+   ],
+   [
+    "p",
+    "The burner's fuel chain is short and mostly domestic. On the deuterium side: water is enriched to heavy water and electrolyzed to deuterium gas. On the helium-3 side: the breeder breeds tritium from lithium using fusion neutrons, the tritium is held and decays to helium-3, and the helium-3 is separated from helium-4 to fusion grade. Both fuels are then stored, conditioned to the target mix, and injected into the central cell."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 260\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"18\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">END-TO-END FUEL CHAIN</text><rect x=\"20\" y=\"40\" width=\"150\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"95.0\" y=\"66.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Water</text><line x1=\"172\" y1=\"62\" x2=\"220\" y2=\"62\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"224\" y=\"40\" width=\"150\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"299.0\" y=\"66.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Heavy water / D&#8322;</text><line x1=\"376\" y1=\"62\" x2=\"424\" y2=\"62\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"428\" y=\"40\" width=\"190\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"523.0\" y=\"66.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Deuterium store</text><rect x=\"20\" y=\"120\" width=\"150\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"95.0\" y=\"136.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Li blanket</text><text x=\"95.0\" y=\"154.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">breeds T</text><line x1=\"172\" y1=\"142\" x2=\"220\" y2=\"142\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"224\" y=\"120\" width=\"150\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"299.0\" y=\"136.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Tritium held</text><text x=\"299.0\" y=\"154.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">decays</text><line x1=\"376\" y1=\"142\" x2=\"424\" y2=\"142\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"400.0\" y=\"136.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\"><sup>3</sup>He</text><rect x=\"428\" y=\"120\" width=\"190\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"523.0\" y=\"146.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Separate to grade</text><line x1=\"94\" y1=\"84\" x2=\"94\" y2=\"116\" stroke=\"#9FB1C4\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"100\" y=\"106\" fill=\"#6E7D8F\" font-size=\"9\">breeder side</text><rect x=\"230\" y=\"200\" width=\"200\" height=\"46\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"330.0\" y=\"217.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Condition &amp; inject</text><text x=\"330.0\" y=\"235.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">D : <sup>3</sup>He mix</text><line x1=\"523\" y1=\"84\" x2=\"330\" y2=\"198\" stroke=\"#9FB1C4\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><line x1=\"523\" y1=\"164\" x2=\"340\" y2=\"198\" stroke=\"#9FB1C4\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><line x1=\"330\" y1=\"246\" x2=\"330\" y2=\"200\" stroke=\"#3A4756\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/></svg>"
+   ],
+   [
+    "h3",
+    "Reading the map"
+   ],
+   [
+    "p",
+    "Two features stand out. First, the deuterium branch is short and industrial; the helium-3 branch runs through the breeder and is the longer, slower, more valuable path. Second, separation appears on the helium-3 branch to guarantee purity before the fuel meets the deuterium stream. Downstream of injection, helium-4 ash and unburned helium-3 are removed in exhaust processing, with helium-3 recovered and returned to store."
+   ],
+   [
+    "ul",
+    [
+     "Deuterium branch: water &#8594; heavy water &#8594; D<sub>2</sub> store (short, industrial)",
+     "Helium-3 branch: Li blanket &#8594; tritium &#8594; decay &#8594; separation (long, bred)",
+     "Streams meet at conditioning, set to the target D:<sup>3</sup>He ratio",
+     "Exhaust processing recovers unburned helium-3 downstream"
+    ]
+   ],
+   [
+    "p",
+    "Every link here is either mature industrial technology (deuterium, separation, storage) or the breeder itself. The chain has no step that depends on unproven mining or off-planet logistics."
+   ]
+  ],
+  "related": [
+   [
+    "deuterium-supply",
+    "Deuterium Supply"
+   ],
+   [
+    "helium-3-from-the-breeder",
+    "Helium-3 from Hyperion"
+   ],
+   [
+    "helium-3-transport-and-logistics",
+    "Transport & Logistics"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "helium-3-vs-lunar-comparison",
+  "title": "Breeder Helium-3 vs Lunar Helium-3",
+  "cat": "fuel-supply",
+  "lede": "Breeder-made and lunar helium-3 are complementary sources with very different readiness; the breeder is the near-term supply and the Moon is later upside.",
+  "body": [
+   [
+    "h2",
+    "Two sources, one isotope"
+   ],
+   [
+    "p",
+    "There are two credible ways to obtain helium-3 at scale: breed it on Earth via tritium decay, or recover it from lunar regolith. They yield the same isotope but differ sharply in readiness, infrastructure, and timing. Kronos's plan leans on the breeder first and treats the Moon as a later supplement, and the honest comparison below is why."
+   ],
+   [
+    "truth",
+    [
+     [
+      "Aspect",
+      "Breeder (Earth)",
+      "Lunar"
+     ],
+     [
+      [
+       "Readiness",
+       "Built first, ~2030 first tritium",
+       "Needs lunar ops (late 2030s+)"
+      ],
+      [
+       "Infrastructure",
+       "Fusion breeder fleet",
+       "Regolith mining + transport"
+      ],
+      [
+       "Rate",
+       "Fixed by decay, plannable",
+       "Bounded by lift capacity"
+      ],
+      [
+       "Role",
+       "Primary near-term supply",
+       "Long-term supplement"
+      ]
+     ]
+    ]
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 165\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">COMPLEMENTARY, NOT COMPETING</text><rect x=\"60\" y=\"60\" width=\"220\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"170.0\" y=\"84.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">BREEDER</text><text x=\"170.0\" y=\"102.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">near-term, terrestrial</text><rect x=\"380\" y=\"60\" width=\"220\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#6E7D8F\" stroke-width=\"1.5\"/><text x=\"490.0\" y=\"84.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">LUNAR</text><text x=\"490.0\" y=\"102.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">long-term supplement</text><line x1=\"285\" y1=\"90\" x2=\"375\" y2=\"90\" stroke=\"#9FB1C4\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"330.0\" y=\"84.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">sequence</text><text x=\"330\" y=\"145\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">Same isotope; the breeder de-risks the supply, the Moon expands it.</text></svg>"
+   ],
+   [
+    "h3",
+    "Why not skip to the Moon?"
+   ],
+   [
+    "p",
+    "Lunar helium-3 is often proposed as the answer to scarcity, but building an off-planet supply chain before a single burner runs would couple the whole programme to lunar logistics that do not yet exist. The breeder avoids that: it is a terrestrial machine on a defined build schedule, and it makes helium-3 whether or not lunar operations ever mature. The Moon then becomes upside for fleet expansion, not a single point of failure."
+   ],
+   [
+    "ul",
+    [
+     "Same product isotope from two very different sources",
+     "Breeder is buildable now and plannable by decay rate",
+     "Lunar recovery needs infrastructure that does not exist yet",
+     "Sequence: breeder first (primary), lunar later (supplement)"
+    ]
+   ],
+   [
+    "p",
+    "The comparison is not breeder versus lunar as rivals. It is a sequence: prove and scale the terrestrial source, then add lunar supply on top when its logistics exist."
+   ]
+  ],
+  "related": [
+   [
+    "lunar-helium-3",
+    "Lunar Helium-3"
+   ],
+   [
+    "helium-3-scarcity",
+    "Helium-3 Scarcity"
+   ],
+   [
+    "breeder-fleet-feeds-burner-fleet",
+    "Breeder Fleet Feeds Burner Fleet"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "deuterium-extraction-heavy-water",
+  "title": "Deuterium from Heavy Water",
+  "cat": "fuel-supply",
+  "lede": "Deuterium is recovered by concentrating water into heavy water and electrolyzing it — mature processes that require no new industry for the burner.",
+  "body": [
+   [
+    "h2",
+    "From water to heavy water"
+   ],
+   [
+    "p",
+    "Deuterium is bound up in water as HDO and, rarely, D<sub>2</sub>O. Concentrating it means preferentially enriching these heavier molecules. The Girdler sulfide process cycles water and hydrogen sulfide between hot and cold towers, using the temperature-dependent tendency of deuterium to shift between the two, to progressively enrich water in deuterium. Vacuum distillation and other exchange methods refine the product further to reactor-grade heavy water."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">HEAVY-WATER ENRICHMENT</text><rect x=\"30\" y=\"60\" width=\"120\" height=\"56\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"90.0\" y=\"82.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Feed water</text><text x=\"90.0\" y=\"100.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">HDO trace</text><line x1=\"152\" y1=\"88\" x2=\"215\" y2=\"88\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"219\" y=\"60\" width=\"150\" height=\"56\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"294.0\" y=\"82.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">GS process</text><text x=\"294.0\" y=\"100.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">hot/cold towers</text><line x1=\"371\" y1=\"88\" x2=\"434\" y2=\"88\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"438\" y=\"60\" width=\"120\" height=\"56\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"498.0\" y=\"82.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Heavy water</text><text x=\"498.0\" y=\"100.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">D&#8322;O</text><text x=\"300\" y=\"140\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">Then electrolysis liberates D&#8322; gas for the fuel plant.</text></svg>"
+   ],
+   [
+    "h3",
+    "Then to deuterium gas"
+   ],
+   [
+    "p",
+    "Heavy water is electrolyzed to release deuterium gas, which is dried, purified, and stored for the fuel plant. All of this is decades-old industrial practice — heavy water has been produced at scale for other purposes for generations. Aegis therefore adds no new deuterium-production technology; it draws on an existing, well-understood supply base. The only fuel-technology novelty on the burner side is helium-3 handling, not deuterium."
+   ],
+   [
+    "ul",
+    [
+     "Deuterium enriched from water as HDO / D<sub>2</sub>O",
+     "Girdler sulfide process plus distillation to heavy water",
+     "Electrolysis releases deuterium gas for storage",
+     "Mature technology — no new deuterium industry required"
+    ]
+   ],
+   [
+    "p",
+    "This maturity is part of why the burner's fuel-security discussion focuses on helium-3: the deuterium half of the fuel is a solved, abundant, industrial commodity."
+   ]
+  ],
+  "related": [
+   [
+    "deuterium-supply",
+    "Deuterium Supply"
+   ],
+   [
+    "deuterium-storage",
+    "Deuterium Storage"
+   ],
+   [
+    "fuel-supply-chain-map",
+    "The Fuel Supply Chain"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "fuel-accountancy",
+  "title": "Fuel Accountancy",
+  "cat": "fuel-supply",
+  "lede": "Because helium-3 is scarce and bred, every gram is tracked through a mass-balance system spanning breeder, store, burner, and exhaust recovery.",
+  "body": [
+   [
+    "h2",
+    "Accounting for a bred resource"
+   ],
+   [
+    "p",
+    "When a fuel is abundant, you meter it; when a fuel is bred slowly and cannot be quickly replaced, you account for it. Helium-3 falls in the second category. A fuel-accountancy system maintains a mass balance across the whole loop: helium-3 produced at the breeder, held in store, injected into the burner, burned, and recovered from exhaust. The books must close — helium-3 in must equal helium-3 burned plus helium-3 returned plus known losses."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 200\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">HELIUM-3 MASS BALANCE</text><text x=\"20\" y=\"46\" fill=\"#9FB1C4\" font-size=\"12\">in (breeder)  =  burned  +  recovered  +  losses</text><rect x=\"20\" y=\"70\" width=\"120\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"80.0\" y=\"96.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Produced</text><rect x=\"160\" y=\"70\" width=\"110\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"215.0\" y=\"96.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Store</text><rect x=\"290\" y=\"70\" width=\"110\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"345.0\" y=\"96.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Injected</text><rect x=\"420\" y=\"70\" width=\"110\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"475.0\" y=\"96.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Burned</text><rect x=\"200\" y=\"140\" width=\"150\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"275.0\" y=\"156.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Recovered</text><text x=\"275.0\" y=\"174.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">from exhaust</text><line x1=\"142\" y1=\"92\" x2=\"158\" y2=\"92\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><line x1=\"272\" y1=\"92\" x2=\"288\" y2=\"92\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><line x1=\"402\" y1=\"92\" x2=\"418\" y2=\"92\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><line x1=\"475\" y1=\"116\" x2=\"300\" y2=\"140\" stroke=\"#9FB1C4\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"387.5\" y=\"122.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">recycle</text></svg>"
+   ],
+   [
+    "h3",
+    "Why the books must close"
+   ],
+   [
+    "p",
+    "A closed mass balance does two jobs. Operationally, it tells the fleet how much helium-3 is available and how far the reserve can stretch, feeding the inventory-management plan. It also provides material accountancy: because helium-3 comes from tritium, the same discipline that tracks a strategic, bred isotope for supply purposes supports the safeguards and reporting expected of any tritium-derived material."
+   ],
+   [
+    "ul",
+    [
+     "Mass balance across breeder, store, burner, and exhaust",
+     "Books must close: in = burned + recovered + losses",
+     "Feeds inventory management and fleet planning",
+     "Supports safeguards for a tritium-derived material"
+    ]
+   ],
+   [
+    "p",
+    "Accurate accountancy depends on the fuel-cycle instrumentation — flow, composition, and inventory measurements at each node — which is why measurement and accounting are treated together in this section."
+   ]
+  ],
+  "related": [
+   [
+    "helium-3-inventory-management",
+    "Helium-3 Inventory Management"
+   ],
+   [
+    "fuel-cycle-instrumentation-and-monitoring",
+    "Fuel-Cycle Instrumentation"
+   ],
+   [
+    "fuel-recycling-in-the-central-cell",
+    "Fuel Recycling"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "fuel-recycling-in-the-central-cell",
+  "title": "Fuel Recycling in the Central Cell",
+  "cat": "fuel-supply",
+  "lede": "Most helium-3 is not burned in a single pass; recovering and recycling the unburned fraction is essential to using a scarce fuel efficiently.",
+  "body": [
+   [
+    "h2",
+    "Burn fraction is not one"
+   ],
+   [
+    "p",
+    "A fuel atom injected into the plasma has a probability of reacting before it leaves; the fraction that actually burns per pass is well below one. For a scarce fuel like helium-3, letting the unburned remainder escape unrecovered would waste a bred resource. So the fuel cycle is built to recover unburned helium-3 (and deuterium) from the exhaust, clean it, and return it to the fuel stream."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 185\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">RECYCLE LOOP</text><rect x=\"150\" y=\"70\" width=\"360\" height=\"44\" rx=\"22\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.6\"/><text x=\"330\" y=\"97\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"11\">central cell &#183; partial burn</text><line x1=\"60\" y1=\"92\" x2=\"148\" y2=\"92\" stroke=\"#9FB1C4\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"104.0\" y=\"86.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">fresh + recycled</text><line x1=\"512\" y1=\"92\" x2=\"600\" y2=\"92\" stroke=\"#9FB1C4\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"556.0\" y=\"86.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">exhaust</text><path d=\"M600 114 C 600 170, 60 170, 60 114\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.4\" marker-end=\"url(#ah)\"/><text x=\"330\" y=\"165\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10.5\">recover unburned <sup>3</sup>He, clean, return</text></svg>"
+   ],
+   [
+    "h3",
+    "Recovery, cleaning, return"
+   ],
+   [
+    "p",
+    "Exhaust from the burn is a mix of helium-4 ash, unburned helium-3 and deuterium, and trace species. Processing removes the helium-4 ash (by isotope separation) and any impurities, and returns clean helium-3 and deuterium to the store. Effective recycling multiplies the useful output of every gram the breeder makes: a fuel that is used many times over stretches a fixed supply much further than one burned once and lost."
+   ],
+   [
+    "ul",
+    [
+     "Burn fraction per pass is well below one",
+     "Unburned helium-3 and deuterium are recovered from exhaust",
+     "Helium-4 ash and impurities are separated out",
+     "Recycling stretches a fixed, bred helium-3 supply"
+    ]
+   ],
+   [
+    "p",
+    "Recycling ties directly to fuel accountancy: the recovered fraction is one of the terms that must balance in the helium-3 mass ledger, and improving recovery is one of the levers for feeding more burners per breeder."
+   ]
+  ],
+  "related": [
+   [
+    "exhaust-and-ash-removal",
+    "Exhaust & Ash Removal"
+   ],
+   [
+    "fuel-accountancy",
+    "Fuel Accountancy"
+   ],
+   [
+    "helium-4-ash-management",
+    "Helium-4 Ash Management"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "exhaust-and-ash-removal",
+  "title": "Exhaust and Ash Removal",
+  "cat": "fuel-supply",
+  "lede": "The burner's exhaust carries helium-4 ash and unburned fuel out through the mirror ends; processing it removes ash and returns fuel to the loop.",
+  "body": [
+   [
+    "h2",
+    "Where the exhaust goes"
+   ],
+   [
+    "p",
+    "In a tandem mirror, particles that are not confined stream out along the field lines through the end regions. This end loss, often a problem to be minimized, doubles as the exhaust path: helium-4 ash produced by the burn, along with unburned helium-3 and deuterium, leaves the central cell toward the expanders and end cells. The exhaust is collected there rather than at a divertor as in a tokamak."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">END-REGION EXHAUST</text><rect x=\"200\" y=\"80\" width=\"260\" height=\"40\" rx=\"20\" fill=\"none\" stroke=\"#9FB1C4\"/><text x=\"330\" y=\"105\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"11\">central cell</text><path d=\"M200 80 L120 55 L120 145 L200 120 Z\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.4\"/><path d=\"M460 80 L540 55 L540 145 L460 120 Z\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.4\"/><line x1=\"120\" y1=\"100\" x2=\"60\" y2=\"100\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"90.0\" y=\"94.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">exhaust</text><line x1=\"540\" y1=\"100\" x2=\"600\" y2=\"100\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"330\" y=\"160\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">End loss becomes the exhaust and direct-conversion path.</text></svg>"
+   ],
+   [
+    "h3",
+    "Processing the stream"
+   ],
+   [
+    "p",
+    "The collected exhaust is pumped, cooled, and sent to fuel processing. There, helium-4 ash is separated from the valuable helium-3 and deuterium, impurities are removed, and the recovered fuel is returned to store. The helium-4 ash — inert and harmless — is the burner's main routine waste stream, and it is vented or collected without special radiological handling."
+   ],
+   [
+    "ul",
+    [
+     "Exhaust exits along field lines through the mirror ends",
+     "Carries helium-4 ash plus unburned helium-3 and deuterium",
+     "Processing separates ash from recoverable fuel",
+     "Helium-4 ash is inert — the main routine waste stream"
+    ]
+   ],
+   [
+    "p",
+    "Because the exhaust path is also where charged particles are directed for direct energy conversion, exhaust handling and power conversion share the same end-region hardware — a point where the fuel cycle and the power cycle physically meet."
+   ]
+  ],
+  "related": [
+   [
+    "fuel-recycling-in-the-central-cell",
+    "Fuel Recycling"
+   ],
+   [
+    "helium-4-ash-management",
+    "Helium-4 Ash Management"
+   ],
+   [
+    "proton-fuel-product",
+    "The Proton Product & DEC"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "helium-4-ash-management",
+  "title": "Helium-4 Ash Management",
+  "cat": "fuel-supply",
+  "lede": "Helium-4 is the burner's principal by-product: an inert, non-radioactive gas that must be removed from the plasma and separated from unburned helium-3.",
+  "body": [
+   [
+    "h2",
+    "The clean ash"
+   ],
+   [
+    "p",
+    "The primary D–<sup>3</sup>He reaction produces a helium-4 nucleus (an alpha particle). As the burn proceeds, helium-4 accumulates in the plasma as ash. Unlike the activated waste of neutron-heavy reactors, helium-4 is completely inert and non-radioactive — the same gas used to fill balloons. The challenge it poses is not hazard but dilution: ash left in the plasma displaces fuel, radiates energy, and eventually would quench the burn."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 165\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">ASH ACCUMULATION</text><rect x=\"120\" y=\"60\" width=\"420\" height=\"60\" rx=\"30\" fill=\"none\" stroke=\"#9FB1C4\"/><circle cx=\"170\" cy=\"90\" r=\"6\" fill=\"#D4AD5C\" opacity=\"0.6\"/><circle cx=\"240\" cy=\"90\" r=\"6\" fill=\"#D4AD5C\" opacity=\"0.6\"/><circle cx=\"310\" cy=\"90\" r=\"6\" fill=\"#D4AD5C\" opacity=\"0.6\"/><circle cx=\"380\" cy=\"90\" r=\"6\" fill=\"#D4AD5C\" opacity=\"0.6\"/><circle cx=\"450\" cy=\"90\" r=\"6\" fill=\"#D4AD5C\" opacity=\"0.6\"/><text x=\"330\" y=\"45\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10.5\"><sup>4</sup>He ash builds up &#8594; must be pumped out</text><line x1=\"500\" y1=\"120\" x2=\"560\" y2=\"140\" stroke=\"#9FB1C4\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"530.0\" y=\"124.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">remove</text></svg>"
+   ],
+   [
+    "h3",
+    "Removal and separation"
+   ],
+   [
+    "p",
+    "Ash is removed with the end-region exhaust and then separated from the unburned helium-3 it is mixed with. Because helium-3 and helium-4 differ only in mass, this is the same isotope-separation step used to purify incoming fuel — done here in reverse, to reclaim helium-3 and discard the helium-4. The recovered helium-3 returns to store; the helium-4 is collected or vented as an inert, ordinary waste."
+   ],
+   [
+    "ul",
+    [
+     "Primary reaction produces helium-4 (alpha) as ash",
+     "Ash is inert and non-radioactive — a handling non-issue",
+     "Must be removed to prevent fuel dilution and radiation losses",
+     "Separated from unburned helium-3 by isotope separation"
+    ]
+   ],
+   [
+    "p",
+    "The cleanliness of the ash is one of the burner's clearest advantages for fixed installations: the routine by-product of operation is a harmless gas, not activated material, which is why the design suits low-signature, sited power."
+   ]
+  ],
+  "related": [
+   [
+    "exhaust-and-ash-removal",
+    "Exhaust & Ash Removal"
+   ],
+   [
+    "isotope-separation",
+    "Isotope Separation"
+   ],
+   [
+    "fuel-recycling-in-the-central-cell",
+    "Fuel Recycling"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "fueling-rate-and-burn-fraction",
+  "title": "Fuelling Rate and Burn Fraction",
+  "cat": "fuel-supply",
+  "lede": "The rate fuel is injected and the fraction that burns per pass together set how much helium-3 a burner consumes to hold a given power.",
+  "body": [
+   [
+    "h2",
+    "Two numbers that size demand"
+   ],
+   [
+    "p",
+    "Helium-3 demand at an installation follows from two quantities. The fuelling rate is how fast fresh and recycled fuel must be injected to sustain the plasma density against burn and loss. The burn fraction is what proportion of injected fuel reacts before leaving. A low burn fraction means fuel must be cycled many times, which raises the importance of recovery; the fuelling rate then sets the throughput the fuel plant must handle."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 145\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">SIZING HELIUM-3 DEMAND</text><text x=\"20\" y=\"46\" fill=\"#9FB1C4\" font-size=\"12\">net <sup>3</sup>He use = injected &#215; (1 &#8722; recovery of unburned)</text><rect x=\"20\" y=\"70\" width=\"150\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"95.0\" y=\"86.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Fuelling rate</text><text x=\"95.0\" y=\"104.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">injection</text><rect x=\"200\" y=\"70\" width=\"150\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"275.0\" y=\"86.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Burn fraction</text><text x=\"275.0\" y=\"104.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">per pass</text><line x1=\"355\" y1=\"92\" x2=\"415\" y2=\"92\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"385.0\" y=\"86.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">&#215; recovery</text><rect x=\"430\" y=\"70\" width=\"180\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"520.0\" y=\"96.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Net <sup>3</sup>He demand</text></svg>"
+   ],
+   [
+    "h3",
+    "Why recovery dominates"
+   ],
+   [
+    "p",
+    "Because the per-pass burn fraction is well below one, most injected helium-3 is not consumed on any given pass — it leaves in the exhaust. If that fraction is recovered and recycled, the net consumption is small relative to the throughput. If it were not recovered, net consumption would balloon and no realistic breeder supply could keep up. This is why recycling is not an optimization but a requirement for a scarce, bred fuel."
+   ],
+   [
+    "ul",
+    [
+     "Fuelling rate sustains plasma density against burn and loss",
+     "Burn fraction per pass is well below one",
+     "Net demand = injected minus recovered unburned fuel",
+     "High recovery keeps net helium-3 consumption low"
+    ]
+   ],
+   [
+    "p",
+    "For fleet planning, net helium-3 demand per burner is the figure that must be matched against the breeder's ~1.97 kg/yr-class output per unit to decide how many burners a breeder can feed."
+   ]
+  ],
+  "related": [
+   [
+    "fuel-injection-system",
+    "The Fuel Injection System"
+   ],
+   [
+    "fuel-recycling-in-the-central-cell",
+    "Fuel Recycling"
+   ],
+   [
+    "steady-state-fuel-demand",
+    "Steady-State Fuel Demand"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "fuel-conditioning",
+  "title": "Fuel Conditioning",
+  "cat": "fuel-supply",
+  "lede": "Before injection, deuterium and helium-3 are purified, dried, blended to the target ratio, and formed into the gas or pellets the plasma requires.",
+  "body": [
+   [
+    "h2",
+    "From store to injectable fuel"
+   ],
+   [
+    "p",
+    "Fuel drawn from storage is not ready to inject as-is. Conditioning is the set of steps that turns stored gas into a plasma-ready feed. It removes residual impurities and moisture, verifies isotopic purity, blends deuterium and helium-3 to the target ratio, and prepares the physical form — clean gas for puffing, or frozen solid pellets for deep injection. Conditioning is where the fuel's chemistry and composition are finalized."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 130\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><rect x=\"6\" y=\"42\" width=\"120\" height=\"54\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"66.0\" y=\"63.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Purify</text><text x=\"66.0\" y=\"81.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">remove impurities</text><line x1=\"128\" y1=\"69.0\" x2=\"150\" y2=\"69.0\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"152\" y=\"42\" width=\"120\" height=\"54\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"212.0\" y=\"63.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Verify</text><text x=\"212.0\" y=\"81.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">isotopic purity</text><line x1=\"274\" y1=\"69.0\" x2=\"296\" y2=\"69.0\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"298\" y=\"42\" width=\"120\" height=\"54\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"358.0\" y=\"63.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Blend</text><text x=\"358.0\" y=\"81.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">D : <sup>3</sup>He</text><line x1=\"420\" y1=\"69.0\" x2=\"442\" y2=\"69.0\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"444\" y=\"42\" width=\"120\" height=\"54\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"504.0\" y=\"63.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Form</text><text x=\"504.0\" y=\"81.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">gas / pellet</text></svg>"
+   ],
+   [
+    "h3",
+    "Why conditioning is its own step"
+   ],
+   [
+    "p",
+    "Separating conditioning from bulk storage keeps the large fuel inventory simple and stable while the exacting composition control happens on a small, active stream just before injection. It also places a final quality gate immediately upstream of the plasma: any off-spec fuel is caught here, not in the machine. For pellet fuelling, conditioning includes freezing and shaping the fuel to the size and speed the injector needs to place it deep in the plasma."
+   ],
+   [
+    "ul",
+    [
+     "Removes residual impurities and moisture",
+     "Verifies isotopic purity as a final gate",
+     "Blends deuterium and helium-3 to the target ratio",
+     "Forms gas for puffing or frozen pellets for deep injection"
+    ]
+   ],
+   [
+    "p",
+    "Conditioning connects storage, quality assurance, and injection into one continuous path, and it is instrumented so the composition delivered to the plasma is measured, not assumed."
+   ]
+  ],
+  "related": [
+   [
+    "fuel-storage-and-handling",
+    "Fuel Storage & Handling"
+   ],
+   [
+    "fuel-quality-assurance",
+    "Fuel Quality Assurance"
+   ],
+   [
+    "fuel-injection-system",
+    "The Fuel Injection System"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "cryogenic-fuel-storage",
+  "title": "Cryogenic Fuel Storage",
+  "cat": "fuel-supply",
+  "lede": "Storing fuel cold shrinks its volume and stabilizes it; helium-3, which cannot be stored as a hydride, is a prime candidate for cryogenic storage.",
+  "body": [
+   [
+    "h2",
+    "Why store cold"
+   ],
+   [
+    "p",
+    "Light gases occupy large volumes at room temperature. Cooling them — to cryogenic liquid or dense cold gas — drastically reduces the volume a given quantity of fuel needs, and cold, sealed storage limits loss and contamination. Deuterium can be liquefied or absorbed in metal hydride beds, but helium-3 is a noble gas that forms no hydride, so cold storage in leak-tight vessels is its natural home."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 195\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">COLD STORAGE OF LIGHT FUELS</text><rect x=\"120\" y=\"45\" width=\"120\" height=\"110\" rx=\"10\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.6\"/><text x=\"180\" y=\"95\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"12\"><sup>3</sup>He</text><text x=\"180\" y=\"115\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"9.5\">cryogenic</text><line x1=\"140\" y1=\"160\" x2=\"140\" y2=\"175\" stroke=\"#9FB1C4\"/><line x1=\"160\" y1=\"160\" x2=\"160\" y2=\"175\" stroke=\"#9FB1C4\"/><line x1=\"180\" y1=\"160\" x2=\"180\" y2=\"175\" stroke=\"#9FB1C4\"/><line x1=\"200\" y1=\"160\" x2=\"200\" y2=\"175\" stroke=\"#9FB1C4\"/><line x1=\"220\" y1=\"160\" x2=\"220\" y2=\"175\" stroke=\"#9FB1C4\"/><rect x=\"380\" y=\"45\" width=\"120\" height=\"110\" rx=\"10\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"440\" y=\"95\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"12\">D&#8322;</text><text x=\"440\" y=\"115\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"9.5\">liquid or hydride</text></svg>"
+   ],
+   [
+    "h3",
+    "Engineering the cold"
+   ],
+   [
+    "p",
+    "Cryogenic storage requires vacuum-insulated vessels, refrigeration, and careful pressure and boil-off management. For helium-3 the paramount design goal remains loss prevention: because it is bred and scarce, boil-off and leaks are not just inefficiencies but supply losses. Vessels are double-contained and monitored, and boil-off is captured and re-liquefied rather than vented. The same cryogenic infrastructure supports the separation plant, since isotope separation of helium runs cold."
+   ],
+   [
+    "ul",
+    [
+     "Cold storage shrinks volume and stabilizes light gases",
+     "Helium-3 forms no hydride — cryogenic or dense cold gas storage",
+     "Vacuum insulation, refrigeration, boil-off capture required",
+     "Loss prevention is the governing design goal for helium-3"
+    ]
+   ],
+   [
+    "p",
+    "Cryogenic storage, isotope separation, and dilution-refrigeration uses of helium-3 all share the same low-temperature engineering base, so the cold infrastructure serves multiple parts of the fuel system."
+   ]
+  ],
+  "related": [
+   [
+    "fuel-storage-and-handling",
+    "Fuel Storage & Handling"
+   ],
+   [
+    "deuterium-storage",
+    "Deuterium Storage"
+   ],
+   [
+    "isotope-separation",
+    "Isotope Separation"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "proton-fuel-product",
+  "title": "The Proton Product and Direct Conversion",
+  "cat": "fuel-supply",
+  "lede": "The 14.7 MeV proton from the primary reaction is a charged particle whose energy can be captured directly, linking the fuel choice to the burner's power path.",
+  "body": [
+   [
+    "h2",
+    "The reaction that pays off at the ends"
+   ],
+   [
+    "p",
+    "The primary D–<sup>3</sup>He reaction sends most of its 18.3 MeV into a fast proton (14.7 MeV) and an alpha (3.6 MeV). Both are charged, and this is the crux of the fuel choice: charged products can be guided by magnetic and electric fields and their kinetic energy recovered by direct energy conversion, rather than only being turned into heat and then into electricity through a thermal cycle."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 175\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">CHARGED PRODUCT &#8594; DEC</text><rect x=\"40\" y=\"70\" width=\"150\" height=\"56\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"115.0\" y=\"92.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">D + <sup>3</sup>He</text><text x=\"115.0\" y=\"110.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">primary burn</text><line x1=\"194\" y1=\"98\" x2=\"270\" y2=\"98\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"232.0\" y=\"92.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">p 14.7 MeV</text><path d=\"M280 70 L360 55 L360 141 L280 126 Z\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"320\" y=\"102\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"10\">expander</text><line x1=\"360\" y1=\"98\" x2=\"450\" y2=\"98\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"454\" y=\"70\" width=\"170\" height=\"56\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"539.0\" y=\"92.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Direct converter</text><text x=\"539.0\" y=\"110.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">charge &#8594; power</text></svg>"
+   ],
+   [
+    "h3",
+    "Why this is a fuel-supply topic"
+   ],
+   [
+    "p",
+    "Direct conversion is usually filed under the power system, but it belongs to the fuel story too: it is the reason the burner tolerates the high cost of using helium-3. A fuel whose energy comes out as charged particles justifies the effort of breeding and handling a scarce isotope, because it converts to electricity more directly than a neutron-dominated fuel could. The fuel choice and the conversion method are two sides of the same design decision."
+   ],
+   [
+    "ul",
+    [
+     "Primary products are charged: proton (14.7 MeV) and alpha (3.6 MeV)",
+     "Charged particles enable direct energy conversion",
+     "This justifies the cost of using scarce helium-3",
+     "Fuel choice and conversion method are one decision"
+    ]
+   ],
+   [
+    "p",
+    "The small neutron fraction (5.44%) is the part of the energy that cannot be directly converted and instead appears as heat and activation — another reason keeping that fraction low is valued."
+   ]
+  ],
+  "related": [
+   [
+    "d3he-fuel-cycle",
+    "The D–3He Fuel Cycle"
+   ],
+   [
+    "why-helium-3",
+    "Why Helium-3 Is the Fuel"
+   ],
+   [
+    "exhaust-and-ash-removal",
+    "Exhaust & Ash Removal"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "no-tritium-fuel-in-burner",
+  "title": "No Tritium Fuel in the Burner",
+  "cat": "fuel-supply",
+  "lede": "Aegis does not use tritium as a primary fuel; it burns deuterium and helium-3, which keeps its on-site radiological inventory small.",
+  "body": [
+   [
+    "h2",
+    "A common misreading"
+   ],
+   [
+    "p",
+    "Because tritium is central to the fuel story — it is what helium-3 is made from — it is easy to assume the burner runs on tritium. It does not. Aegis burns deuterium and helium-3. Tritium's role is upstream, at the breeder, as the precursor that decays into the helium-3 the burner uses. A fielded burner is not fuelled with tritium and does not need a tritium supply on site."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">TRITIUM STAYS UPSTREAM</text><rect x=\"30\" y=\"55\" width=\"150\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"105.0\" y=\"78.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Breeder</text><text x=\"105.0\" y=\"96.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">holds tritium</text><line x1=\"182\" y1=\"84\" x2=\"250\" y2=\"84\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"216.0\" y=\"78.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\"><sup>3</sup>He only</text><rect x=\"254\" y=\"55\" width=\"180\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"344.0\" y=\"78.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Aegis site</text><text x=\"344.0\" y=\"96.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">burns D + <sup>3</sup>He</text><line x1=\"182\" y1=\"120\" x2=\"254\" y2=\"120\" stroke=\"#6E7D8F\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><text x=\"220\" y=\"138\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10\">tritium stays at the breeder</text></svg>"
+   ],
+   [
+    "h3",
+    "Why this matters for siting"
+   ],
+   [
+    "p",
+    "Keeping tritium off the burner site is one reason Aegis suits fixed installations. Tritium is the fuel loop's one mobile radioactive species, demanding layered containment and detritiation wherever it lives. By confining that burden to the breeder and shipping only helium-3 — an inert, stable, non-radioactive gas — the burner carries a far smaller radiological footprint. A trace of tritium is generated internally by D–D side reactions, but this is a small in-machine quantity, not a fuel input."
+   ],
+   [
+    "ul",
+    [
+     "Burner fuel is deuterium and helium-3, not tritium",
+     "Tritium's role is upstream, at the breeder",
+     "Helium-3 shipped to site is inert and non-radioactive",
+     "Only a trace of tritium arises internally, not as fuel"
+    ]
+   ],
+   [
+    "p",
+    "This separation of duties — radiological work at the breeder, clean fuel at the burner — is a deliberate feature of the two-machine system, and a large part of why the burner can be described as low-signature."
+   ]
+  ],
+  "related": [
+   [
+    "tritium-handling-and-safety",
+    "Tritium Handling & Safety"
+   ],
+   [
+    "supply-security",
+    "Supply Security"
+   ],
+   [
+    "side-reactions-dd",
+    "D–D Side Reactions"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "helium-3-transport-and-logistics",
+  "title": "Helium-3 Transport and Logistics",
+  "cat": "fuel-supply",
+  "lede": "Moving helium-3 from breeder to burner means transporting a scarce, inert gas in leak-tight vessels, where the priority is preventing loss.",
+  "body": [
+   [
+    "h2",
+    "Shipping a scarce gas"
+   ],
+   [
+    "p",
+    "Helium-3 produced at the breeder must reach the installations that burn it. Transport is straightforward in principle — helium-3 is inert and non-radioactive, so it poses no radiological shipping hazard — but exacting in practice, because it is scarce and irreplaceable on a short timescale. The transported form is compressed or cryogenic gas in double-contained, leak-tight vessels, tracked as part of the fuel-accountancy ledger from the moment it leaves store."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">BREEDER &#8594; BURNER TRANSPORT</text><rect x=\"30\" y=\"55\" width=\"150\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"105.0\" y=\"88.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Breeder store</text><line x1=\"182\" y1=\"84\" x2=\"270\" y2=\"84\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"226.0\" y=\"78.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">sealed vessel</text><rect x=\"274\" y=\"55\" width=\"120\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"334.0\" y=\"78.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Transport</text><text x=\"334.0\" y=\"96.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">leak-tight</text><line x1=\"396\" y1=\"84\" x2=\"484\" y2=\"84\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"488\" y=\"55\" width=\"150\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"563.0\" y=\"88.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Aegis store</text><text x=\"330\" y=\"140\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">Inert gas &#8212; no radiological shipping hazard; loss is the risk.</text></svg>"
+   ],
+   [
+    "h3",
+    "Loss control end to end"
+   ],
+   [
+    "p",
+    "Because a leak is a permanent supply loss, transport hardware mirrors storage hardware: double containment, helium-specific leak detection, and monitored transfer at both ends. Chain-of-custody accounting means the same gram of helium-3 is on the books at the breeder store, in transit, and at the burner store, with reconciliations at each handoff. Co-locating breeders and burners within a jurisdiction shortens the logistics chain and strengthens supply security."
+   ],
+   [
+    "ul",
+    [
+     "Helium-3 ships as inert compressed or cryogenic gas",
+     "No radiological shipping hazard — loss is the concern",
+     "Double containment, leak detection, monitored transfer",
+     "Chain-of-custody accounting at every handoff"
+    ]
+   ],
+   [
+    "p",
+    "Transport is the physical link that turns the breeder's output into the burner's input, and it is governed by the same loss-prevention and accountancy discipline that runs through the whole helium-3 supply."
+   ]
+  ],
+  "related": [
+   [
+    "fuel-accountancy",
+    "Fuel Accountancy"
+   ],
+   [
+    "supply-security",
+    "Supply Security"
+   ],
+   [
+    "fuel-supply-chain-map",
+    "The Fuel Supply Chain"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "fuel-quality-assurance",
+  "title": "Fuel Quality Assurance",
+  "cat": "fuel-supply",
+  "lede": "Every batch of fuel is verified for isotopic purity and composition before it reaches the plasma, protecting both machine performance and the fuel ledger.",
+  "body": [
+   [
+    "h2",
+    "Verify before it burns"
+   ],
+   [
+    "p",
+    "Fuel quality assurance is the set of checks that confirm what is about to be injected is actually what the plasma needs. It verifies isotopic purity — that helium-3 is not diluted with helium-4 — and confirms the deuterium-to-helium-3 blend and the absence of contaminant gases. Because off-spec fuel degrades confinement and confuses accounting, quality is checked as a gate, with out-of-tolerance batches diverted for reprocessing rather than injected."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 130\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><rect x=\"6\" y=\"42\" width=\"120\" height=\"54\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"66.0\" y=\"63.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Sample</text><text x=\"66.0\" y=\"81.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">each batch</text><line x1=\"128\" y1=\"69.0\" x2=\"150\" y2=\"69.0\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"152\" y=\"42\" width=\"120\" height=\"54\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"212.0\" y=\"63.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Analyze</text><text x=\"212.0\" y=\"81.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">isotopes + purity</text><line x1=\"274\" y1=\"69.0\" x2=\"296\" y2=\"69.0\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"298\" y=\"42\" width=\"120\" height=\"54\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"358.0\" y=\"63.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Pass?</text><text x=\"358.0\" y=\"81.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">gate</text><line x1=\"420\" y1=\"69.0\" x2=\"442\" y2=\"69.0\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"444\" y=\"42\" width=\"120\" height=\"54\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"504.0\" y=\"73.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Inject / reject</text></svg>"
+   ],
+   [
+    "h3",
+    "What is measured"
+   ],
+   [
+    "p",
+    "Analysis combines composition measurement (which isotopes and gases are present and in what proportion) with purity measurement (how much helium-4 and other contamination remains). Mass spectrometry and related techniques distinguish helium-3 from helium-4 despite their chemical identity. The results feed two systems at once: the plasma control system, which needs to know the exact mix it is fuelling, and the fuel-accountancy ledger, which needs to know the helium-3 content of every batch."
+   ],
+   [
+    "ul",
+    [
+     "Verifies isotopic purity and the D:<sup>3</sup>He blend",
+     "Detects contaminant gases before injection",
+     "Mass spectrometry distinguishes helium-3 from helium-4",
+     "Results feed both plasma control and fuel accounting"
+    ]
+   ],
+   [
+    "p",
+    "Quality assurance sits between conditioning and injection as the last checkpoint before the plasma, and it is what lets the composition delivered to the burn be a measured fact rather than an assumption."
+   ]
+  ],
+  "related": [
+   [
+    "fuel-conditioning",
+    "Fuel Conditioning"
+   ],
+   [
+    "helium-3-purity-requirements",
+    "Helium-3 Purity Requirements"
+   ],
+   [
+    "fuel-cycle-instrumentation-and-monitoring",
+    "Fuel-Cycle Instrumentation"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "startup-fuel-inventory",
+  "title": "Startup Fuel Inventory",
+  "cat": "fuel-supply",
+  "lede": "Bringing a burner online requires an initial helium-3 charge; this startup inventory is drawn from the reserve the breeder builds ahead of demand.",
+  "body": [
+   [
+    "h2",
+    "The first charge"
+   ],
+   [
+    "p",
+    "A burner cannot begin operating with an empty fuel store. It needs an initial helium-3 inventory large enough to fill the storage and conditioning systems, establish the recycle loop, and sustain the plasma while the recovery system reaches steady operation. This startup charge is a one-time draw on the helium-3 reserve, distinct from the ongoing consumption that recycling holds low."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 190\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">STARTUP VS STEADY DEMAND</text><polyline points=\"40,140 130,120 220,105 300,95\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><circle cx=\"300\" cy=\"95\" r=\"5\" fill=\"#D4AD5C\"/><line x1=\"300\" y1=\"95\" x2=\"620\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><line x1=\"40\" y1=\"150\" x2=\"620\" y2=\"150\" stroke=\"#3A4756\"/><text x=\"170\" y=\"175\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10\">startup charge (one-time draw)</text><text x=\"460\" y=\"88\" text-anchor=\"middle\" fill=\"#9FB1C4\" font-size=\"10\">steady-state (low, recycled)</text></svg>"
+   ],
+   [
+    "h3",
+    "Why the reserve matters"
+   ],
+   [
+    "p",
+    "The startup charge is exactly why the breeder is built first and the reserve accumulated ahead of demand. By the time the first test burner is ready around 2032, the breeder — running since roughly 2030 — should have built a helium-3 reserve from decayed tritium sufficient to charge it. Fleet growth is then paced by how quickly the reserve can supply successive startup charges plus the modest steady-state draw of the burners already running."
+   ],
+   [
+    "ul",
+    [
+     "Startup requires a one-time helium-3 charge to fill the loop",
+     "Distinct from low, recycled steady-state consumption",
+     "Drawn from the reserve built during the breeder-first period",
+     "Fleet growth paced by reserve size and charge cadence"
+    ]
+   ],
+   [
+    "p",
+    "Planning the reserve therefore means summing all the startup charges for a planned burner fleet plus their running demand, and matching that against breeder production over time — the core calculation of the fuel-foundry model."
+   ]
+  ],
+  "related": [
+   [
+    "helium-3-inventory-management",
+    "Helium-3 Inventory Management"
+   ],
+   [
+    "steady-state-fuel-demand",
+    "Steady-State Fuel Demand"
+   ],
+   [
+    "breeder-fleet-feeds-burner-fleet",
+    "Breeder Fleet Feeds Burner Fleet"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "steady-state-fuel-demand",
+  "title": "Steady-State Fuel Demand",
+  "cat": "fuel-supply",
+  "lede": "Once running and recycling, a burner's net helium-3 draw is small; steady-state demand is set by the unrecovered fraction, not the full throughput.",
+  "body": [
+   [
+    "h2",
+    "Running demand versus throughput"
+   ],
+   [
+    "p",
+    "A common error is to equate a burner's helium-3 demand with the amount of fuel cycling through its plasma. Throughput is large — fuel is injected, mostly not burned per pass, and recovered. But net demand is only the part not returned to store: unburned fuel lost to imperfect recovery, plus the helium-3 actually consumed by fusion. With effective recycling, steady-state net demand is a small fraction of throughput."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 135\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">NET DEMAND IS A SLICE OF THROUGHPUT</text><rect x=\"60\" y=\"60\" width=\"360\" height=\"34\" fill=\"none\" stroke=\"#9FB1C4\"/><text x=\"60\" y=\"112\" fill=\"#9FB1C4\" font-size=\"11\">throughput (injected per pass)</text><rect x=\"60\" y=\"60\" width=\"46\" height=\"34\" fill=\"#D4AD5C\"/><text x=\"440\" y=\"82\" fill=\"#D4AD5C\" font-size=\"11\">net demand = burned + unrecovered</text></svg>"
+   ],
+   [
+    "h3",
+    "What sets it"
+   ],
+   [
+    "p",
+    "Steady-state demand rises with the fusion power sustained (more burn consumes more fuel) and falls with better recovery efficiency (less unburned fuel lost). It does not depend on throughput directly. This is why recycling is treated as essential rather than optional: it is the lever that keeps net demand low enough for a breeder fleet to sustain many burners at once, rather than only a few."
+   ],
+   [
+    "ul",
+    [
+     "Net demand = fuel burned + unrecovered unburned fuel",
+     "Independent of the much larger throughput",
+     "Rises with sustained power, falls with recovery efficiency",
+     "Low steady-state demand is what makes fleets feasible"
+    ]
+   ],
+   [
+    "p",
+    "Steady-state demand per burner, added to periodic startup charges, is what the fuel-accountancy and inventory systems track against the breeder's ~1.97 kg/yr-class output to plan the fleet."
+   ]
+  ],
+  "related": [
+   [
+    "fueling-rate-and-burn-fraction",
+    "Fuelling Rate & Burn Fraction"
+   ],
+   [
+    "fuel-recycling-in-the-central-cell",
+    "Fuel Recycling"
+   ],
+   [
+    "startup-fuel-inventory",
+    "Startup Fuel Inventory"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "fuel-supply-redundancy",
+  "title": "Fuel Supply Redundancy",
+  "cat": "fuel-supply",
+  "lede": "Resilient power needs resilient fuel; redundancy comes from on-site reserves, multiple breeders, and the abundance of deuterium.",
+  "body": [
+   [
+    "h2",
+    "No single point of failure"
+   ],
+   [
+    "p",
+    "A fixed installation valued for resilience cannot depend on a single, fragile fuel path. The burner's fuel supply is made redundant in several independent ways so that no one disruption stops it. On-site helium-3 reserves buffer against interruptions upstream; multiple breeders mean production does not rest on one machine; and deuterium's abundance removes half the fuel from the risk picture entirely."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">LAYERS OF REDUNDANCY</text><rect x=\"40\" y=\"55\" width=\"150\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"115.0\" y=\"78.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">On-site reserve</text><text x=\"115.0\" y=\"96.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">buffer</text><rect x=\"255\" y=\"55\" width=\"150\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"330.0\" y=\"78.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Multiple breeders</text><text x=\"330.0\" y=\"96.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">no single source</text><rect x=\"470\" y=\"55\" width=\"150\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"545.0\" y=\"78.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Abundant D</text><text x=\"545.0\" y=\"96.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">never scarce</text><text x=\"330\" y=\"140\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">Independent layers &#8212; a disruption to one does not stop the burn.</text></svg>"
+   ],
+   [
+    "h3",
+    "How the layers combine"
+   ],
+   [
+    "p",
+    "Redundancy is strongest when the layers are independent. A local reserve covers short interruptions in delivery. A fleet of breeders covers the loss of any single production unit. The slow, predictable nature of decay-based supply means shortfalls appear gradually and can be managed, not suddenly. And because deuterium is effectively unlimited, only the helium-3 side needs this protection — halving the problem."
+   ],
+   [
+    "ul",
+    [
+     "On-site reserve buffers delivery interruptions",
+     "A breeder fleet removes single-source production risk",
+     "Slow decay supply gives early warning of any shortfall",
+     "Deuterium abundance removes half the fuel from risk"
+    ]
+   ],
+   [
+    "p",
+    "Redundancy is a design-stage commitment that becomes real as the breeder fleet grows. Until then it is planned into the fuel-foundry model, sizing reserves and breeder count to the resilience the installations require."
+   ]
+  ],
+  "related": [
+   [
+    "supply-security",
+    "Supply Security"
+   ],
+   [
+    "fuel-supply-risk-and-mitigation",
+    "Supply Risk & Mitigation"
+   ],
+   [
+    "breeder-fleet-feeds-burner-fleet",
+    "Breeder Fleet Feeds Burner Fleet"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "deuterium-storage",
+  "title": "Deuterium Storage",
+  "cat": "fuel-supply",
+  "lede": "Deuterium is stored as compressed gas, cryogenic liquid, or metal hydride; its abundance makes storage a matter of convenience rather than scarcity.",
+  "body": [
+   [
+    "h2",
+    "Storing the abundant fuel"
+   ],
+   [
+    "p",
+    "Deuterium storage is comparatively relaxed. Unlike helium-3, deuterium is cheap to replace and effectively unlimited, so storage is chosen for operational convenience rather than to guard against loss. Three forms are common: compressed gas in cylinders, cryogenic liquid for high density, and metal hydride beds that absorb deuterium and release it on mild heating. Hydride storage is attractive because it holds a lot of fuel at low pressure and improves safety."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">DEUTERIUM STORAGE OPTIONS</text><rect x=\"40\" y=\"55\" width=\"150\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"115.0\" y=\"79.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Compressed</text><text x=\"115.0\" y=\"97.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">cylinders</text><rect x=\"255\" y=\"55\" width=\"150\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"330.0\" y=\"79.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Cryogenic</text><text x=\"330.0\" y=\"97.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">liquid D&#8322;</text><rect x=\"470\" y=\"55\" width=\"150\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"545.0\" y=\"79.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Metal hydride</text><text x=\"545.0\" y=\"97.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">low-pressure</text><text x=\"330\" y=\"140\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">Chosen for convenience &#8212; deuterium is abundant and easily replaced.</text></svg>"
+   ],
+   [
+    "h3",
+    "Hydride beds"
+   ],
+   [
+    "p",
+    "Metal hydride storage deserves note because it is the deuterium option with no helium-3 equivalent. Certain metals absorb hydrogen isotopes into their crystal lattice, storing deuterium as a solid-bound gas at near-ambient pressure and releasing it when gently warmed. This gives compact, low-pressure, controllable storage that pairs well with the metered demands of fuel conditioning. Helium-3, being a noble gas, cannot be stored this way and must always be kept as gas."
+   ],
+   [
+    "ul",
+    [
+     "Deuterium stored as compressed gas, cryogenic liquid, or hydride",
+     "Storage chosen for convenience, not loss prevention",
+     "Hydride beds hold much fuel at low pressure, safely",
+     "No hydride option exists for noble-gas helium-3"
+    ]
+   ],
+   [
+    "p",
+    "The contrast with helium-3 storage underlines the asymmetry of the fuel supply: one fuel is stored casually and the other guarded closely, reflecting which is abundant and which is bred."
+   ]
+  ],
+  "related": [
+   [
+    "deuterium-supply",
+    "Deuterium Supply"
+   ],
+   [
+    "cryogenic-fuel-storage",
+    "Cryogenic Fuel Storage"
+   ],
+   [
+    "fuel-storage-and-handling",
+    "Fuel Storage & Handling"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "helium-3-global-context",
+  "title": "Helium-3 in Global Context",
+  "cat": "fuel-supply",
+  "lede": "Today's helium-3 comes mainly from decaying weapons tritium and natural-gas traces, competed for by quantum, medical, and security uses — context for why a breeder matters.",
+  "body": [
+   [
+    "h2",
+    "Today's sources and users"
+   ],
+   [
+    "p",
+    "Almost all helium-3 in use today traces to tritium decay, historically from tritium made in nuclear weapons programs, supplemented by tiny amounts recovered from natural gas. Because large-scale tritium production has largely ceased, this supply is a declining legacy stock. Meanwhile demand has grown: helium-3 is prized for ultra-low-temperature refrigeration (including cooling quantum-computer and detector systems), for neutron detection in security and science, and for medical lung imaging."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 175\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">GLOBAL HELIUM-3 FLOWS</text><rect x=\"30\" y=\"50\" width=\"150\" height=\"50\" rx=\"6\" fill=\"none\" stroke=\"#6E7D8F\" stroke-width=\"1.5\"/><text x=\"105.0\" y=\"69.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Weapons T decay</text><text x=\"105.0\" y=\"87.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">declining</text><rect x=\"30\" y=\"110\" width=\"150\" height=\"50\" rx=\"6\" fill=\"none\" stroke=\"#6E7D8F\" stroke-width=\"1.5\"/><text x=\"105.0\" y=\"129.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Natural gas</text><text x=\"105.0\" y=\"147.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">trace</text><line x1=\"184\" y1=\"75\" x2=\"250\" y2=\"90\" stroke=\"#9FB1C4\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><line x1=\"184\" y1=\"135\" x2=\"250\" y2=\"110\" stroke=\"#9FB1C4\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"254\" y=\"75\" width=\"120\" height=\"50\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"314.0\" y=\"94.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\"><sup>3</sup>He pool</text><text x=\"314.0\" y=\"112.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">limited</text><line x1=\"378\" y1=\"100\" x2=\"440\" y2=\"100\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"409.0\" y=\"94.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">demand</text><rect x=\"444\" y=\"50\" width=\"190\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"539.0\" y=\"76.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Cryo / quantum</text><rect x=\"444\" y=\"108\" width=\"190\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"539.0\" y=\"134.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Detection / medical</text></svg>"
+   ],
+   [
+    "h3",
+    "Why the breeder changes the picture"
+   ],
+   [
+    "p",
+    "A fusion breeder is fundamentally different from these sources because it is a purpose-built, renewable producer rather than a shrinking legacy stock or a trace by-product. It makes fresh tritium that decays into fresh helium-3 for as long as it runs. This does not just supply the burner; it eases the broader helium-3 squeeze that other users face. The breeder turns helium-3 from a competed-for legacy commodity into a produced material."
+   ],
+   [
+    "ul",
+    [
+     "Today: mostly decaying weapons tritium, plus natural-gas traces",
+     "Legacy supply is declining as tritium production has stopped",
+     "Demand from cryogenics, quantum, detection, and medicine",
+     "A breeder is a purpose-built, renewable source"
+    ]
+   ],
+   [
+    "p",
+    "This context is why the breeder–burner pairing is presented as the answer to scarcity: it does not compete for the existing pool, it enlarges it."
+   ]
+  ],
+  "related": [
+   [
+    "helium-3-scarcity",
+    "Helium-3 Scarcity"
+   ],
+   [
+    "helium-3-from-the-breeder",
+    "Helium-3 from Hyperion"
+   ],
+   [
+    "lunar-helium-3",
+    "Lunar Helium-3"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "breeder-fleet-feeds-burner-fleet",
+  "title": "How a Breeder Fleet Feeds a Burner Fleet",
+  "cat": "fuel-supply",
+  "lede": "At scale, a fleet of breeders acts as a fuel foundry: each unit's helium-3 output supports a matched number of burners, sequenced breeder-first.",
+  "body": [
+   [
+    "h2",
+    "The foundry model"
+   ],
+   [
+    "p",
+    "Scaled up, the two-machine system becomes a fleet relationship. A group of breeders functions as a fuel foundry, each producing helium-3 in the ~1.97 kg/yr class at its design point. That output, matched against the net steady-state demand and startup charges of the burners, determines how many burners the foundry can sustain. Growing the burner fleet requires growing the breeder fleet ahead of it, on the same breeder-first logic that governs the single-machine case."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 130\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">FUEL FOUNDRY &#8594; FLEET</text><rect x=\"30\" y=\"45\" width=\"54\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"57.0\" y=\"71.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"13\" font-weight=\"600\">H</text><rect x=\"100\" y=\"45\" width=\"54\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"127.0\" y=\"71.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"13\" font-weight=\"600\">H</text><rect x=\"170\" y=\"45\" width=\"54\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"197.0\" y=\"71.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"13\" font-weight=\"600\">H</text><text x=\"120\" y=\"112\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10\">breeder foundry</text><line x1=\"250\" y1=\"68\" x2=\"320\" y2=\"68\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"285.0\" y=\"62.0\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\"><sup>3</sup>He</text><rect x=\"330\" y=\"40\" width=\"40\" height=\"34\" rx=\"4\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"350.0\" y=\"61.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">A</text><rect x=\"376\" y=\"48\" width=\"40\" height=\"34\" rx=\"4\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"396.0\" y=\"69.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">A</text><rect x=\"422\" y=\"40\" width=\"40\" height=\"34\" rx=\"4\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"442.0\" y=\"61.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">A</text><rect x=\"468\" y=\"48\" width=\"40\" height=\"34\" rx=\"4\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"488.0\" y=\"69.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">A</text><rect x=\"514\" y=\"40\" width=\"40\" height=\"34\" rx=\"4\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"534.0\" y=\"61.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">A</text><rect x=\"560\" y=\"48\" width=\"40\" height=\"34\" rx=\"4\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"580.0\" y=\"69.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">A</text><text x=\"470\" y=\"112\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10\">burner fleet</text></svg>"
+   ],
+   [
+    "h3",
+    "Sequencing and matching"
+   ],
+   [
+    "p",
+    "Two rules govern the fleet. Sequencing: breeders come online first so a helium-3 reserve exists before burners need charging — construction from Q2 2027, first tritium ~2030, first test burner ~2032. Matching: the number of burners is bounded by breeder production, the breeding-ratio lever (1.1 / 1.5 / 1.8), recovery efficiency, and how much bred tritium is held for decay versus used directly. Lunar helium-3 could later raise the ceiling, but the near-term fleet is sized on terrestrial breeding alone."
+   ],
+   [
+    "ul",
+    [
+     "Breeders act as a fuel foundry, each ~1.97 kg/yr class helium-3",
+     "Burner count bounded by breeder output and recovery efficiency",
+     "Breeder-first sequencing builds a reserve ahead of demand",
+     "Breeding-ratio lever scales how many burners a foundry feeds"
+    ]
+   ],
+   [
+    "p",
+    "This foundry model is the fleet-scale expression of the breeder–burner link: the same physics, planned across many machines, with the breeder always built ahead as the source of the burner's fuel."
+   ]
+  ],
+  "related": [
+   [
+    "breeder-burner-link",
+    "The Breeder–Burner Link"
+   ],
+   [
+    "helium-3-yield-from-hyperion",
+    "Helium-3 Yield from Hyperion"
+   ],
+   [
+    "supply-security",
+    "Supply Security"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "fuel-supply-risk-and-mitigation",
+  "title": "Fuel Supply Risk and Mitigation",
+  "cat": "fuel-supply",
+  "lede": "The honest risks to the burner's fuel supply are breeder readiness, breeding ratio, and recovery efficiency — each with a defined mitigation.",
+  "body": [
+   [
+    "h2",
+    "Naming the risks plainly"
+   ],
+   [
+    "p",
+    "A credible fuel plan states its risks. The burner's helium-3 supply depends on machines not yet built and on figures still being resolved, and pretending otherwise would be dishonest. The principal risks are the breeder's readiness on schedule, the tritium breeding ratio it actually achieves, the recovery efficiency the burner reaches, and any interruption to delivery. Each has a mitigation built into the programme's design and sequencing."
+   ],
+   [
+    "truth",
+    [
+     [
+      "Risk",
+      "Mitigation"
+     ],
+     [
+      [
+       "Breeder readiness",
+       "Breeder built first; reserve accrues before burners"
+      ],
+      [
+       "Breeding ratio uncertain",
+       "Lever spans 1.1/1.5/1.8; plan to conservative end"
+      ],
+      [
+       "Low recovery efficiency",
+       "Recycling engineered as a requirement, not option"
+      ],
+      [
+       "Delivery interruption",
+       "On-site reserves + multiple breeders"
+      ]
+     ]
+    ]
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"20\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">RISK MITIGATION STACK</text><rect x=\"40\" y=\"55\" width=\"160\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"120.0\" y=\"78.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Reserve buffer</text><text x=\"120.0\" y=\"96.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">time</text><rect x=\"250\" y=\"55\" width=\"160\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"330.0\" y=\"78.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Conservative TBR</text><text x=\"330.0\" y=\"96.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">margin</text><rect x=\"460\" y=\"55\" width=\"160\" height=\"58\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"540.0\" y=\"78.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Recovery + fleet</text><text x=\"540.0\" y=\"96.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">depth</text><text x=\"330\" y=\"140\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">Mitigations stack; no single failure removes the fuel supply.</text></svg>"
+   ],
+   [
+    "h3",
+    "The honest bottom line"
+   ],
+   [
+    "p",
+    "The fuel supply is a design-stage plan, not a demonstrated capability. Its strongest guarantee is sequencing: by building the breeder first and letting a reserve accumulate by passive decay, the programme puts most of the burner's future fuel into store before any burner needs it. Uncertain figures like the breeding ratio are planned to their conservative end, and no step assumes lunar supply or a hardware net-gain result that has not been shown."
+   ],
+   [
+    "ul",
+    [
+     "Risks: breeder readiness, breeding ratio, recovery, delivery",
+     "Mitigations: reserve, conservative planning, recycling, fleet depth",
+     "Sequencing puts fuel in store before it is needed",
+     "No reliance on lunar supply or unproven net-gain claims"
+    ]
+   ],
+   [
+    "p",
+    "Stated this way, the fuel plan is defensible: real risks, concrete mitigations, and an honest acknowledgment that it is built and proven in the right order rather than assumed."
+   ]
+  ],
+  "related": [
+   [
+    "supply-security",
+    "Supply Security"
+   ],
+   [
+    "fuel-supply-redundancy",
+    "Fuel Supply Redundancy"
+   ],
+   [
+    "tritium-breeding-ratio-lever",
+    "The Breeding-Ratio Lever"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "fuel-cycle-instrumentation-and-monitoring",
+  "title": "Fuel-Cycle Instrumentation and Monitoring",
+  "cat": "fuel-supply",
+  "lede": "Sensors along the fuel cycle measure flow, composition, purity, and inventory, turning fuel handling into a measured, accountable process.",
+  "body": [
+   [
+    "h2",
+    "Measuring the whole loop"
+   ],
+   [
+    "p",
+    "Every claim made about the fuel cycle — the mix ratio, the purity, the reserve, the mass balance — rests on measurement. Instrumentation is distributed along the loop: flow meters on injection and exhaust, composition analyzers before and after the plasma, purity monitors after separation, and inventory gauges on storage. Together they turn fuel handling from an assumed process into a measured, auditable one."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 210\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"12\" y=\"18\" fill=\"#D4AD5C\" font-size=\"11\" letter-spacing=\"1.5\">SENSORS ALONG THE LOOP</text><rect x=\"30\" y=\"45\" width=\"120\" height=\"40\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"90.0\" y=\"59.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Store</text><text x=\"90.0\" y=\"77.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">inventory</text><line x1=\"152\" y1=\"65\" x2=\"200\" y2=\"65\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"204\" y=\"45\" width=\"120\" height=\"40\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"264.0\" y=\"59.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Condition</text><text x=\"264.0\" y=\"77.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">composition</text><line x1=\"326\" y1=\"65\" x2=\"374\" y2=\"65\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"378\" y=\"45\" width=\"120\" height=\"40\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"438.0\" y=\"59.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Inject</text><text x=\"438.0\" y=\"77.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">flow</text><line x1=\"500\" y1=\"65\" x2=\"548\" y2=\"65\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"380\" y=\"120\" width=\"200\" height=\"40\" rx=\"20\" fill=\"none\" stroke=\"#9FB1C4\"/><text x=\"480\" y=\"145\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"11\">plasma</text><rect x=\"150\" y=\"120\" width=\"180\" height=\"40\" rx=\"6\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"240.0\" y=\"134.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Exhaust</text><text x=\"240.0\" y=\"152.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">flow + composition</text><line x1=\"438\" y1=\"88\" x2=\"470\" y2=\"118\" stroke=\"#9FB1C4\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><line x1=\"378\" y1=\"140\" x2=\"332\" y2=\"140\" stroke=\"#9FB1C4\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"60\" y=\"185\" fill=\"#6E7D8F\" font-size=\"10\">purity monitor after separation feeds accountancy</text></svg>"
+   ],
+   [
+    "h3",
+    "What the data drives"
+   ],
+   [
+    "p",
+    "The measurements serve three systems. Plasma control uses real-time flow and composition to hold the density and mix ratio. Fuel accountancy uses inventory and flow data to keep the helium-3 mass balance closed. Quality assurance uses purity and composition data to gate each batch. Because helium-3 is a scarce, bred, tritium-derived material, this monitoring also supports the material-tracking discipline expected of it — the same sensors that optimize the burn also account for the resource."
+   ],
+   [
+    "ul",
+    [
+     "Flow, composition, purity, and inventory measured around the loop",
+     "Feeds plasma control, fuel accountancy, and quality assurance",
+     "Closes the helium-3 mass balance in real time",
+     "Supports material tracking of a bred, tritium-derived resource"
+    ]
+   ],
+   [
+    "p",
+    "Instrumentation is the connective tissue of the fuel section: it is what makes every other page's claim — purity, ratio, reserve, balance — a measured fact rather than an assumption, and it is where the fuel supply meets the burner's control brain."
+   ]
+  ],
+  "related": [
+   [
+    "fuel-accountancy",
+    "Fuel Accountancy"
+   ],
+   [
+    "fuel-quality-assurance",
+    "Fuel Quality Assurance"
+   ],
+   [
+    "deuterium-helium-3-mix-ratio",
+    "The D–3He Mix Ratio"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ }
+]

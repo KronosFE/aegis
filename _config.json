@@ -1,0 +1,36 @@
+{
+  "route": "aegis",
+  "title": "Aegis — Fixed-Installation Power",
+  "short": "Aegis",
+  "kicker": "AEGIS · THE BURNER",
+  "headline": "Resilient power, rooted in place.",
+  "tagline": "Aegis is the Kronos burner in its fixed-installation housing — a D-3He tandem-mirror generator delivering firm, low-signature, sovereign power. Design stage; the burner is perfected while the breeder is built.",
+  "hero_clip": "burner-hero-tandem-mirror.mp4",
+  "cats": {
+    "the-machine": [
+      "The Machine",
+      "The tandem mirror — central cell, high-field plugs, expander, and direct converter."
+    ],
+    "resilient-installation-power": [
+      "Resilient Installation Power",
+      "Sovereign, low-signature, always-on power for fixed installations."
+    ],
+    "the-physics": [
+      "The Physics",
+      "D-3He low-neutron operation, the ambipolar potential, and the end-plug gate."
+    ],
+    "deployment-operations": [
+      "Deployment & Operations",
+      "Installation, balance of plant, and maintenance."
+    ],
+    "fuel-supply": [
+      "Fuel & Supply",
+      "Helium-3 from the breeder and the fuel cycle."
+    ],
+    "readiness-timeline": [
+      "Readiness & Timeline",
+      "Design stage now; the first test burner and what it proves."
+    ]
+  },
+  "hero_blueprint": "burner"
+}

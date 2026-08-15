@@ -1,0 +1,3073 @@
+[
+ {
+  "slug": "burner-physics-overview",
+  "title": "The Physics of the Burner at a Glance",
+  "cat": "the-physics",
+  "lede": "The burner (Aegis) runs deuterium and helium-3 in a tandem-mirror geometry, converting mostly charged products directly to electricity.",
+  "body": [
+   [
+    "h2",
+    "One reaction, one geometry, one conversion path"
+   ],
+   [
+    "p",
+    "The burner (Aegis) is a deuterium–helium-3 (D–<sup>3</sup>He) tandem-mirror generator. Three physics choices define it: the <b>fuel</b> (D–<sup>3</sup>He, whose main branch releases its energy in charged particles), the <b>confinement</b> (an open-ended magnetic mirror plugged electrostatically at both ends), and the <b>conversion</b> (direct energy conversion of charged particles to DC electricity, with no steam cycle)."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 190\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><line x1=\"20\" y1=\"150\" x2=\"640\" y2=\"150\" stroke=\"#6E7D8F\" stroke-width=\"1\"/><rect x=\"200\" y=\"120\" width=\"260\" height=\"20\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.4\"/><path d=\"M120,140 L150,60 L180,60 L200,120\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.8\"/><path d=\"M460,120 L480,60 L510,60 L540,140\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.8\"/><text x=\"330\" y=\"133\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"12\">central cell — D&#8211;<sup>3</sup>He burn</text><text x=\"165\" y=\"52\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">plug 26.49 T</text><text x=\"495\" y=\"52\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">plug 26.49 T</text><text x=\"115\" y=\"168\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"10.5\">throat 17 T</text><text x=\"545\" y=\"168\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"10.5\">throat 17 T</text><text x=\"60\" y=\"168\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"10.5\">expander / DEC</text><text x=\"560\" y=\"168\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"10.5\">expander / DEC</text><line x1=\"20\" y1=\"150\" x2=\"120\" y2=\"150\" stroke=\"#9FB1C4\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><line x1=\"540\" y1=\"150\" x2=\"640\" y2=\"150\" stroke=\"#9FB1C4\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/></svg>"
+   ],
+   [
+    "p",
+    "These choices are coupled. D–<sup>3</sup>He yields charged protons and alpha particles that an open geometry can let stream out along the field into a direct converter. That is only attractive if the neutron output stays low — here it is a <b>5.44%</b> neutron fraction, which is low-neutron, <b>not</b> aneutronic. The operating point that makes this practical is around <b>90 keV</b> ion temperature."
+   ],
+   [
+    "h3",
+    "Design and simulation, stated plainly"
+   ],
+   [
+    "p",
+    "Everything on these pages is a design-and-simulation study. The burner is not built. Its physics carries four honest gates — end-plug coil stress, an unprecedented plug operating regime, a helium-3 supply that does not yet exist at scale, and availability short of hyperscale requirements. We state each one at full strength rather than soften it; they are physics facts, not marketing."
+   ],
+   [
+    "p",
+    "Read as a system, the burner is legible: a fuel chosen for charged output, a geometry chosen to let that output stream to a converter, and a conversion path chosen to skip the steam cycle. Each choice tightens the others, and each carries a named gate. The pages in this section trace those couplings from the reaction kinematics through confinement to conversion, and they end where the physics ends today — at the four gates and the test burner meant to start retiring them."
+   ],
+   [
+    "ul",
+    [
+     "Fuel: D–<sup>3</sup>He, ~5.44% neutron fraction (low-neutron)",
+     "Geometry: tandem mirror, 26.49 T plug / 17 T throat",
+     "Operating point: ~90 keV ion temperature",
+     "Conversion: direct energy conversion, no steam",
+     "Status: design & simulation; test burner ~2032"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "d3he-reaction-fundamentals",
+    "The D–He-3 Reaction"
+   ],
+   [
+    "tandem-mirror-overview",
+    "The Tandem Mirror"
+   ],
+   [
+    "direct-energy-conversion-principle",
+    "Direct Energy Conversion"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "d3he-reaction-fundamentals",
+  "title": "The Deuterium–Helium-3 Reaction",
+  "cat": "the-physics",
+  "lede": "D + He-3 fuses to a helium-4 nucleus and a 14.7 MeV proton, releasing 18.35 MeV entirely in charged particles.",
+  "body": [
+   [
+    "h2",
+    "The primary branch"
+   ],
+   [
+    "p",
+    "The reaction the burner is built around is D + <sup>3</sup>He → <sup>4</sup>He (3.6 MeV) + p (14.7 MeV). The total energy release is <b>18.35 MeV</b>, and in this branch <b>all</b> of it appears as kinetic energy of charged particles — a helium-4 nucleus and a proton. No neutron is produced in the primary branch."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 175\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><rect x=\"20\" y=\"70\" width=\"150\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"95.0\" y=\"100.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">D + <sup>3</sup>He</text><text x=\"95.0\" y=\"116.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">fuel ions</text><line x1=\"172\" y1=\"100\" x2=\"215\" y2=\"100\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"217\" y=\"45\" width=\"180\" height=\"110\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"307.0\" y=\"104.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\"></text><text x=\"307\" y=\"80\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"13\" font-weight=\"600\"><sup>4</sup>He  3.6 MeV</text><text x=\"307\" y=\"112\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"13\" font-weight=\"600\">p  14.7 MeV</text><text x=\"307\" y=\"140\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">18.35 MeV total, all charged</text><line x1=\"399\" y1=\"100\" x2=\"442\" y2=\"100\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"444\" y=\"70\" width=\"196\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"542.0\" y=\"100.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">charged output</text><text x=\"542.0\" y=\"116.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">to direct converter</text></svg>"
+   ],
+   [
+    "p",
+    "Because the products are charged, they are steered by the magnetic field and can be collected electrostatically. That is the physical premise for direct energy conversion. In a deuterium–tritium machine, by contrast, roughly 80% of the yield is carried by a 14.1 MeV neutron, which is uncharged and must be caught in a blanket and converted as heat."
+   ],
+   [
+    "h3",
+    "Why the charged fraction is the point"
+   ],
+   [
+    "p",
+    "The value of D–<sup>3</sup>He is not that it is clean of neutrons — it is not — but that the dominant energy channel is charged. Charged energy can bypass a thermal cycle. The trade is a much higher required temperature and a scarce fuel; those penalties drive the burner's honest gates."
+   ],
+   [
+    "p",
+    "The reaction also depends on temperature: the products above are fixed by kinematics, but how often the reaction occurs is set by the ion energy and density. At the burner's ~90 keV operating point the rate is high enough to matter, though still below D–T at the same conditions. Everything downstream — direct conversion, low activation, the fuel-supply gate — follows from this one branch and the charged particles it produces."
+   ],
+   [
+    "ul",
+    [
+     "Primary branch: D + <sup>3</sup>He → <sup>4</sup>He + p",
+     "Yield: 18.35 MeV, entirely charged",
+     "Enables direct conversion of the main channel",
+     "Neutrons arise only from side reactions (~5.44%)"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "why-d3he-over-dt",
+    "Why D–He-3 Over D–T"
+   ],
+   [
+    "low-neutron-fraction",
+    "The 5.44% Neutron Fraction"
+   ],
+   [
+    "dd-side-reactions",
+    "The D–D Side Reactions"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "why-d3he-over-dt",
+  "title": "Why D–Helium-3 Over D–Tritium",
+  "cat": "the-physics",
+  "lede": "D–He-3 trades a far harder ignition condition for a mostly charged energy release and a much lower neutron flux on structures.",
+  "body": [
+   [
+    "h2",
+    "A deliberate trade"
+   ],
+   [
+    "p",
+    "D–T is the easiest fusion fuel: its cross-section peaks near 60–70 keV and it ignites at the lowest triple product of any candidate. But four-fifths of D–T energy leaves as a 14.1 MeV neutron, activating structures and demanding a thermal blanket. The burner accepts a harder physics problem to avoid that."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 205\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><text x=\"160\" y=\"30\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">D–T</text><text x=\"500\" y=\"30\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">D–<sup>3</sup>He</text><rect x=\"40\" y=\"50\" width=\"240\" height=\"40\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"160.0\" y=\"74.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">~80% energy in neutrons</text><rect x=\"40\" y=\"100\" width=\"240\" height=\"40\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"160.0\" y=\"124.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">peak reactivity ~64 keV</text><rect x=\"40\" y=\"150\" width=\"240\" height=\"40\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"160.0\" y=\"174.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">easiest to ignite</text><rect x=\"380\" y=\"50\" width=\"240\" height=\"40\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"500.0\" y=\"74.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">~5.44% neutron fraction</text><rect x=\"380\" y=\"100\" width=\"240\" height=\"40\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"500.0\" y=\"124.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">operating point ~90 keV</text><rect x=\"380\" y=\"150\" width=\"240\" height=\"40\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"500.0\" y=\"174.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">mostly charged output</text></svg>"
+   ],
+   [
+    "p",
+    "The reward is physical, not economic: the main D–<sup>3</sup>He channel is charged, so it can be collected directly and the structural neutron load falls by more than an order of magnitude relative to D–T. The residual neutrons come from unavoidable D–D side reactions."
+   ],
+   [
+    "h3",
+    "The penalties are real"
+   ],
+   [
+    "p",
+    "D–<sup>3</sup>He requires a higher ion temperature (~90 keV vs ~15–20 keV for D–T ignition studies), a higher triple product, and a fuel — helium-3 — that is scarce at terrestrial scale. These are exactly the levers behind the burner's honest gates, and they are the reason the breeder (Hyperion) exists: it bakes helium-3 into the program's fuel loop."
+   ],
+   [
+    "p",
+    "The comparison is not that one fuel is better absolutely, but that each suits a different job. D–T suits a machine whose purpose is to breed fuel and make products near-term; D–<sup>3</sup>He suits a resilient direct-conversion generator whose purpose is firm, low-activation power. The program runs both because the D–T breeder is what makes the helium-3 the D–<sup>3</sup>He burner needs — the two fuels are links in one chain, not rivals."
+   ],
+   [
+    "ul",
+    [
+     "D–T: easy ignition, ~80% neutron energy",
+     "D–<sup>3</sup>He: hard ignition, ~5.44% neutrons, charged output",
+     "Trade favors direct conversion and low activation",
+     "Penalties: temperature, triple product, He-3 scarcity"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "d3he-reaction-fundamentals",
+    "The D–He-3 Reaction"
+   ],
+   [
+    "dt-vs-d3he-physics",
+    "D–T vs D–He-3 Physics"
+   ],
+   [
+    "helium3-supply-gate",
+    "Gate: He-3 Supply"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "low-neutron-fraction",
+  "title": "The 5.44% Neutron Fraction",
+  "cat": "the-physics",
+  "lede": "Low-neutron is not aneutronic: about 5.44% of the burner's fusion power leaves as neutrons from D–D side reactions.",
+  "body": [
+   [
+    "h2",
+    "Low-neutron, stated honestly"
+   ],
+   [
+    "p",
+    "The burner's fusion power carries a <b>5.44%</b> neutron fraction. This is <b>low-neutron</b>, not aneutronic. The primary D–<sup>3</sup>He branch makes no neutrons, but deuterium also reacts with deuterium, and one of those channels — plus secondary tritium burn-up — produces 2.45 MeV and 14.1 MeV neutrons. At ~90 keV with a realistic fuel mix, those side reactions leave roughly one part in eighteen of the power in neutrons."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><rect x=\"60\" y=\"60\" width=\"540\" height=\"46\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><rect x=\"60\" y=\"60\" width=\"511\" height=\"46\" rx=\"6\" fill=\"#232C39\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"315\" y=\"88\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">charged energy — 94.56%</text><text x=\"575\" y=\"88\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"12\" font-weight=\"600\">n</text><text x=\"575\" y=\"124\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">5.44%</text><text x=\"315\" y=\"132\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">fraction of fusion power leaving as neutrons</text></svg>"
+   ],
+   [
+    "p",
+    "This still matters. A 5.44% neutron fraction is low enough to make direct conversion worthwhile and to keep activation modest, but it is not zero: the first wall, plug region, and nearby structures still require neutron shielding and will see activation over their lifetime. Any claim of \"clean\" or \"radiation-free\" fusion would be false for this machine, and we do not make it."
+   ],
+   [
+    "h3",
+    "Why not zero"
+   ],
+   [
+    "p",
+    "Truly aneutronic fuels (such as p–<sup>11</sup>B) exist, but their ignition conditions are far beyond D–<sup>3</sup>He. Deuterium is in the fuel because it is abundant and its D–<sup>3</sup>He cross-section is favorable; the penalty for keeping deuterium is the D–D neutron tail."
+   ],
+   [
+    "p",
+    "The 5.44% is a design-point figure, not a universal constant: it moves with the fuel mix and operating temperature. What does not move is the qualitative statement — a deuterium-bearing plasma always makes some neutrons through D–D. Honest labelling matters here more than almost anywhere, because the temptation to call D–<sup>3</sup>He \"aneutronic\" is strong and, for this machine, wrong."
+   ],
+   [
+    "ul",
+    [
+     "5.44% of fusion power in neutrons",
+     "Source: D–D side reactions + secondary T burn",
+     "Low-neutron, explicitly not aneutronic",
+     "Shielding and activation are still required"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "dd-side-reactions",
+    "The D–D Side Reactions"
+   ],
+   [
+    "neutron-activation-shielding",
+    "Neutron Activation & Shielding"
+   ],
+   [
+    "fuel-mix-and-neutron-yield",
+    "Fuel Mix & Neutron Yield"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "dd-side-reactions",
+  "title": "The Deuterium–Deuterium Side Reactions",
+  "cat": "the-physics",
+  "lede": "Deuterium fusing with itself produces the burner's neutrons through two nearly equal branches, one of which breeds tritium.",
+  "body": [
+   [
+    "h2",
+    "Two branches, both unavoidable"
+   ],
+   [
+    "p",
+    "With deuterium in the fuel, D–D fusion happens alongside the primary D–<sup>3</sup>He reaction. It splits into two branches of nearly equal probability:"
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><rect x=\"40\" y=\"70\" width=\"150\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"115.0\" y=\"104.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">D + D</text><line x1=\"192\" y1=\"85\" x2=\"235\" y2=\"60\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><line x1=\"192\" y1=\"115\" x2=\"235\" y2=\"140\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"237\" y=\"40\" width=\"200\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"337.0\" y=\"62.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\"><sup>3</sup>He + n (2.45 MeV)</text><text x=\"337.0\" y=\"78.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">~50%</text><rect x=\"237\" y=\"116\" width=\"200\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"337.0\" y=\"138.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">T + p</text><text x=\"337.0\" y=\"154.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">~50%</text><line x1=\"439\" y1=\"138\" x2=\"482\" y2=\"138\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"484\" y=\"116\" width=\"150\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"559.0\" y=\"138.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">T burns → 14.1 MeV n</text><text x=\"559.0\" y=\"154.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">secondary</text></svg>"
+   ],
+   [
+    "p",
+    "The first branch, D + D → <sup>3</sup>He + n, emits a 2.45 MeV neutron. The second, D + D → T + p, breeds tritium in the plasma; that tritium then burns with deuterium (D + T → <sup>4</sup>He + n) and releases a 14.1 MeV neutron. Together these set the <b>5.44%</b> neutron fraction."
+   ],
+   [
+    "h3",
+    "Controlling the tail, not eliminating it"
+   ],
+   [
+    "p",
+    "The neutron tail scales with the deuterium density and temperature relative to the helium-3 content. A helium-3-rich mix suppresses D–D reactions but demands more of a scarce fuel; a deuterium-rich mix eases fuel supply but raises the neutron fraction. The design point balances the two — it does not remove the neutrons, because D–D cannot be switched off while deuterium is present."
+   ],
+   [
+    "p",
+    "Because the tritium bred in the second branch takes time to burn, part of the neutron output is delayed relative to the primary reaction, and the balance between prompt D–D neutrons and secondary D–T neutrons shifts with confinement and temperature. Accounting for both channels, and for the tritium inventory that transiently builds in the plasma, is part of computing the 5.44% figure honestly rather than quoting only the primary branch."
+   ],
+   [
+    "ul",
+    [
+     "D + D → <sup>3</sup>He + n (2.45 MeV), ~50%",
+     "D + D → T + p (~50%), then T burns → 14.1 MeV n",
+     "Together: the 5.44% neutron fraction",
+     "Tail is tunable by fuel mix, never zero with D present"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "low-neutron-fraction",
+    "The 5.44% Neutron Fraction"
+   ],
+   [
+    "fuel-mix-and-neutron-yield",
+    "Fuel Mix & Neutron Yield"
+   ],
+   [
+    "d3he-reaction-fundamentals",
+    "The D–He-3 Reaction"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "operating-point-90-kev",
+  "title": "The ~90 keV Operating Point",
+  "cat": "the-physics",
+  "lede": "The burner is designed to run near a 90 keV ion temperature, where the D–He-3 reactivity is high enough to be practical.",
+  "body": [
+   [
+    "h2",
+    "Where the reaction runs"
+   ],
+   [
+    "p",
+    "The burner's design ion temperature is roughly <b>90 keV</b> — about 1 billion kelvin. This is far hotter than a D–T machine, which ignites in the 10–20 keV range. The reason is the D–<sup>3</sup>He cross-section: both nuclei carry a positive charge of +1 and +2, so the Coulomb barrier is higher than for D–T, and useful reactivity only builds up at tens of keV."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 200\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><line x1=\"60\" y1=\"170\" x2=\"620\" y2=\"170\" stroke=\"#6E7D8F\" stroke-width=\"1\"/><line x1=\"60\" y1=\"170\" x2=\"60\" y2=\"40\" stroke=\"#6E7D8F\" stroke-width=\"1\"/><path d=\"M60,168 C160,160 240,120 320,95 C420,66 520,58 610,55\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><line x1=\"470\" y1=\"40\" x2=\"470\" y2=\"170\" stroke=\"#9FB1C4\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><text x=\"470\" y=\"32\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">~90 keV design point</text><text x=\"340\" y=\"188\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">ion temperature (keV) →</text><text x=\"52\" y=\"105\" text-anchor=\"end\" fill=\"#6E7D8F\" font-size=\"10.5\">&#10216;σv&#10217;</text></svg>"
+   ],
+   [
+    "p",
+    "Pushing higher than ~90 keV gives diminishing gains in reactivity while increasing radiation losses and confinement demands. Running much lower drops the reaction rate below what the power balance can sustain. The ~90 keV point is a compromise between reactivity, radiation losses, and what the tandem-mirror confinement can hold."
+   ],
+   [
+    "h3",
+    "A demanding target"
+   ],
+   [
+    "p",
+    "No device has sustained a D–<sup>3</sup>He plasma at this temperature and confinement in steady state. The plug operating regime required to hold such a plasma is one of the burner's honest gates: it sits well beyond the parameters any built mirror has reached."
+   ],
+   [
+    "p",
+    "The choice of ~90 keV is also a statement about what the confinement must deliver: hotter ions mean a higher pressure the magnetic well and plugs must hold, and a higher radiation load the power balance must overcome. The operating point is thus not just a plasma-physics number but the anchor that sets the field, the plug potential, and the engineering margins across the whole machine."
+   ],
+   [
+    "ul",
+    [
+     "Design ion temperature ~90 keV (~10<sup>9</sup> K)",
+     "Set by the D–<sup>3</sup>He Coulomb barrier",
+     "Balances reactivity against radiation losses",
+     "No device has yet reached this regime steadily"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "coulomb-barrier-cross-sections",
+    "Coulomb Barrier & Cross-Sections"
+   ],
+   [
+    "bremsstrahlung-losses",
+    "Bremsstrahlung Losses"
+   ],
+   [
+    "plug-regime-gate",
+    "Gate: Plug Operating Regime"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "reactivity-vs-temperature",
+  "title": "Reactivity Versus Temperature",
+  "cat": "the-physics",
+  "lede": "The rate-averaged cross-section for D–He-3 rises steeply through the tens of keV and broadens past ~100 keV, framing the operating window.",
+  "body": [
+   [
+    "h2",
+    "The reactivity curve"
+   ],
+   [
+    "p",
+    "Fusion power density scales with n<sub>1</sub> n<sub>2</sub> &#10216;σv&#10217;, where &#10216;σv&#10217; is the reaction rate averaged over the ion velocity distribution. For D–<sup>3</sup>He, &#10216;σv&#10217; is small below 20 keV, climbs steeply through 30–80 keV, and flattens beyond ~100 keV. The burner sits on the upper shoulder of this curve near 90 keV."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 200\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><line x1=\"60\" y1=\"170\" x2=\"620\" y2=\"170\" stroke=\"#6E7D8F\" stroke-width=\"1\"/><line x1=\"60\" y1=\"170\" x2=\"60\" y2=\"40\" stroke=\"#6E7D8F\" stroke-width=\"1\"/><path d=\"M60,169 C150,165 230,140 300,110 C380,76 470,58 610,50\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><path d=\"M60,169 C120,150 180,80 240,64 C320,45 420,55 610,80\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.6\" stroke-dasharray=\"5 3\"/><text x=\"210\" y=\"58\" text-anchor=\"start\" fill=\"#9FB1C4\" font-size=\"11\">D–T</text><text x=\"560\" y=\"44\" text-anchor=\"start\" fill=\"#D4AD5C\" font-size=\"11\">D–<sup>3</sup>He</text><text x=\"340\" y=\"188\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">temperature (keV) →</text><text x=\"52\" y=\"105\" text-anchor=\"end\" fill=\"#6E7D8F\" font-size=\"10.5\">&#10216;σv&#10217;</text></svg>"
+   ],
+   [
+    "p",
+    "D–T (dashed) peaks near 64 keV and is larger at every temperature; D–<sup>3</sup>He (gold) peaks higher and later. The gap is why D–<sup>3</sup>He needs a higher temperature and a higher triple product to reach the same power density."
+   ],
+   [
+    "h3",
+    "Reading the window"
+   ],
+   [
+    "p",
+    "The practical window is bounded below by insufficient reaction rate and above by radiation and confinement penalties. The ~90 keV design point is chosen inside that window, accepting that D–<sup>3</sup>He will always be reactivity-limited relative to D–T."
+   ],
+   [
+    "p",
+    "The averaging that produces &#10216;σv&#10217; matters as much as the peak: because reactions are dominated by the fast tail of the distribution, the reactivity is sensitive to how well the plasma stays Maxwellian and how hot the ions run relative to the electrons. A hot-ion mode, where T<sub>i</sub> exceeds T<sub>e</sub>, both raises &#10216;σv&#10217; and eases the bremsstrahlung balance, which is why the burner targets it."
+   ],
+   [
+    "ul",
+    [
+     "Power density &#8733; n<sub>1</sub>n<sub>2</sub>&#10216;σv&#10217;",
+     "D–<sup>3</sup>He reactivity peaks higher and later than D–T",
+     "Steep rise through 30–80 keV",
+     "Operating window sits on the upper shoulder"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "operating-point-90-kev",
+    "The ~90 keV Operating Point"
+   ],
+   [
+    "power-balance-lawson",
+    "Power Balance & Lawson"
+   ],
+   [
+    "coulomb-barrier-cross-sections",
+    "Coulomb Barrier & Cross-Sections"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "coulomb-barrier-cross-sections",
+  "title": "The Coulomb Barrier & Cross-Sections",
+  "cat": "the-physics",
+  "lede": "Helium-3's double charge raises the Coulomb barrier for D–He-3, pushing the useful reaction temperature into the tens of keV.",
+  "body": [
+   [
+    "h2",
+    "Why the barrier is higher"
+   ],
+   [
+    "p",
+    "Two nuclei must approach within the range of the strong force to fuse, against their mutual electrostatic repulsion. That repulsion scales with the product of the charges, Z<sub>1</sub>Z<sub>2</sub>. For D–T it is 1×1; for D–<sup>3</sup>He it is 1×2. The larger barrier means fewer ions have enough energy to tunnel through it at a given temperature."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 185\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><line x1=\"60\" y1=\"150\" x2=\"620\" y2=\"150\" stroke=\"#6E7D8F\" stroke-width=\"1\"/><path d=\"M60,150 C260,150 300,40 340,40 C360,40 380,110 620,120\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><path d=\"M60,150 C260,150 300,80 340,80 C360,80 380,120 620,128\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.6\" stroke-dasharray=\"5 3\"/><text x=\"345\" y=\"32\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">D–<sup>3</sup>He barrier (Z=1×2)</text><text x=\"345\" y=\"74\" text-anchor=\"end\" fill=\"#9FB1C4\" font-size=\"11\">D–T (Z=1×1)</text><text x=\"340\" y=\"168\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">internuclear separation →</text><text x=\"52\" y=\"90\" text-anchor=\"end\" fill=\"#6E7D8F\" font-size=\"10.5\">V</text></svg>"
+   ],
+   [
+    "p",
+    "Quantum tunnelling lets fusion occur below the classical barrier height, and the reaction rate is dominated by ions in the high-energy tail of the Maxwellian distribution — the Gamow peak. Because the D–<sup>3</sup>He barrier is higher, its Gamow peak sits at higher energy, and the plasma must be hotter to populate it."
+   ],
+   [
+    "h3",
+    "The consequence"
+   ],
+   [
+    "p",
+    "This single fact — helium-3's +2 charge — is why the burner runs near 90 keV rather than 15 keV, why its triple product target is higher, and why its confinement must be correspondingly strong. It is a fixed feature of the fuel, not a design choice that can be relaxed."
+   ],
+   [
+    "p",
+    "There is no way to lower the barrier — it is set by the nuclear charges — so the only levers are temperature, density, and confinement time, which is why D–<sup>3</sup>He forces a higher triple product than D–T. This is the root cause that propagates into every downstream gate: the field the plug needs, the regime it must reach, and the recirculating power the engineering gain must overcome all trace back to helium-3's +2 charge."
+   ],
+   [
+    "ul",
+    [
+     "Barrier &#8733; Z<sub>1</sub>Z<sub>2</sub>; D–<sup>3</sup>He = 1×2",
+     "Higher barrier → higher Gamow peak energy",
+     "Reaction driven by the Maxwellian tail",
+     "Fixes the ~90 keV operating requirement"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "operating-point-90-kev",
+    "The ~90 keV Operating Point"
+   ],
+   [
+    "maxwellian-vs-beam",
+    "Maxwellian vs Beam-Driven Ions"
+   ],
+   [
+    "reactivity-vs-temperature",
+    "Reactivity vs Temperature"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "maxwellian-vs-beam",
+  "title": "Maxwellian Versus Beam-Driven Ions",
+  "cat": "the-physics",
+  "lede": "A thermal plasma fuses from the tail of its distribution; injected fast ions can add reactions but must be sustained against slowing-down.",
+  "body": [
+   [
+    "h2",
+    "Two ways to reach fusion energy"
+   ],
+   [
+    "p",
+    "In a thermal (Maxwellian) plasma at ~90 keV, most ions are slower than the optimum fusion energy and the reactions come from the fast tail. An alternative is to inject energetic ions as a beam, placing population exactly where the cross-section is high. Real mirror designs use both: bulk thermal ions plus neutral-beam-injected fast ions."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 195\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><line x1=\"60\" y1=\"160\" x2=\"360\" y2=\"160\" stroke=\"#6E7D8F\" stroke-width=\"1\"/><path d=\"M60,160 C120,60 160,50 210,90 C260,130 310,158 360,159\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.8\"/><path d=\"M330,160 L330,70 L350,70 L350,160 Z\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.6\"/><text x=\"200\" y=\"45\" text-anchor=\"middle\" fill=\"#9FB1C4\" font-size=\"11\">thermal bulk</text><text x=\"340\" y=\"58\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">beam</text><text x=\"210\" y=\"180\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">ion energy →</text><rect x=\"430\" y=\"70\" width=\"200\" height=\"80\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"530.0\" y=\"110.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">sloshing ions</text><text x=\"530.0\" y=\"126.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">injected, mirror-trapped</text></svg>"
+   ],
+   [
+    "p",
+    "Beam-driven and \"sloshing\" ions are central to tandem-mirror plugging: fast ions injected at an angle collect near the mirror throats, peaking the density there and building the electrostatic potential that confines the central-cell ions. But injected ions slow down by collisions and must be continuously replaced, which draws input power."
+   ],
+   [
+    "h3",
+    "The efficiency question"
+   ],
+   [
+    "p",
+    "Beam sustainment always carries an efficiency penalty; too much reliance on beam-driven reactions erodes net gain. The design target is a largely thermal central cell with beams used where they do the most good — building the plug potential — rather than as the primary fusion driver."
+   ],
+   [
+    "p",
+    "There is also a bookkeeping subtlety: reactions between beam ions and thermal ions can dominate the fusion rate in some regimes, so the effective reactivity is not simply the thermal &#10216;σv&#10217;. The burner design leans on beams to build the plug rather than to drive the bulk of the fusion, keeping the recirculating power within what the engineering gain can absorb."
+   ],
+   [
+    "ul",
+    [
+     "Thermal plasma fuses from its high-energy tail",
+     "Beam/sloshing ions place population at high &#10216;σv&#10217;",
+     "Sloshing ions build the plug potential",
+     "Beams slow down; sustaining them draws power"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "ambipolar-potential",
+    "The Ambipolar Potential"
+   ],
+   [
+    "sloshing-ions-thermal-barrier",
+    "Sloshing Ions & Thermal Barriers"
+   ],
+   [
+    "plasma-heating-methods",
+    "Plasma Heating Methods"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "bremsstrahlung-losses",
+  "title": "Bremsstrahlung Radiation Losses",
+  "cat": "the-physics",
+  "lede": "Electrons decelerating in the field of ions radiate X-rays; this bremsstrahlung is a major, unavoidable loss channel for a hot D–He-3 plasma.",
+  "body": [
+   [
+    "h2",
+    "The dominant radiative loss"
+   ],
+   [
+    "p",
+    "When electrons pass near ions they decelerate and emit X-ray photons — bremsstrahlung (\"braking radiation\"). The radiated power scales as n<sub>e</sub><sup>2</sup> Z<sub>eff</sub> √T<sub>e</sub>. Helium-3 has charge 2, so a D–<sup>3</sup>He plasma radiates more bremsstrahlung than a pure hydrogenic one at the same density and temperature."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 175\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><rect x=\"40\" y=\"70\" width=\"140\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"110.0\" y=\"100.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">hot electrons</text><text x=\"110.0\" y=\"116.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">T<sub>e</sub> high</text><line x1=\"182\" y1=\"100\" x2=\"225\" y2=\"100\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"227\" y=\"70\" width=\"140\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"297.0\" y=\"100.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">pass near ions</text><text x=\"297.0\" y=\"116.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">Z=1, 2</text><line x1=\"369\" y1=\"100\" x2=\"412\" y2=\"100\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"414\" y=\"70\" width=\"140\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"484.0\" y=\"100.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">X-ray photons</text><text x=\"484.0\" y=\"116.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">bremsstrahlung</text><text x=\"297\" y=\"152\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"12\">P<sub>br</sub> &#8733; n<sub>e</sub><sup>2</sup> Z<sub>eff</sub> &#8730;T<sub>e</sub></text></svg>"
+   ],
+   [
+    "p",
+    "Bremsstrahlung is fundamental: it cannot be shielded or reflected back into the plasma the way some other losses can, because the plasma is transparent to hard X-rays. For D–<sup>3</sup>He, the ratio of bremsstrahlung loss to fusion power is far less favorable than for D–T, and it sets a floor on the temperature and purity the plasma must maintain to stay net-positive."
+   ],
+   [
+    "h3",
+    "Why it constrains the design"
+   ],
+   [
+    "p",
+    "Keeping Z<sub>eff</sub> low means keeping impurities out; running at high ion temperature relative to electron temperature helps, because fusion power tracks T<sub>i</sub> while bremsstrahlung tracks T<sub>e</sub>. The burner design assumes a hot-ion mode where T<sub>i</sub> exceeds T<sub>e</sub> to keep the radiation balance workable."
+   ],
+   [
+    "p",
+    "Because the loss escapes the plasma entirely, it sets a hard lower bound on the fusion power density needed for net gain — the plasma must out-produce its own X-ray glow. For D–<sup>3</sup>He that bound is far closer to the achievable fusion power than it is for D–T, which is precisely why impurity control and the hot-ion mode are treated as requirements rather than refinements."
+   ],
+   [
+    "ul",
+    [
+     "P<sub>br</sub> &#8733; n<sub>e</sub><sup>2</sup> Z<sub>eff</sub> &#8730;T<sub>e</sub>",
+     "He-3's Z=2 raises radiated power",
+     "Plasma is transparent to the X-rays — they leave",
+     "Hot-ion operation (T<sub>i</sub> > T<sub>e</sub>) helps the balance"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "synchrotron-losses",
+    "Synchrotron Radiation Losses"
+   ],
+   [
+    "power-balance-lawson",
+    "Power Balance & Lawson"
+   ],
+   [
+    "impurity-radiation",
+    "Impurity Radiation"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "synchrotron-losses",
+  "title": "Synchrotron Radiation Losses",
+  "cat": "the-physics",
+  "lede": "Electrons spiralling in a strong magnetic field radiate at the cyclotron frequency; in the high-field plug region this cannot be ignored.",
+  "body": [
+   [
+    "h2",
+    "Radiation from gyrating electrons"
+   ],
+   [
+    "p",
+    "Electrons circle magnetic field lines and radiate at the electron cyclotron frequency and its harmonics — synchrotron (cyclotron) radiation. The radiated power scales strongly with magnetic field (roughly B<sup>2</sup>) and with electron temperature. In the burner's plug region, where the field reaches 26.49 T, this loss channel becomes significant."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 205\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><circle cx=\"200\" cy=\"110\" r=\"55\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.4\"/><path d=\"M200,55 a55,55 0 0 1 40,95\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\" marker-end=\"url(#ah)\"/><text x=\"200\" y=\"115\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">e<sup>&#8722;</sup></text><path d=\"M270,90 q30,-20 60,0 M270,110 q30,-20 60,0 M270,130 q30,-20 60,0\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.3\"/><text x=\"360\" y=\"110\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"11\">cyclotron photons</text><text x=\"200\" y=\"190\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"12\">P<sub>syn</sub> &#8733; B<sup>2</sup> T<sub>e</sub>  (partly reabsorbed)</text></svg>"
+   ],
+   [
+    "p",
+    "Unlike bremsstrahlung, synchrotron radiation is emitted at relatively low frequencies and is partly reabsorbed by the plasma before it escapes, so the net loss depends on plasma size and opacity. In a compact, high-field region the reabsorption helps, but the raw emission is large enough that the electron temperature and field profile must be managed to keep it in check."
+   ],
+   [
+    "h3",
+    "Interaction with the plug"
+   ],
+   [
+    "p",
+    "The plug is where the field is highest and the loss is worst, yet it is also where a strong confining potential is needed. This tension between field strength, radiation, and confinement is part of why the plug regime is one of the burner's honest gates."
+   ],
+   [
+    "p",
+    "The reabsorption that softens this loss depends on the plasma being optically thick at the cyclotron frequency, which in turn depends on size and density — so the same compactness that makes the plug's field so demanding also changes how much synchrotron energy escapes. Getting the field profile, temperature, and geometry to keep both bremsstrahlung and synchrotron in check simultaneously is part of what makes the plug regime narrow."
+   ],
+   [
+    "ul",
+    [
+     "P<sub>syn</sub> rises steeply with B and T<sub>e</sub>",
+     "Worst in the 26.49 T plug region",
+     "Partly reabsorbed — net loss depends on size/opacity",
+     "Couples radiation limits to plug confinement"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "bremsstrahlung-losses",
+    "Bremsstrahlung Losses"
+   ],
+   [
+    "plug-field-26-tesla",
+    "The 26.49 T Plug Field"
+   ],
+   [
+    "power-balance-lawson",
+    "Power Balance & Lawson"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "power-balance-lawson",
+  "title": "Power Balance & the Lawson Criterion",
+  "cat": "the-physics",
+  "lede": "Net gain requires fusion power to exceed radiation, transport, and injection losses; for D–He-3 this triple-product bar is much higher than D–T.",
+  "body": [
+   [
+    "h2",
+    "The balance that must close"
+   ],
+   [
+    "p",
+    "A power-producing plasma must generate more fusion energy than it loses. The bookkeeping compares fusion power against three drains: radiation (bremsstrahlung and synchrotron), transport (particles and heat leaving confinement), and the input power needed to sustain heating and plugging. Net gain requires the sum on the loss side to stay below the fusion source."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><rect x=\"40\" y=\"60\" width=\"180\" height=\"80\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"130.0\" y=\"100.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">fusion power</text><text x=\"130.0\" y=\"116.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">n<sub>D</sub>n<sub>He3</sub>&#10216;σv&#10217;</text><line x1=\"222\" y1=\"100\" x2=\"270\" y2=\"100\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><line x1=\"272\" y1=\"60\" x2=\"272\" y2=\"160\" stroke=\"#9FB1C4\" stroke-width=\"1.4\"/><rect x=\"300\" y=\"40\" width=\"170\" height=\"36\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"385.0\" y=\"62.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">bremsstrahlung</text><rect x=\"300\" y=\"86\" width=\"170\" height=\"36\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"385.0\" y=\"108.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">transport losses</text><rect x=\"300\" y=\"132\" width=\"170\" height=\"36\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"385.0\" y=\"154.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">injection / plugging</text><line x1=\"474\" y1=\"58\" x2=\"510\" y2=\"58\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><line x1=\"474\" y1=\"104\" x2=\"510\" y2=\"104\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><line x1=\"474\" y1=\"150\" x2=\"510\" y2=\"150\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"512\" y=\"60\" width=\"120\" height=\"80\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"572.0\" y=\"100.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">must exceed</text><text x=\"572.0\" y=\"116.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">losses</text></svg>"
+   ],
+   [
+    "p",
+    "The Lawson criterion expresses this as a triple product of density, temperature, and confinement time (n T τ). For D–<sup>3</sup>He the required triple product is roughly an order of magnitude higher than D–T, because the reactivity is lower and the radiation losses are higher. That raises the bar on every confinement parameter at once."
+   ],
+   [
+    "h3",
+    "Why this frames the gates"
+   ],
+   [
+    "p",
+    "The confinement time and plug potential needed to close this balance for D–<sup>3</sup>He are what push the plug into an operating regime beyond any built device, and what make the coil stresses so demanding. The power balance is the physics behind the honest gates — it is achievable on paper and unproven in hardware."
+   ],
+   [
+    "p",
+    "It is worth being precise about what the triple product does and does not promise: satisfying n T τ is necessary for net gain but not sufficient, because it says nothing about whether the required τ can actually be held, or whether the plug that holds it can be built. The burner's gates are exactly the places where the paper triple product and the buildable machine diverge."
+   ],
+   [
+    "ul",
+    [
+     "Fusion power > radiation + transport + injection",
+     "D–<sup>3</sup>He triple product ~10× D–T",
+     "Higher n, T, and τ all required at once",
+     "Drives the plug-stress and plug-regime gates"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "ignition-vs-driven",
+    "Ignition Versus Driven Operation"
+   ],
+   [
+    "confinement-time-scaling",
+    "Confinement Time & Scaling"
+   ],
+   [
+    "plug-regime-gate",
+    "Gate: Plug Operating Regime"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "ignition-vs-driven",
+  "title": "Ignition Versus Driven Operation",
+  "cat": "the-physics",
+  "lede": "The burner is designed as a driven system: external power sustains the plugs and heating rather than relying on self-heating alone.",
+  "body": [
+   [
+    "h2",
+    "Self-heated or externally sustained"
+   ],
+   [
+    "p",
+    "An ignited plasma sustains its temperature entirely from its own fusion products, needing no external heating once started. A driven plasma requires continuous input power — to heat, to fuel, and, in a mirror, to maintain the end plugs. The burner is designed as a <b>driven</b> system, not an ignited one."
+   ],
+   [
+    "p",
+    "In D–<sup>3</sup>He the charged fusion products (the 3.6 MeV alpha and 14.7 MeV proton) do deposit energy back into the plasma, providing partial self-heating. But because the triple product needed for full ignition is so high, the design does not assume ignition; it assumes a positive but finite energy gain with external drive."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 200\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><rect x=\"40\" y=\"70\" width=\"150\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"115.0\" y=\"100.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">input power</text><text x=\"115.0\" y=\"116.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">heating + plugs</text><line x1=\"192\" y1=\"100\" x2=\"235\" y2=\"100\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"237\" y=\"70\" width=\"180\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"327.0\" y=\"100.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">plasma</text><text x=\"327.0\" y=\"116.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">partial self-heat</text><line x1=\"419\" y1=\"100\" x2=\"462\" y2=\"100\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"464\" y=\"70\" width=\"170\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"549.0\" y=\"100.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">net electricity</text><text x=\"549.0\" y=\"116.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">via DEC</text><path d=\"M327,132 q0,40 -120,40 q-120,0 -120,-40\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.4\" marker-end=\"url(#ah)\"/><text x=\"207\" y=\"182\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">recirculated fraction</text></svg>"
+   ],
+   [
+    "p",
+    "A fraction of the generated electricity is recirculated to run the injectors and plugs. The net output is what remains. The engineering gain, Q<sub>E</sub>, must stay comfortably above one after this recirculation — which is a stricter test than the scientific gain Q<sub>sci</sub> that only counts fusion versus heating power."
+   ],
+   [
+    "h3",
+    "Why driven is honest"
+   ],
+   [
+    "p",
+    "Claiming ignition for D–<sup>3</sup>He would overstate the physics. Treating the burner as driven — and holding it to an engineering-gain test that includes plug and injector power — is the honest framing, and it is why the plug efficiency and recirculating power matter so much."
+   ],
+   [
+    "p",
+    "Treating the machine as driven also shapes how it is controlled: the operating point is actively maintained by heating and plug power rather than sitting at a self-sustaining fixed point, which gives operators a throttle but demands continuous, reliable input. That control burden is one of the reasons availability — the fourth gate — is non-trivial for a driven mirror."
+   ],
+   [
+    "ul",
+    [
+     "Burner = driven, not ignited",
+     "Charged products give partial self-heating",
+     "Recirculated power runs plugs and injectors",
+     "Engineering gain Q<sub>E</sub> is the honest test"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "q-engineering-vs-science",
+    "Q-Engineering vs Q-Science"
+   ],
+   [
+    "power-balance-lawson",
+    "Power Balance & Lawson"
+   ],
+   [
+    "ambipolar-potential",
+    "The Ambipolar Potential"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "tandem-mirror-overview",
+  "title": "The Tandem Mirror",
+  "cat": "the-physics",
+  "lede": "A long central cell confined by strong magnetic mirrors at each end, with electrostatic end plugs closing the loss cone that open mirrors suffer.",
+  "body": [
+   [
+    "h2",
+    "An open-ended machine, closed by potential"
+   ],
+   [
+    "p",
+    "A magnetic mirror is an open field line pinched at both ends by regions of strong field. Ions and electrons spiralling along the line are reflected by the pinch — but only if their velocity is angled enough; those moving too straight along the field escape through the \"loss cone.\" A simple mirror therefore leaks continuously. The tandem mirror fixes this by adding a confining electric potential at each end."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 190\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><line x1=\"20\" y1=\"150\" x2=\"640\" y2=\"150\" stroke=\"#6E7D8F\" stroke-width=\"1\"/><rect x=\"200\" y=\"120\" width=\"260\" height=\"20\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.4\"/><path d=\"M120,140 L150,60 L180,60 L200,120\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.8\"/><path d=\"M460,120 L480,60 L510,60 L540,140\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.8\"/><text x=\"330\" y=\"133\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"12\">central cell — D&#8211;<sup>3</sup>He burn</text><text x=\"165\" y=\"52\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">plug 26.49 T</text><text x=\"495\" y=\"52\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">plug 26.49 T</text><text x=\"115\" y=\"168\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"10.5\">throat 17 T</text><text x=\"545\" y=\"168\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"10.5\">throat 17 T</text><text x=\"60\" y=\"168\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"10.5\">expander / DEC</text><text x=\"560\" y=\"168\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"10.5\">expander / DEC</text><line x1=\"20\" y1=\"150\" x2=\"120\" y2=\"150\" stroke=\"#9FB1C4\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><line x1=\"540\" y1=\"150\" x2=\"640\" y2=\"150\" stroke=\"#9FB1C4\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/></svg>"
+   ],
+   [
+    "p",
+    "The burner's geometry is: a long <b>central cell</b> where the D–<sup>3</sup>He fuel burns, a high-field <b>throat</b> (17 T) at each end where the field pinches, a high-field <b>plug</b> (26.49 T) beyond it that builds the confining potential, and an <b>expander</b> where the exhaust plasma fans out into the direct converter."
+   ],
+   [
+    "h3",
+    "Why open geometry at all"
+   ],
+   [
+    "p",
+    "Open ends make direct energy conversion natural: charged particles that do leave stream along field lines straight into a collector, rather than being trapped in a closed torus. The trade-off is that the ends must be plugged electrostatically, which is where the tandem mirror's hardest physics — and its honest gates — live."
+   ],
+   [
+    "p",
+    "The concept dates to real experimental machines that demonstrated ambipolar plugging and thermal barriers at their scale; what is unproven is the extrapolation to the burner's field and regime. Reading the geometry with that history in mind is the honest frame: the mechanism is established physics, and the specific parameters the burner needs are not yet demonstrated."
+   ],
+   [
+    "ul",
+    [
+     "Central cell: D–<sup>3</sup>He burn region",
+     "Throat: 17 T magnetic pinch",
+     "Plug: 26.49 T, builds confining potential",
+     "Expander: opens to the direct converter"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "magnetic-mirror-principle",
+    "The Magnetic Mirror Principle"
+   ],
+   [
+    "ambipolar-potential",
+    "The Ambipolar Potential"
+   ],
+   [
+    "central-cell-physics",
+    "The Central Cell"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "magnetic-mirror-principle",
+  "title": "The Magnetic Mirror Principle",
+  "cat": "the-physics",
+  "lede": "A charged particle's magnetic moment is conserved, so it is reflected where the field strengthens — unless its velocity lies inside the loss cone.",
+  "body": [
+   [
+    "h2",
+    "Reflection by a magnetic gradient"
+   ],
+   [
+    "p",
+    "A charged particle gyrating around a field line has an adiabatic invariant, the magnetic moment μ = mv<sub>&#8869;</sub><sup>2</sup>/2B. As it moves into a stronger field, B rises, so v<sub>&#8869;</sub> must rise to keep μ fixed — and since total energy is conserved, v<sub>&#8741;</sub> falls. If the field is strong enough, v<sub>&#8741;</sub> reaches zero and the particle is reflected: a magnetic mirror."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 195\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><line x1=\"40\" y1=\"110\" x2=\"620\" y2=\"110\" stroke=\"#6E7D8F\" stroke-width=\"1\"/><path d=\"M120,110 q10,-30 20,0 q10,30 20,0 q10,-30 20,0 q10,30 20,0 q10,-30 20,0\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.6\"/><line x1=\"500\" y1=\"60\" x2=\"500\" y2=\"160\" stroke=\"#9FB1C4\" stroke-width=\"2\"/><text x=\"500\" y=\"50\" text-anchor=\"middle\" fill=\"#9FB1C4\" font-size=\"11\">high-field throat</text><path d=\"M480,110 q-15,20 -35,0\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"300\" y=\"90\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">gyrating ion</text><text x=\"300\" y=\"175\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"11\">μ = mv<sub>&#8869;</sub><sup>2</sup>/2B conserved → reflected</text></svg>"
+   ],
+   [
+    "p",
+    "Reflection only works if enough of the particle's energy is in perpendicular motion. Particles moving nearly parallel to the field — inside the <b>loss cone</b> — are not reflected and escape out the end. The mirror ratio R = B<sub>max</sub>/B<sub>min</sub> sets how wide the loss cone is: higher R, narrower cone, better confinement."
+   ],
+   [
+    "h3",
+    "The limit of a simple mirror"
+   ],
+   [
+    "p",
+    "Even a strong mirror always leaves a loss cone open, and collisions constantly scatter particles into it. A pure mirror therefore cannot confine a fusion plasma well enough on its own. The tandem mirror's electrostatic plugs are the answer to this fundamental leak."
+   ],
+   [
+    "p",
+    "The adiabatic invariance of μ holds only when the field changes slowly compared with a gyration; near the sharp throat this can break down, letting some particles slip through that a naive calculation would confine. Real designs account for this non-adiabaticity, which is one more reason the throat and plug fields, and their profiles, are specified so tightly."
+   ],
+   [
+    "ul",
+    [
+     "μ = mv<sub>&#8869;</sub><sup>2</sup>/2B is conserved",
+     "Rising B converts parallel to perpendicular motion",
+     "Loss cone: particles too parallel escape",
+     "Mirror ratio R = B<sub>max</sub>/B<sub>min</sub> sets cone width"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "loss-cone-confinement",
+    "The Loss Cone"
+   ],
+   [
+    "throat-field-17-tesla",
+    "The 17 T Throat Field"
+   ],
+   [
+    "ambipolar-potential",
+    "The Ambipolar Potential"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "loss-cone-confinement",
+  "title": "The Loss Cone",
+  "cat": "the-physics",
+  "lede": "The loss cone is the range of velocity angles a mirror cannot reflect; collisions continually scatter particles into it, driving end losses.",
+  "body": [
+   [
+    "h2",
+    "A hole in velocity space"
+   ],
+   [
+    "p",
+    "At each point in a mirror, particles are confined only if the angle between their velocity and the field exceeds a critical value set by the mirror ratio: sin<sup>2</sup>θ<sub>c</sub> = 1/R. Particles within θ<sub>c</sub> of the field line lie in the loss cone and stream out the end. Larger mirror ratio R shrinks the cone but never closes it."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 220\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><circle cx=\"200\" cy=\"110\" r=\"70\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.4\"/><path d=\"M200,110 L270,75 A70,70 0 0 0 270,145 Z\" fill=\"#D4AD5C\" fill-opacity=\"0.25\" stroke=\"#D4AD5C\" stroke-width=\"1.4\"/><path d=\"M200,110 L130,75 A70,70 0 0 1 130,145 Z\" fill=\"#D4AD5C\" fill-opacity=\"0.25\" stroke=\"#D4AD5C\" stroke-width=\"1.4\"/><text x=\"200\" y=\"115\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"11\">confined</text><text x=\"330\" y=\"110\" text-anchor=\"start\" fill=\"#D4AD5C\" font-size=\"11\">loss cone</text><text x=\"200\" y=\"205\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">velocity space; cones open along the field</text></svg>"
+   ],
+   [
+    "p",
+    "Collisions are the problem. Even a perfectly confined ion is scattered by Coulomb collisions and can be knocked into the loss cone, after which it escapes on a transit time. This scatter-into-loss-cone process sets the intrinsic end-loss rate of a mirror and, without plugging, is far too fast for a power plant."
+   ],
+   [
+    "h3",
+    "How the tandem mirror plugs it"
+   ],
+   [
+    "p",
+    "The electrostatic potential built by the end plugs raises the effective barrier for ions leaving the central cell, so an ion must be scattered into the loss cone <b>and</b> have enough energy to climb the potential. This dramatically slows end loss — the central mechanism that makes the tandem mirror viable."
+   ],
+   [
+    "p",
+    "The size of the loss cone also governs how sensitive confinement is to the mirror ratio: because it depends on 1/R, pushing R higher yields diminishing returns, so beyond a point the electrostatic plug — not a stronger magnetic pinch — is the only economical way to further close the leak. That is the structural reason the tandem mirror exists."
+   ],
+   [
+    "ul",
+    [
+     "Loss cone half-angle: sin<sup>2</sup>θ<sub>c</sub> = 1/R",
+     "Collisions scatter ions into the cone",
+     "Simple mirror leaks far too fast",
+     "Plug potential adds an energy barrier on top"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "magnetic-mirror-principle",
+    "The Magnetic Mirror Principle"
+   ],
+   [
+    "ambipolar-potential",
+    "The Ambipolar Potential"
+   ],
+   [
+    "microstability-loss-cone-modes",
+    "Loss-Cone Microinstabilities"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "central-cell-physics",
+  "title": "The Central Cell",
+  "cat": "the-physics",
+  "lede": "The long, moderate-field central cell is where D–He-3 actually burns; its length and density carry most of the fusion power.",
+  "body": [
+   [
+    "h2",
+    "Where the power is made"
+   ],
+   [
+    "p",
+    "The central cell is the long, relatively low-field section between the two ends. It holds the bulk of the fuel and is where nearly all the D–<sup>3</sup>He fusion occurs. Its field is modest compared with the plugs — the burner's design puts about 8 T on axis in the equivalent breeder core, and the central cell of the mirror runs well below the 17 T throat and 26.49 T plug."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 190\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><line x1=\"20\" y1=\"150\" x2=\"640\" y2=\"150\" stroke=\"#6E7D8F\" stroke-width=\"1\"/><rect x=\"200\" y=\"120\" width=\"260\" height=\"20\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.4\"/><path d=\"M120,140 L150,60 L180,60 L200,120\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.8\"/><path d=\"M460,120 L480,60 L510,60 L540,140\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.8\"/><text x=\"330\" y=\"133\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"12\">central cell — D&#8211;<sup>3</sup>He burn</text><text x=\"165\" y=\"52\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">plug 26.49 T</text><text x=\"495\" y=\"52\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">plug 26.49 T</text><text x=\"115\" y=\"168\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"10.5\">throat 17 T</text><text x=\"545\" y=\"168\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"10.5\">throat 17 T</text><text x=\"60\" y=\"168\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"10.5\">expander / DEC</text><text x=\"560\" y=\"168\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"10.5\">expander / DEC</text><line x1=\"20\" y1=\"150\" x2=\"120\" y2=\"150\" stroke=\"#9FB1C4\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><line x1=\"540\" y1=\"150\" x2=\"640\" y2=\"150\" stroke=\"#9FB1C4\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/></svg>"
+   ],
+   [
+    "p",
+    "Fusion power from the central cell scales with its volume, the fuel density squared, and the reactivity at ~90 keV. A longer central cell makes more power for the same field, which is why mirror reactors tend to be long and thin rather than compact. The confinement of this fuel depends entirely on the plugs at the ends holding the ambipolar potential."
+   ],
+   [
+    "h3",
+    "Coupled to the ends"
+   ],
+   [
+    "p",
+    "The central cell cannot be analysed alone. Its ion confinement time is set by the end-plug potential; its density and temperature feed back into the potential the plugs can sustain; and its exhaust flows to the expanders and direct converters. It is the productive core, but the plugs are what make that core hold together."
+   ],
+   [
+    "p",
+    "Because the central cell is where the neutrons are also made, its density and temperature set both the useful fusion power and the 5.44% neutron fraction at once — the two cannot be tuned independently. Designing the cell is therefore a joint optimisation of power output, neutron load, and the confinement the plugs can provide, not a search for a single peak."
+   ],
+   [
+    "ul",
+    [
+     "Long, moderate-field burn region",
+     "Holds most fuel and makes most fusion power",
+     "Power &#8733; length × n<sup>2</sup> × &#10216;σv&#10217;",
+     "Confinement set by the end-plug potential"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "tandem-mirror-overview",
+    "The Tandem Mirror"
+   ],
+   [
+    "ambipolar-potential",
+    "The Ambipolar Potential"
+   ],
+   [
+    "confinement-time-scaling",
+    "Confinement Time & Scaling"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "ambipolar-potential",
+  "title": "The Ambipolar Potential",
+  "cat": "the-physics",
+  "lede": "Electrons leak faster than ions, leaving the central cell slightly positive; the tandem mirror amplifies this potential at the ends to confine ions.",
+  "body": [
+   [
+    "h2",
+    "The idea that makes the tandem mirror work"
+   ],
+   [
+    "p",
+    "In any plasma, electrons are lighter and escape a mirror faster than ions. As they leave, the plasma is left with a slight positive charge, which builds an electric potential that holds the remaining electrons back and lets ions leak faster — the <b>ambipolar</b> potential that equalises the two loss rates. The tandem mirror engineers this potential to confine the central-cell ions."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 195\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><line x1=\"40\" y1=\"150\" x2=\"620\" y2=\"150\" stroke=\"#6E7D8F\" stroke-width=\"1\"/><path d=\"M40,150 L120,150 L150,60 L200,90 L460,90 L510,60 L540,150 L620,150\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"330\" y=\"80\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"11\">central-cell potential φ<sub>c</sub></text><text x=\"175\" y=\"52\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">plug peak φ<sub>p</sub></text><text x=\"500\" y=\"52\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">plug peak φ<sub>p</sub></text><text x=\"330\" y=\"175\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">electrostatic potential along the axis</text><text x=\"52\" y=\"95\" text-anchor=\"end\" fill=\"#6E7D8F\" font-size=\"11\">φ</text></svg>"
+   ],
+   [
+    "p",
+    "The end plugs are dense, hot regions where the potential peaks above the central-cell potential. A central-cell ion trying to leave must climb this <b>confining peak</b> φ<sub>p</sub> &#8722; φ<sub>c</sub>. Only ions with enough parallel energy to surmount it escape; the rest are electrostatically reflected back into the burn region."
+   ],
+   [
+    "h3",
+    "The demand and the gate"
+   ],
+   [
+    "p",
+    "Sustaining a high plug potential requires a dense, energetic plasma held in an extreme magnetic field — 26.49 T. The confinement quality scales with the potential the plugs can hold, and holding it drives both the coil stress gate and the plug-regime gate. The ambipolar potential is the burner's core mechanism and the seat of its hardest physics."
+   ],
+   [
+    "p",
+    "A useful way to see the concept: the magnetic mirror confines electrons well and ions poorly, so the plasma builds a potential that trades some electron confinement for much better ion confinement, and the tandem mirror engineers that trade deliberately at the ends. The whole machine is, in a sense, a device for building and holding a particular electrostatic potential profile along a field line."
+   ],
+   [
+    "ul",
+    [
+     "Electrons escape first → plasma turns positive",
+     "Ambipolar potential equalises loss rates",
+     "Plugs peak the potential to reflect central ions",
+     "Confinement &#8733; the potential the plugs sustain"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "electrostatic-plugging",
+    "Electrostatic Plugging"
+   ],
+   [
+    "sloshing-ions-thermal-barrier",
+    "Sloshing Ions & Thermal Barriers"
+   ],
+   [
+    "plug-field-26-tesla",
+    "The 26.49 T Plug Field"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "electrostatic-plugging",
+  "title": "Electrostatic Plugging",
+  "cat": "the-physics",
+  "lede": "The end plugs raise the electric potential above the central cell, forming a barrier that reflects escaping ions back into the burn.",
+  "body": [
+   [
+    "h2",
+    "Plugging with voltage, not just field"
+   ],
+   [
+    "p",
+    "A conventional mirror confines with magnetic geometry alone and always leaks through the loss cone. Electrostatic plugging adds a second barrier: a region of raised electric potential at each end. A positive potential peak repels positive ions, closing much of the loss cone that the magnetic field alone leaves open."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 165\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><rect x=\"40\" y=\"80\" width=\"120\" height=\"50\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"105.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">central cell</text><text x=\"100.0\" y=\"121.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">ions at φ<sub>c</sub></text><line x1=\"162\" y1=\"105\" x2=\"205\" y2=\"105\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><path d=\"M207,130 L250,60 L280,60 L323,130\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"265\" y=\"52\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">potential peak φ<sub>p</sub></text><path d=\"M323,105 q-30,25 -60,0\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"360\" y=\"95\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"11\">most ions reflected</text><rect x=\"500\" y=\"80\" width=\"120\" height=\"50\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"560.0\" y=\"105.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">expander</text><text x=\"560.0\" y=\"121.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">few escape</text></svg>"
+   ],
+   [
+    "p",
+    "The confining barrier for ions is the potential difference φ<sub>p</sub> &#8722; φ<sub>c</sub>. To keep it high, the plug plasma must be denser and hotter than the central cell, which is achieved with neutral-beam-injected sloshing ions and, in the thermal-barrier variant, by depressing the electron potential between cell and plug so the plug potential can rise further."
+   ],
+   [
+    "h3",
+    "Where the difficulty concentrates"
+   ],
+   [
+    "p",
+    "Everything hard about the tandem mirror sits in the plug: the highest field, the most radiation, the fast-ion population that must be sustained, and the stability that must be maintained. The two plug-related honest gates — coil overstress and an unprecedented operating regime — both live here."
+   ],
+   [
+    "p",
+    "The barrier only helps for ions with too little parallel energy to climb it, so plugging works best on the bulk thermal population and least on the fastest ions — which is acceptable, since it is the bulk that must be confined to make power. Matching the potential height to the ion temperature is therefore a design choice, and it ties the plug directly to the ~90 keV operating point."
+   ],
+   [
+    "ul",
+    [
+     "Positive potential peak repels central-cell ions",
+     "Barrier height = φ<sub>p</sub> &#8722; φ<sub>c</sub>",
+     "Requires dense, hot plug plasma",
+     "Concentrates the burner's hardest physics"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "ambipolar-potential",
+    "The Ambipolar Potential"
+   ],
+   [
+    "sloshing-ions-thermal-barrier",
+    "Sloshing Ions & Thermal Barriers"
+   ],
+   [
+    "plug-coil-stress-gate",
+    "Gate: Plug Coil Stress"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "sloshing-ions-thermal-barrier",
+  "title": "Sloshing Ions & Thermal Barriers",
+  "cat": "the-physics",
+  "lede": "Angled neutral-beam injection creates ions that peak away from the midplane, shaping the potential; a thermal barrier decouples plug and cell electrons.",
+  "body": [
+   [
+    "h2",
+    "Shaping the plug potential"
+   ],
+   [
+    "p",
+    "Injecting neutral beams at an angle to the field creates <b>sloshing ions</b> — fast ions that turn around near the mirror throats rather than at the midplane, so their density peaks off-centre. This double-humped density profile builds the potential structure the plug needs and helps stabilise loss-cone microinstabilities."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 195\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><line x1=\"40\" y1=\"140\" x2=\"620\" y2=\"140\" stroke=\"#6E7D8F\" stroke-width=\"1\"/><path d=\"M120,140 C170,70 200,70 230,140 C260,70 290,70 340,140\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"180\" y=\"60\" text-anchor=\"start\" fill=\"#D4AD5C\" font-size=\"11\">sloshing-ion density</text><path d=\"M420,140 L450,90 L470,120 L500,70 L560,110\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.6\"/><text x=\"490\" y=\"60\" text-anchor=\"middle\" fill=\"#9FB1C4\" font-size=\"11\">thermal barrier dip</text><text x=\"330\" y=\"178\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">density and potential shaping in the plug</text></svg>"
+   ],
+   [
+    "p",
+    "A <b>thermal barrier</b> goes further: by creating a local dip in the electron potential between the central cell and the plug, it thermally isolates the plug electrons from the colder central-cell electrons. That lets the plug electrons — and therefore the confining potential — run hotter and higher without an excessive power draw."
+   ],
+   [
+    "h3",
+    "Why it is delicate"
+   ],
+   [
+    "p",
+    "These structures depend on precisely sustained fast-ion populations and heating profiles. They are the mechanism by which the plug does its job, but they also mean the plug operates in a narrow, self-consistent regime — one that has never been sustained at the burner's parameters, which is the substance of the plug-regime gate."
+   ],
+   [
+    "p",
+    "Both structures are self-consistent: the fast ions build the potential, and the potential shapes where the fast ions turn around, so the equilibrium must be solved as a coupled system rather than imposed. This self-consistency is elegant on paper and demanding in practice, because a stable equilibrium at the burner's parameters has never been demonstrated — the substance of the plug-regime gate."
+   ],
+   [
+    "ul",
+    [
+     "Sloshing ions: off-midplane density peaks",
+     "Shape the confining potential; damp instabilities",
+     "Thermal barrier: isolates plug electrons",
+     "Enables higher potential at lower power draw"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "ambipolar-potential",
+    "The Ambipolar Potential"
+   ],
+   [
+    "electrostatic-plugging",
+    "Electrostatic Plugging"
+   ],
+   [
+    "plug-regime-gate",
+    "Gate: Plug Operating Regime"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "plug-field-26-tesla",
+  "title": "The 26.49 T Plug Field",
+  "cat": "the-physics",
+  "lede": "The end plugs demand a 26.49 T magnetic field — far above operating fusion magnets — to hold the confining potential and density.",
+  "body": [
+   [
+    "h2",
+    "The strongest field in the machine"
+   ],
+   [
+    "p",
+    "The burner's end plugs are specified at <b>26.49 T</b>. This field sets the mirror ratio at the plug and the density the plug plasma can hold, which in turn set the confining potential. It is the single most demanding magnetic parameter in the design — higher than any large-scale fusion magnet in operation, and well into the regime where conductor stress dominates the engineering."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 175\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><rect x=\"60\" y=\"60\" width=\"70\" height=\"90\" rx=\"4\" fill=\"#232C39\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"95\" y=\"110\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"14\" font-weight=\"600\">26.49</text><text x=\"95\" y=\"128\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">T plug</text><rect x=\"180\" y=\"80\" width=\"60\" height=\"70\" rx=\"4\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"210\" y=\"120\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">17 T</text><text x=\"210\" y=\"138\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10\">throat</text><rect x=\"290\" y=\"110\" width=\"55\" height=\"40\" rx=\"4\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"317\" y=\"132\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"12\">~8 T</text><text x=\"317\" y=\"148\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"9.5\">core</text><text x=\"470\" y=\"110\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"11\">field falls sharply</text><text x=\"470\" y=\"128\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"11\">from plug to core</text></svg>"
+   ],
+   [
+    "p",
+    "At 26.49 T the magnetic pressure on the coil (which scales as B<sup>2</sup>) is enormous. This is the direct cause of the coil-stress gate: at the design bore, the plug coil is overstressed by roughly <b>3 to 3.9 times</b> what the conductor and structure can bear as specified, making it infeasible in its current form."
+   ],
+   [
+    "h3",
+    "Honest framing"
+   ],
+   [
+    "p",
+    "The field value is not negotiable to the physics: the confining potential the plug must build requires it. The engineering to reach 26.49 T at the required bore does not close today. The burner is a design-and-simulation study precisely because this gate, among others, remains open."
+   ],
+   [
+    "p",
+    "For scale, 26.49 T is well above the fields at which today's large superconducting fusion magnets operate, and the step is not incremental — magnetic pressure grows as the square of the field, so the mechanical problem grows faster than the field itself. The number is quoted exactly because it is the pivot on which the coil-stress gate turns."
+   ],
+   [
+    "ul",
+    [
+     "Plug field specified at 26.49 T",
+     "Sets mirror ratio, density, confining potential",
+     "B<sup>2</sup> pressure drives the coil-stress gate",
+     "Overstressed ~3–3.9× at the design bore"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "throat-field-17-tesla",
+    "The 17 T Throat Field"
+   ],
+   [
+    "plug-coil-stress-gate",
+    "Gate: Plug Coil Stress"
+   ],
+   [
+    "ambipolar-potential",
+    "The Ambipolar Potential"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "throat-field-17-tesla",
+  "title": "The 17 T Throat Field",
+  "cat": "the-physics",
+  "lede": "At each mirror throat the field reaches 17 T, setting the magnetic pinch that reflects particles before the plug potential acts.",
+  "body": [
+   [
+    "h2",
+    "The magnetic pinch"
+   ],
+   [
+    "p",
+    "Between the central cell and the plug, the field rises to a <b>17 T</b> throat. This is the magnetic pinch that provides the first stage of confinement — the mirror reflection — before the electrostatic plug provides the second. The throat field, together with the central-cell field, sets the mirror ratio R = B<sub>throat</sub>/B<sub>cell</sub> that determines the loss-cone width."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 190\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><line x1=\"20\" y1=\"150\" x2=\"640\" y2=\"150\" stroke=\"#6E7D8F\" stroke-width=\"1\"/><rect x=\"200\" y=\"120\" width=\"260\" height=\"20\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.4\"/><path d=\"M120,140 L150,60 L180,60 L200,120\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.8\"/><path d=\"M460,120 L480,60 L510,60 L540,140\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.8\"/><text x=\"330\" y=\"133\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"12\">central cell — D&#8211;<sup>3</sup>He burn</text><text x=\"165\" y=\"52\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">plug 26.49 T</text><text x=\"495\" y=\"52\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">plug 26.49 T</text><text x=\"115\" y=\"168\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"10.5\">throat 17 T</text><text x=\"545\" y=\"168\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"10.5\">throat 17 T</text><text x=\"60\" y=\"168\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"10.5\">expander / DEC</text><text x=\"560\" y=\"168\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"10.5\">expander / DEC</text><line x1=\"20\" y1=\"150\" x2=\"120\" y2=\"150\" stroke=\"#9FB1C4\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><line x1=\"540\" y1=\"150\" x2=\"640\" y2=\"150\" stroke=\"#9FB1C4\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/></svg>"
+   ],
+   [
+    "p",
+    "The throat is also a high-stress magnet region, though less extreme than the 26.49 T plug. It shapes the field lines that funnel plasma from the wide central cell down through the pinch and out toward the expander, and its precise profile matters for both confinement and for the flow of exhaust to the direct converter."
+   ],
+   [
+    "h3",
+    "Working with the plug"
+   ],
+   [
+    "p",
+    "Magnetic mirroring at the throat and electrostatic plugging at the plug are complementary: the throat sets the loss cone, and the plug potential closes most of what remains. Getting the two fields — 17 T throat and 26.49 T plug — into the right ratio and profile is central to the tandem-mirror confinement scheme."
+   ],
+   [
+    "p",
+    "Because the throat and central-cell fields together fix the mirror ratio, the 17 T value is chosen jointly with the cell field rather than in isolation — a stronger throat narrows the loss cone but adds magnet stress and steepens the field gradient the plasma must follow. It is a deliberate midpoint between confinement and buildability, and less extreme than the plug it feeds."
+   ],
+   [
+    "ul",
+    [
+     "Throat field: 17 T at each end",
+     "Provides the magnetic mirror reflection",
+     "Sets mirror ratio and loss-cone width",
+     "Funnels exhaust toward the expander/DEC"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "plug-field-26-tesla",
+    "The 26.49 T Plug Field"
+   ],
+   [
+    "magnetic-mirror-principle",
+    "The Magnetic Mirror Principle"
+   ],
+   [
+    "expander-region-physics",
+    "The Expander Region"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "magnetic-well-mhd",
+  "title": "The Magnetic Well & MHD Stability",
+  "cat": "the-physics",
+  "lede": "A minimum-B magnetic well makes the plasma sit in a region where field increases outward, stabilising the interchange instability.",
+  "body": [
+   [
+    "h2",
+    "Curvature and stability"
+   ],
+   [
+    "p",
+    "A plasma is unstable to interchange (\"flute\") modes wherever the magnetic field curves toward the plasma — so-called bad curvature. Simple axisymmetric mirrors have bad curvature and are MHD-unstable. Stability requires a <b>magnetic well</b>: a configuration where the field strength increases in every direction away from the plasma centre, giving good curvature everywhere."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 190\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><line x1=\"60\" y1=\"150\" x2=\"620\" y2=\"150\" stroke=\"#6E7D8F\" stroke-width=\"1\"/><path d=\"M60,80 C200,150 460,150 620,80\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"340\" y=\"168\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">|B| increases outward from centre → well</text><text x=\"340\" y=\"70\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">minimum-B well</text><circle cx=\"340\" cy=\"150\" r=\"6\" fill=\"#D4AD5C\"/><text x=\"340\" y=\"140\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"10\">plasma</text></svg>"
+   ],
+   [
+    "p",
+    "In a tandem mirror the well is created with non-axisymmetric coils — quadrupole or \"minimum-B\" (baseball / yin-yang) anchor coils — that bend the field into a minimum-B shape. These anchors stabilise the whole connected plasma, including the axisymmetric central cell, provided the stabilising region is strong enough."
+   ],
+   [
+    "h3",
+    "The tension with simplicity"
+   ],
+   [
+    "p",
+    "Non-axisymmetric coils complicate the geometry, raise the field errors that can drive transport, and add to the already severe magnet engineering. The design must reconcile MHD stability (which wants non-axisymmetric wells) with confinement and buildability (which prefer symmetry) — a balance that remains an open part of the burner's physics."
+   ],
+   [
+    "p",
+    "The distinction between average and local good curvature matters: a configuration can be stable on average yet locally unfavourable, so the well must be deep enough to guarantee stability everywhere the pressure is high. Verifying that at the burner's beta and field, in the presence of the non-axisymmetric anchors, is a stability calculation that experiment has not yet checked at these parameters."
+   ],
+   [
+    "ul",
+    [
+     "Interchange modes grow in bad curvature",
+     "Minimum-B well = field rises outward everywhere",
+     "Built with quadrupole/anchor coils",
+     "Trades symmetry for MHD stability"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "beta-limits",
+    "Beta Limits in the Mirror"
+   ],
+   [
+    "interchange-ballooning-modes",
+    "Interchange & Ballooning Modes"
+   ],
+   [
+    "minimum-b-anchor-coils",
+    "Minimum-B Anchor Coils"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "beta-limits",
+  "title": "Beta Limits in the Mirror",
+  "cat": "the-physics",
+  "lede": "Beta is the ratio of plasma pressure to magnetic pressure; mirrors can run at relatively high beta, but stability caps how high.",
+  "body": [
+   [
+    "h2",
+    "Pressure against the field"
+   ],
+   [
+    "p",
+    "Beta, β = plasma pressure / magnetic pressure, measures how much plasma a given field can hold. High beta is efficient — more fusion power per unit of expensive magnetic field. Mirrors are attractive partly because they can operate at higher beta than tokamaks, but there is still a ceiling set by stability."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 190\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><rect x=\"80\" y=\"60\" width=\"200\" height=\"90\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><rect x=\"80\" y=\"60\" width=\"200\" height=\"54\" rx=\"6\" fill=\"#232C39\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"180\" y=\"110\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"12\">plasma pressure</text><text x=\"180\" y=\"140\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"11\">magnetic pressure</text><text x=\"180\" y=\"170\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"12\">β = P<sub>plasma</sub> / P<sub>mag</sub></text><rect x=\"380\" y=\"75\" width=\"240\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"500.0\" y=\"105.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">stability caps β</text><text x=\"500.0\" y=\"121.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">interchange, ballooning, mirror modes</text></svg>"
+   ],
+   [
+    "p",
+    "As beta rises, pressure-driven instabilities — interchange and ballooning modes — become easier to excite, and at high enough beta the plasma pressure can locally cancel the mirror field (the \"mirror instability\"). The minimum-B well raises the beta limit by improving curvature, but it does not remove the ceiling."
+   ],
+   [
+    "h3",
+    "Where it bites"
+   ],
+   [
+    "p",
+    "The plug region operates at high field and high pressure to build the confining potential, so beta limits and the coil-stress gate interact: raising the field to buy stability margin worsens the coil stress, while raising beta to ease the coils worsens stability. This coupling is part of why the plug regime is unproven."
+   ],
+   [
+    "p",
+    "High beta is doubly attractive for D–<sup>3</sup>He because the fuel already demands so much field; every point of beta recovered is field the plug does not have to supply. But the same pressure that raises beta is what drives the instabilities the well must suppress, so the beta the machine can actually run at — not the beta it would like — is what the power balance must use."
+   ],
+   [
+    "ul",
+    [
+     "β = plasma pressure / magnetic pressure",
+     "Mirrors tolerate higher β than tokamaks",
+     "Interchange/ballooning/mirror modes cap β",
+     "Beta and coil stress trade against each other"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "magnetic-well-mhd",
+    "The Magnetic Well & MHD Stability"
+   ],
+   [
+    "interchange-ballooning-modes",
+    "Interchange & Ballooning Modes"
+   ],
+   [
+    "plug-coil-stress-gate",
+    "Gate: Plug Coil Stress"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "minimum-b-anchor-coils",
+  "title": "Minimum-B Anchor Coils",
+  "cat": "the-physics",
+  "lede": "Non-axisymmetric anchor coils bend the field into a minimum-B shape that MHD-stabilises the connected plasma, including the symmetric central cell.",
+  "body": [
+   [
+    "h2",
+    "Stabilising the whole chain"
+   ],
+   [
+    "p",
+    "A minimum-B (baseball or yin-yang) coil produces a field that increases in all directions from the centre — a magnetic well. Placed as <b>anchors</b> in the end regions, these coils stabilise not just their own plasma but the axisymmetric central cell connected to them, because the plasma is a single connected object and MHD stability is a global property."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 200\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><path d=\"M120,60 C60,110 60,110 120,160 C180,110 180,110 120,60\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><path d=\"M120,90 C90,110 90,110 120,130 C150,110 150,110 120,90\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.6\"/><text x=\"120\" y=\"180\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">minimum-B anchor</text><rect x=\"250\" y=\"95\" width=\"220\" height=\"30\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.4\"/><text x=\"360\" y=\"88\" text-anchor=\"middle\" fill=\"#9FB1C4\" font-size=\"11\">axisymmetric central cell</text><line x1=\"230\" y1=\"110\" x2=\"248\" y2=\"110\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"560\" y=\"110\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"11\">stabilised by anchors</text></svg>"
+   ],
+   [
+    "p",
+    "The trade-off is geometric complexity and field errors. Non-axisymmetric coils create field ripple that can enhance radial transport, and they are mechanically intricate to build at high field. The design must place just enough minimum-B stabilisation to hold the plasma while keeping the transport penalty and the magnet engineering tractable."
+   ],
+   [
+    "h3",
+    "An open balance"
+   ],
+   [
+    "p",
+    "How to combine strong minimum-B anchors with the extreme axisymmetric plug field, without the ripple destroying confinement or the stresses exceeding limits, is unresolved at the burner's parameters. It is one strand of the broader plug-regime gate."
+   ],
+   [
+    "p",
+    "The historic yin-yang and baseball coils proved the principle at modest field; scaling that shaping to sit alongside a 26.49 T axisymmetric plug, without the ripple ruining radial confinement or the combined stresses exceeding limits, is unproven. The anchor problem is thus a specific, nameable piece of the general plug-regime gate rather than a separate concern."
+   ],
+   [
+    "ul",
+    [
+     "Baseball / yin-yang coils make a minimum-B well",
+     "Anchors stabilise the connected central cell",
+     "Penalty: field ripple, geometric complexity",
+     "Balance with the plug field remains open"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "magnetic-well-mhd",
+    "The Magnetic Well & MHD Stability"
+   ],
+   [
+    "radial-transport",
+    "Radial Transport"
+   ],
+   [
+    "plug-regime-gate",
+    "Gate: Plug Operating Regime"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "interchange-ballooning-modes",
+  "title": "Interchange & Ballooning Modes",
+  "cat": "the-physics",
+  "lede": "Pressure-driven MHD instabilities in bad-curvature regions must be suppressed for the mirror to hold; the magnetic well is the main defence.",
+  "body": [
+   [
+    "h2",
+    "How the plasma tries to escape"
+   ],
+   [
+    "p",
+    "Two pressure-driven MHD instabilities threaten the mirror. The <b>interchange</b> (flute) mode swaps a tube of plasma with a tube of vacuum field where the curvature is bad, releasing energy — like a heavy fluid on top of a light one. The <b>ballooning</b> mode is a localised bulge that grows where pressure is high and curvature is unfavourable."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 195\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><path d=\"M80,110 q30,-40 60,0 q30,40 60,0 q30,-40 60,0\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.8\"/><text x=\"170\" y=\"70\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">interchange (flute)</text><path d=\"M380,110 C420,110 430,60 470,60 C510,60 520,110 560,110\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.8\"/><text x=\"470\" y=\"50\" text-anchor=\"middle\" fill=\"#9FB1C4\" font-size=\"11\">ballooning bulge</text><text x=\"330\" y=\"180\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">pressure-driven modes in bad curvature</text></svg>"
+   ],
+   [
+    "p",
+    "The primary defence is the minimum-B magnetic well, which gives good curvature and removes the free energy that drives interchange modes. Additional stabilisation can come from finite-Larmor-radius effects (which damp short-wavelength modes) and from careful pressure profiling. Sheared plasma rotation, driven by the radial electric field, can further suppress turbulence."
+   ],
+   [
+    "h3",
+    "Why it stays on the list"
+   ],
+   [
+    "p",
+    "Suppressing these modes at the burner's high beta and extreme fields, in a geometry that also has to satisfy confinement and buildability, has not been demonstrated. The stability of the full configuration at design parameters is part of the physics the test burner (~2032) is meant to probe."
+   ],
+   [
+    "p",
+    "Finite-Larmor-radius stabilisation is helpful precisely because the burner's ions are hot and their orbits large, so short-wavelength modes are naturally damped; the danger is in the long-wavelength interchange that only the well can hold. Distinguishing which modes are controlled by geometry and which by kinetic effects is central to trusting the configuration's stability."
+   ],
+   [
+    "ul",
+    [
+     "Interchange: swaps plasma and field in bad curvature",
+     "Ballooning: pressure bulge in high-β regions",
+     "Minimum-B well removes the drive",
+     "FLR effects and sheared rotation add margin"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "magnetic-well-mhd",
+    "The Magnetic Well & MHD Stability"
+   ],
+   [
+    "beta-limits",
+    "Beta Limits in the Mirror"
+   ],
+   [
+    "microstability-loss-cone-modes",
+    "Loss-Cone Microinstabilities"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "microstability-loss-cone-modes",
+  "title": "Loss-Cone Microinstabilities",
+  "cat": "the-physics",
+  "lede": "The mirror's hole in velocity space drives kinetic instabilities — DCLC and Alfvén ion-cyclotron modes — that sloshing ions and warm plasma must suppress.",
+  "body": [
+   [
+    "h2",
+    "Instabilities from a gap in velocity space"
+   ],
+   [
+    "p",
+    "A mirror plasma has an empty loss cone in velocity space, and that non-thermal distribution carries free energy. It can drive <b>microinstabilities</b> — short-wavelength kinetic modes that scatter ions into the loss cone faster than collisions alone. The two most important are the drift-cyclotron loss-cone (DCLC) mode and the Alfvén ion-cyclotron (AIC) mode."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 200\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><circle cx=\"180\" cy=\"110\" r=\"65\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.4\"/><path d=\"M180,110 L240,80 A65,65 0 0 0 240,140 Z\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><text x=\"180\" y=\"115\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"11\">gap</text><path d=\"M255,90 q30,20 0,40\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.4\"/><text x=\"300\" y=\"110\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"11\">free energy → DCLC / AIC</text><rect x=\"430\" y=\"80\" width=\"200\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"530.0\" y=\"110.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">warm plasma + sloshing</text><text x=\"530.0\" y=\"126.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">fill the gap, damp modes</text></svg>"
+   ],
+   [
+    "p",
+    "The proven remedy is to fill in the velocity-space gap: a warm plasma stream and sloshing-ion distributions reduce the sharp loss-cone feature that drives DCLC, while AIC is controlled by limiting the anisotropy of the fast ions. Historic mirror experiments demonstrated these stabilisation techniques at their parameters."
+   ],
+   [
+    "h3",
+    "At burner parameters"
+   ],
+   [
+    "p",
+    "Whether the same control holds at the burner's density, field, and fast-ion energy is unverified. Microstability is intimately tied to the plug distribution that also builds the confining potential, so it is inseparable from the plug-regime gate."
+   ],
+   [
+    "p",
+    "These modes are subtle because they can be benign at low fast-ion energy and virulent at high energy, so a machine can appear stable in a small experiment and not in a reactor-scale plug. That scale dependence is exactly why microstability cannot be signed off from historic data alone and must be probed at higher parameters by the test burner."
+   ],
+   [
+    "ul",
+    [
+     "Loss-cone gap carries free energy",
+     "Drives DCLC and Alfvén ion-cyclotron modes",
+     "Warm plasma + sloshing ions damp them",
+     "Unverified at burner-scale plug parameters"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "loss-cone-confinement",
+    "The Loss Cone"
+   ],
+   [
+    "sloshing-ions-thermal-barrier",
+    "Sloshing Ions & Thermal Barriers"
+   ],
+   [
+    "plug-regime-gate",
+    "Gate: Plug Operating Regime"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "radial-transport",
+  "title": "Radial Transport & Confinement",
+  "cat": "the-physics",
+  "lede": "Across the field, particles and heat diffuse outward; classical and neoclassical processes, plus field errors, set how well the central cell holds.",
+  "body": [
+   [
+    "h2",
+    "Losing plasma sideways"
+   ],
+   [
+    "p",
+    "End loss along the field is the mirror's headline confinement problem, but plasma also diffuses <b>across</b> the field, radially outward to the wall. Classical diffusion from Coulomb collisions sets a floor; non-axisymmetric field components (resonant and neoclassical transport) and turbulence can raise the actual rate well above it."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 195\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><rect x=\"120\" y=\"70\" width=\"420\" height=\"80\" rx=\"40\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><line x1=\"330\" y1=\"110\" x2=\"330\" y2=\"40\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><line x1=\"230\" y1=\"110\" x2=\"230\" y2=\"180\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><line x1=\"430\" y1=\"110\" x2=\"430\" y2=\"180\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"330\" y=\"30\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">radial transport to wall</text><text x=\"330\" y=\"115\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"11\">central-cell plasma</text></svg>"
+   ],
+   [
+    "p",
+    "In tandem mirrors the radial electric field — the same ambipolar potential that plugs the ends — also drives plasma rotation. Sheared rotation can suppress turbulence and improve radial confinement, linking the plug physics to cross-field losses. But non-axisymmetric anchor coils introduce field ripple that opens neoclassical transport channels."
+   ],
+   [
+    "h3",
+    "The net picture"
+   ],
+   [
+    "p",
+    "Radial and axial losses together set the central-cell confinement time that must satisfy the power balance. The design assumes rotation-improved radial confinement; confirming that at burner parameters, alongside the end-loss physics, is part of what the program must demonstrate."
+   ],
+   [
+    "p",
+    "The link between the plug potential and radial rotation means the burner cannot separate its axial and radial confinement problems — improving one through the electric field changes the other. This coupling is a feature when the rotation suppresses turbulence and a risk when field errors from the anchors open transport channels, and the net outcome at design parameters is not yet measured."
+   ],
+   [
+    "ul",
+    [
+     "Cross-field diffusion adds to end loss",
+     "Field ripple opens neoclassical transport",
+     "Sheared rotation (from E-field) can suppress turbulence",
+     "Sets the central-cell confinement time"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "confinement-time-scaling",
+    "Confinement Time & Scaling"
+   ],
+   [
+    "minimum-b-anchor-coils",
+    "Minimum-B Anchor Coils"
+   ],
+   [
+    "ambipolar-potential",
+    "The Ambipolar Potential"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "confinement-time-scaling",
+  "title": "Confinement Time & Scaling",
+  "cat": "the-physics",
+  "lede": "In a tandem mirror the ion confinement time rises roughly exponentially with the plug-to-cell potential, which is why the plug is decisive.",
+  "body": [
+   [
+    "h2",
+    "What sets the confinement time"
+   ],
+   [
+    "p",
+    "For central-cell ions, the confinement time in a tandem mirror scales with the electrostatic barrier they must climb. To first order it depends on how many collisions are needed to scatter an ion into the loss cone <b>and</b> give it enough energy to surmount the potential peak. The result is that τ grows steeply — roughly exponentially — with the ratio (φ<sub>p</sub> &#8722; φ<sub>c</sub>) / T<sub>i</sub>."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 190\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><line x1=\"60\" y1=\"160\" x2=\"620\" y2=\"160\" stroke=\"#6E7D8F\" stroke-width=\"1\"/><line x1=\"60\" y1=\"160\" x2=\"60\" y2=\"40\" stroke=\"#6E7D8F\" stroke-width=\"1\"/><path d=\"M60,158 C200,150 320,120 420,90 C500,66 560,50 610,45\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"330\" y=\"180\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">potential barrier / T<sub>i</sub>  →</text><text x=\"52\" y=\"100\" text-anchor=\"end\" fill=\"#6E7D8F\" font-size=\"11\">τ</text><text x=\"450\" y=\"60\" text-anchor=\"start\" fill=\"#D4AD5C\" font-size=\"11\">τ rises ~exponentially</text></svg>"
+   ],
+   [
+    "p",
+    "This is the leverage of the tandem-mirror concept: a modest increase in the confining potential yields a large increase in confinement time, which is what lets an open-ended machine reach fusion-relevant τ. It is also the vulnerability — confinement is only as good as the potential the plug can actually sustain."
+   ],
+   [
+    "h3",
+    "Coupling to the gates"
+   ],
+   [
+    "p",
+    "Because τ depends so sensitively on the plug, the plug's field (26.49 T), density, and stability all feed directly into whether the power balance closes. The steepness that gives the concept its promise is the same steepness that makes the unproven plug regime so consequential."
+   ],
+   [
+    "p",
+    "The exponential sensitivity cuts both ways: it is why a well-built plug confines so well, and why a plug that falls short of its design potential loses confinement far faster than a linear intuition would suggest. Small shortfalls in the achievable potential — from stress limits, instabilities, or heating efficiency — translate into large shortfalls in τ, which is why the plug gates dominate the machine's prospects."
+   ],
+   [
+    "ul",
+    [
+     "τ grows ~exponentially with (φ<sub>p</sub>&#8722;φ<sub>c</sub>)/T<sub>i</sub>",
+     "Small potential gains → large confinement gains",
+     "Enables fusion-relevant τ in an open machine",
+     "Makes the plug regime decisive for the power balance"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "ambipolar-potential",
+    "The Ambipolar Potential"
+   ],
+   [
+    "power-balance-lawson",
+    "Power Balance & Lawson"
+   ],
+   [
+    "plug-regime-gate",
+    "Gate: Plug Operating Regime"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "direct-energy-conversion-principle",
+  "title": "Direct Energy Conversion",
+  "cat": "the-physics",
+  "lede": "Charged fusion products stream out along the field and are decelerated against a voltage, converting their kinetic energy straight to DC electricity.",
+  "body": [
+   [
+    "h2",
+    "Electricity without a steam cycle"
+   ],
+   [
+    "p",
+    "Because the D–<sup>3</sup>He reaction releases its energy as charged particles, the burner can convert most of it without heat. In <b>direct energy conversion</b> (DEC), the charged products escape along the diverging field into an expander, where they are decelerated against a series of biased collector electrodes. Their kinetic energy does work against the electric field and is collected as direct current."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 195\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><rect x=\"30\" y=\"80\" width=\"120\" height=\"50\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"90.0\" y=\"105.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">plasma exhaust</text><text x=\"90.0\" y=\"121.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">charged particles</text><line x1=\"152\" y1=\"105\" x2=\"195\" y2=\"105\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><path d=\"M197,70 L260,55 M197,140 L260,155\" stroke=\"#9FB1C4\" stroke-width=\"1.4\" fill=\"none\"/><text x=\"240\" y=\"50\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"10\">expander (field fans out)</text><line x1=\"300\" y1=\"60\" x2=\"300\" y2=\"150\" stroke=\"#D4AD5C\" stroke-width=\"1.6\"/><line x1=\"360\" y1=\"60\" x2=\"360\" y2=\"150\" stroke=\"#D4AD5C\" stroke-width=\"1.6\"/><line x1=\"420\" y1=\"60\" x2=\"420\" y2=\"150\" stroke=\"#D4AD5C\" stroke-width=\"1.6\"/><text x=\"360\" y=\"175\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">biased collector electrodes</text><line x1=\"460\" y1=\"105\" x2=\"505\" y2=\"105\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"507\" y=\"80\" width=\"120\" height=\"50\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"567.0\" y=\"105.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">DC output</text><text x=\"567.0\" y=\"121.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">no turbine</text></svg>"
+   ],
+   [
+    "p",
+    "This bypasses the Carnot limit that caps a thermal cycle. Where a steam plant converts heat to electricity at perhaps a third efficiency, direct conversion of a well-collimated charged beam can in principle reach much higher — the theoretical attraction of D–<sup>3</sup>He. The neutron fraction (5.44%) and any unconverted charged energy still appear as heat and are handled conventionally."
+   ],
+   [
+    "h3",
+    "The real efficiency"
+   ],
+   [
+    "p",
+    "Practical DEC efficiency is set by how monoenergetic and well-directed the collected particles are, by secondary-electron and space-charge effects at the collectors, and by the field geometry in the expander. It is high but not unity, and the recirculating power for plugs and injectors is charged against it in the engineering gain."
+   ],
+   [
+    "p",
+    "The concept only works because the products are both charged and reasonably directed along the field as they leave; a fuel whose energy left as neutrons or isotropic heat could not be converted this way. Direct conversion is therefore not a bolt-on efficiency trick but a consequence of the fuel and geometry chosen upstream — it is the payoff for accepting D–<sup>3</sup>He's harder ignition."
+   ],
+   [
+    "ul",
+    [
+     "Charged products decelerated against a voltage",
+     "Kinetic energy → DC electricity directly",
+     "Bypasses the Carnot limit of a steam cycle",
+     "Neutron + unconverted energy still handled as heat"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "dec-collector-design",
+    "The Direct Converter"
+   ],
+   [
+    "dec-efficiency",
+    "DEC Efficiency vs Thermal Cycle"
+   ],
+   [
+    "expander-region-physics",
+    "The Expander Region"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "dec-collector-design",
+  "title": "The Direct Converter",
+  "cat": "the-physics",
+  "lede": "A periodic or venetian-blind collector array sorts charged particles by energy and decelerates them against staged voltages for efficient capture.",
+  "body": [
+   [
+    "h2",
+    "Sorting particles by energy"
+   ],
+   [
+    "p",
+    "A direct converter must decelerate a spread of particle energies efficiently. Two classic geometries do this. A <b>periodic (Venetian-blind)</b> collector uses angled slats at graded potentials, so particles are captured on the electrode whose voltage best matches their energy. A <b>gridded</b> converter uses a sequence of transparent grids at rising potential, each reflecting lower-energy particles and passing the fastest to the deepest, highest-voltage stage."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 195\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><line x1=\"60\" y1=\"60\" x2=\"60\" y2=\"150\" stroke=\"#D4AD5C\" stroke-width=\"1.6\"/><line x1=\"120\" y1=\"60\" x2=\"120\" y2=\"150\" stroke=\"#D4AD5C\" stroke-width=\"1.6\"/><line x1=\"180\" y1=\"60\" x2=\"180\" y2=\"150\" stroke=\"#D4AD5C\" stroke-width=\"1.6\"/><line x1=\"240\" y1=\"60\" x2=\"240\" y2=\"150\" stroke=\"#D4AD5C\" stroke-width=\"1.6\"/><text x=\"150\" y=\"175\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">staged grids at rising potential</text><line x1=\"20\" y1=\"105\" x2=\"55\" y2=\"105\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><text x=\"20\" y=\"95\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"10\">in</text><line x1=\"360\" y1=\"70\" x2=\"410\" y2=\"60\" stroke=\"#9FB1C4\" stroke-width=\"2\"/><line x1=\"360\" y1=\"100\" x2=\"410\" y2=\"90\" stroke=\"#9FB1C4\" stroke-width=\"2\"/><line x1=\"360\" y1=\"130\" x2=\"410\" y2=\"120\" stroke=\"#9FB1C4\" stroke-width=\"2\"/><text x=\"450\" y=\"105\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"11\">venetian-blind slats</text></svg>"
+   ],
+   [
+    "p",
+    "Matching each particle to a collector near its own energy is what makes the conversion efficient: energy dumped as heat at a mismatched electrode is lost. The design must handle a broad energy spectrum — 3.6 MeV alphas and 14.7 MeV protons from the primary reaction, plus a thermal spread — across a large collector area to keep power density and secondary emission manageable."
+   ],
+   [
+    "h3",
+    "Engineering constraints"
+   ],
+   [
+    "p",
+    "Real converters contend with secondary electrons knocked off the electrodes, space-charge limits on how much current a gap can carry, and the sheer area needed at reactor power. These are demanding but conventional high-voltage engineering problems, not open physics gates like the plug."
+   ],
+   [
+    "p",
+    "The area required scales with the power to be converted and the space-charge limit of each gap, so a reactor-scale converter is physically large — a hall of electrodes rather than a compact unit. That size is a known engineering burden, and it interacts with the expander geometry that delivers and spreads the particle stream, but it does not carry the open-physics uncertainty that the plug does."
+   ],
+   [
+    "ul",
+    [
+     "Venetian-blind or gridded geometries",
+     "Match particle energy to collector voltage",
+     "Must span MeV-scale product energies",
+     "Limited by secondaries, space charge, area"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "direct-energy-conversion-principle",
+    "Direct Energy Conversion"
+   ],
+   [
+    "charged-particle-spectrum",
+    "The Charged-Particle Spectrum"
+   ],
+   [
+    "dec-efficiency",
+    "DEC Efficiency"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "charged-particle-spectrum",
+  "title": "The Charged-Particle Spectrum",
+  "cat": "the-physics",
+  "lede": "The direct converter sees alphas, protons, and thermal ions across a wide energy range; the spectrum sets the achievable conversion efficiency.",
+  "body": [
+   [
+    "h2",
+    "What arrives at the converter"
+   ],
+   [
+    "p",
+    "The exhaust reaching the direct converter is a mix. The primary D–<sup>3</sup>He reaction contributes 3.6 MeV helium-4 nuclei and 14.7 MeV protons. On top of these fusion products sit the thermal fuel ions leaving the plasma at energies of order the ~90 keV operating temperature, plus electrons. The converter must handle all of them."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 195\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><line x1=\"60\" y1=\"160\" x2=\"620\" y2=\"160\" stroke=\"#6E7D8F\" stroke-width=\"1\"/><rect x=\"90\" y=\"120\" width=\"30\" height=\"40\" fill=\"#9FB1C4\"/><text x=\"105\" y=\"175\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"9.5\">~90 keV</text><rect x=\"300\" y=\"90\" width=\"30\" height=\"70\" fill=\"#D4AD5C\"/><text x=\"315\" y=\"175\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"9.5\">3.6 MeV α</text><rect x=\"500\" y=\"55\" width=\"30\" height=\"105\" fill=\"#D4AD5C\"/><text x=\"515\" y=\"175\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"9.5\">14.7 MeV p</text><text x=\"340\" y=\"45\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">energy spectrum at the converter</text><text x=\"52\" y=\"100\" text-anchor=\"end\" fill=\"#6E7D8F\" font-size=\"10.5\">flux</text></svg>"
+   ],
+   [
+    "p",
+    "A broad spectrum is harder to convert efficiently than a monoenergetic beam, because a single collector voltage can only be well-matched to one energy. Staged collectors mitigate this, but the spread — especially the two orders of magnitude between thermal ions and the 14.7 MeV proton — is a real efficiency penalty that must be designed around."
+   ],
+   [
+    "h3",
+    "Why the spectrum is fixed"
+   ],
+   [
+    "p",
+    "The product energies are set by the reaction kinematics and cannot be changed; the thermal component is set by the operating temperature. So the converter design is constrained by physics on the input side: it must extract the most from a spectrum it does not control."
+   ],
+   [
+    "p",
+    "A practical converter recovers most, not all, of this spectrum's energy, and the fraction it misses reappears as heat that a conventional cycle must handle. Quoting an honest conversion efficiency therefore means integrating over this real spectrum rather than assuming a monoenergetic beam, and it is one of the inputs to the engineering gain the burner is judged on."
+   ],
+   [
+    "ul",
+    [
+     "3.6 MeV α + 14.7 MeV p from the primary branch",
+     "Thermal fuel ions near ~90 keV, plus electrons",
+     "Broad spectrum limits single-stage efficiency",
+     "Product energies fixed by reaction kinematics"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "direct-energy-conversion-principle",
+    "Direct Energy Conversion"
+   ],
+   [
+    "dec-collector-design",
+    "The Direct Converter"
+   ],
+   [
+    "dec-efficiency",
+    "DEC Efficiency"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "dec-efficiency",
+  "title": "DEC Efficiency Versus the Thermal Cycle",
+  "cat": "the-physics",
+  "lede": "Direct conversion of charged particles can exceed a steam cycle's efficiency, but real losses and the neutron fraction keep it below unity.",
+  "body": [
+   [
+    "h2",
+    "The efficiency case, honestly"
+   ],
+   [
+    "p",
+    "A steam cycle is bounded by the Carnot limit and typically converts heat to electricity at roughly a third efficiency. Direct energy conversion sidesteps that bound because it never thermalises the charged energy — it decelerates ordered particle motion against a voltage. In principle this reaches much higher efficiency, which is the central appeal of pairing D–<sup>3</sup>He with an open geometry."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 195\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><rect x=\"80\" y=\"70\" width=\"90\" height=\"90\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><rect x=\"80\" y=\"129\" width=\"90\" height=\"31\" fill=\"#9FB1C4\"/><text x=\"125\" y=\"50\" text-anchor=\"middle\" fill=\"#9FB1C4\" font-size=\"11\">steam cycle</text><text x=\"125\" y=\"178\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">~1/3</text><rect x=\"360\" y=\"70\" width=\"90\" height=\"90\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><rect x=\"360\" y=\"92\" width=\"90\" height=\"68\" fill=\"#D4AD5C\" fill-opacity=\"0.5\"/><text x=\"405\" y=\"50\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">direct conversion</text><text x=\"405\" y=\"178\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">higher, < 1</text><text x=\"560\" y=\"110\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"11\">charged energy only</text></svg>"
+   ],
+   [
+    "p",
+    "But it is not free. Real DEC efficiency is degraded by the broad particle spectrum, secondary-electron emission, space-charge limits, incomplete collection, and the fraction of energy that arrives as heat anyway — the 5.44% neutron energy and any thermalised losses. Those heat streams are recovered with a conventional (Carnot-limited) cycle."
+   ],
+   [
+    "h3",
+    "Netting it out"
+   ],
+   [
+    "p",
+    "The honest figure is a high but sub-unity conversion of the charged channel, combined with a modest thermal recovery of the rest, minus the recirculating power for plugs and injectors. That net number is what the engineering gain Q<sub>E</sub> must be built on — not the theoretical ceiling."
+   ],
+   [
+    "p",
+    "The honest way to report the number is end-to-end: charged energy converted at high but sub-unity efficiency, plus a modest thermal recovery of the neutron and thermalised fraction, minus recirculating power. Any single headline figure that omits the recirculating draw or the thermal remainder would overstate the machine, which is why the engineering gain, not the converter efficiency, is the figure of record."
+   ],
+   [
+    "ul",
+    [
+     "Bypasses Carnot for the charged channel",
+     "Degraded by spectrum, secondaries, space charge",
+     "Neutron + thermal energy still Carnot-limited",
+     "Recirculating power charged against the net"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "direct-energy-conversion-principle",
+    "Direct Energy Conversion"
+   ],
+   [
+    "q-engineering-vs-science",
+    "Q-Engineering vs Q-Science"
+   ],
+   [
+    "charged-particle-spectrum",
+    "The Charged-Particle Spectrum"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "expander-region-physics",
+  "title": "The Expander Region",
+  "cat": "the-physics",
+  "lede": "Beyond the throat the field fans out, reducing plasma density and heat flux so the exhaust can meet the direct converter and end walls.",
+  "body": [
+   [
+    "h2",
+    "Spreading the exhaust"
+   ],
+   [
+    "p",
+    "Past the mirror throat the magnetic field diverges rapidly into an <b>expander</b>. As the field lines fan out, the plasma follows them and its density and power density drop by the ratio of field strengths. This spreading is essential: the raw exhaust leaving a 17 T throat would carry an impossible heat flux onto any surface if it were not expanded first."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 195\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><line x1=\"80\" y1=\"105\" x2=\"180\" y2=\"105\" stroke=\"#9FB1C4\" stroke-width=\"2\"/><path d=\"M180,95 L360,50 M180,115 L360,160\" stroke=\"#D4AD5C\" stroke-width=\"1.8\" fill=\"none\"/><text x=\"130\" y=\"95\" text-anchor=\"start\" fill=\"#9FB1C4\" font-size=\"10\">throat 17 T</text><line x1=\"360\" y1=\"50\" x2=\"360\" y2=\"160\" stroke=\"#9FB1C4\" stroke-width=\"1.6\"/><text x=\"360\" y=\"180\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">expanded plasma → DEC / end wall</text><text x=\"280\" y=\"60\" text-anchor=\"start\" fill=\"#D4AD5C\" font-size=\"11\">field diverges</text></svg>"
+   ],
+   [
+    "p",
+    "The expander also matters for the potential structure. Because electron confinement depends on the potential drop from the plasma to the end wall, the expander is shaped to control that drop — a large expansion ratio lowers the plasma potential at the wall, which affects how electrons are confined and how the direct converter is biased."
+   ],
+   [
+    "h3",
+    "Interface to conversion"
+   ],
+   [
+    "p",
+    "The expander is the physical hand-off from confinement to conversion: it takes a dense, hot, magnetised exhaust and delivers a spread-out charged stream that the direct converter can decelerate and the end walls can survive. Its geometry couples confinement physics, heat handling, and conversion efficiency together."
+   ],
+   [
+    "p",
+    "The expansion ratio is a design knob with competing pulls: a larger expansion lowers heat flux and sets a favourable wall potential for electron confinement, but it demands more volume and more precisely shaped field at the ends. Balancing those against the direct converter's needs makes the expander a genuine three-way compromise between heat handling, confinement, and conversion."
+   ],
+   [
+    "ul",
+    [
+     "Field fans out beyond the throat",
+     "Density and heat flux drop with expansion ratio",
+     "Controls the plasma-to-wall potential drop",
+     "Delivers exhaust to the direct converter"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "direct-energy-conversion-principle",
+    "Direct Energy Conversion"
+   ],
+   [
+    "throat-field-17-tesla",
+    "The 17 T Throat Field"
+   ],
+   [
+    "heat-flux-end-walls",
+    "End-Wall Heat Flux"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "plasma-heating-methods",
+  "title": "Plasma Heating Methods",
+  "cat": "the-physics",
+  "lede": "Neutral beams, ion-cyclotron and electron-cyclotron waves heat the plasma and build the plug populations that sustain confinement.",
+  "body": [
+   [
+    "h2",
+    "Reaching and holding 90 keV"
+   ],
+   [
+    "p",
+    "No plasma heats itself to ~90 keV from cold. External heating both raises the temperature and, critically in a tandem mirror, creates the fast-ion and hot-electron populations that build the confining potential. Three methods carry the load: neutral-beam injection (NBI), ion-cyclotron resonance heating (ICRF), and electron-cyclotron heating (ECH)."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 245\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><rect x=\"40\" y=\"60\" width=\"150\" height=\"50\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"115.0\" y=\"85.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">NBI</text><text x=\"115.0\" y=\"101.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">fast/sloshing ions</text><rect x=\"40\" y=\"120\" width=\"150\" height=\"50\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"115.0\" y=\"145.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">ICRF</text><text x=\"115.0\" y=\"161.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">ion heating</text><rect x=\"40\" y=\"180\" width=\"150\" height=\"50\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"115.0\" y=\"205.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">ECH</text><text x=\"115.0\" y=\"221.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">hot plug electrons</text><line x1=\"192\" y1=\"85\" x2=\"250\" y2=\"120\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><line x1=\"192\" y1=\"145\" x2=\"250\" y2=\"145\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><line x1=\"192\" y1=\"205\" x2=\"250\" y2=\"170\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"252\" y=\"110\" width=\"150\" height=\"70\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"327.0\" y=\"145.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">plasma</text><text x=\"327.0\" y=\"161.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">T<sub>i</sub> ~90 keV</text><line x1=\"404\" y1=\"145\" x2=\"447\" y2=\"145\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"449\" y=\"110\" width=\"180\" height=\"70\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"539.0\" y=\"145.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">potential + burn</text><text x=\"539.0\" y=\"161.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">confinement built</text></svg>"
+   ],
+   [
+    "p",
+    "NBI injects energetic neutral atoms that ionise and become the sloshing ions that shape the plug potential. ICRF deposits energy resonantly into the ions, supporting the hot-ion mode that keeps fusion power ahead of bremsstrahlung. ECH heats electrons locally, which is how the thermal barrier and the elevated plug potential are created and maintained."
+   ],
+   [
+    "h3",
+    "Heating as confinement"
+   ],
+   [
+    "p",
+    "In most machines heating and confinement are separate concerns; in a tandem mirror they are the same problem. The heating systems do not just warm the plasma — they build the very potential structure that confines it. Their power draw is therefore recirculating power that counts directly against the engineering gain."
+   ],
+   [
+    "p",
+    "Because the heating systems are also the confinement systems, their efficiency is a first-order term in the machine's viability rather than a secondary balance-of-plant concern. Improving injector and wave-heating efficiency directly raises the engineering gain, and any shortfall there compounds with the plug gates — which is why heating technology sits close to the centre of the burner's physics case."
+   ],
+   [
+    "ul",
+    [
+     "NBI: creates sloshing ions, shapes potential",
+     "ICRF: sustains the hot-ion mode",
+     "ECH: builds thermal barrier and plug potential",
+     "Heating power is recirculating power"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "sloshing-ions-thermal-barrier",
+    "Sloshing Ions & Thermal Barriers"
+   ],
+   [
+    "ambipolar-potential",
+    "The Ambipolar Potential"
+   ],
+   [
+    "q-engineering-vs-science",
+    "Q-Engineering vs Q-Science"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "fuel-mix-and-neutron-yield",
+  "title": "Fuel Mix & Neutron Yield",
+  "cat": "the-physics",
+  "lede": "The deuterium-to-helium-3 ratio trades neutron fraction against helium-3 demand; a He-3-rich mix runs cleaner but needs more scarce fuel.",
+  "body": [
+   [
+    "h2",
+    "The lever between neutrons and fuel"
+   ],
+   [
+    "p",
+    "The neutron fraction is not a single fixed number of physics — it depends on the fuel mix. More deuterium relative to helium-3 raises the rate of D–D side reactions and pushes the neutron fraction up; more helium-3 suppresses D–D and lowers it, at the expense of consuming more of a fuel that is scarce at terrestrial scale. The burner's <b>5.44%</b> is the design-point value for its chosen mix."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 190\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><line x1=\"60\" y1=\"150\" x2=\"620\" y2=\"150\" stroke=\"#6E7D8F\" stroke-width=\"1\"/><path d=\"M80,60 C200,90 400,130 600,148\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"120\" y=\"55\" text-anchor=\"start\" fill=\"#D4AD5C\" font-size=\"10.5\">more D: higher neutron fraction</text><text x=\"400\" y=\"140\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"10.5\">more <sup>3</sup>He: lower, needs fuel</text><text x=\"330\" y=\"175\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">He-3 fraction →</text><text x=\"52\" y=\"95\" text-anchor=\"end\" fill=\"#6E7D8F\" font-size=\"10.5\">n frac</text></svg>"
+   ],
+   [
+    "p",
+    "This coupling ties the physics directly to the fuel-supply gate. Running cleaner (lower neutron fraction, less activation) means burning more helium-3, which worsens the ~400× supply shortfall per commercial unit. Running with more deuterium eases fuel demand but raises the neutron load on structures. There is no mix that escapes both constraints."
+   ],
+   [
+    "h3",
+    "Why the design point sits where it does"
+   ],
+   [
+    "p",
+    "5.44% represents a balance: low enough to keep direct conversion worthwhile and activation modest, rich enough in deuterium to keep helium-3 demand from being even more extreme. It is an honest compromise, not an optimum that removes either problem."
+   ],
+   [
+    "p",
+    "Because the same mix sets both the neutron load and the helium-3 draw, the design cannot minimise both at once; it can only choose a defensible point on the trade curve. The 5.44% point reflects that honesty — it is neither the cleanest nor the most fuel-frugal mix, but the balance that keeps direct conversion worthwhile without making the already-severe supply gate worse."
+   ],
+   [
+    "ul",
+    [
+     "Neutron fraction rises with deuterium content",
+     "He-3-rich mix runs cleaner but needs more fuel",
+     "5.44% is the chosen design-point balance",
+     "Couples directly to the He-3 supply gate"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "dd-side-reactions",
+    "The D–D Side Reactions"
+   ],
+   [
+    "low-neutron-fraction",
+    "The 5.44% Neutron Fraction"
+   ],
+   [
+    "helium3-supply-gate",
+    "Gate: He-3 Supply"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "ash-accumulation",
+  "title": "Ash Accumulation: Helium-4 & Protons",
+  "cat": "the-physics",
+  "lede": "Fusion products left in the plasma dilute the fuel and radiate; the burner must exhaust helium-4 ash and protons to sustain the burn.",
+  "body": [
+   [
+    "h2",
+    "Cleaning the burn"
+   ],
+   [
+    "p",
+    "Every D–<sup>3</sup>He reaction leaves a helium-4 nucleus and a proton in the plasma. If these fusion \"ash\" species build up, they dilute the fuel, raise Z<sub>eff</sub> (increasing bremsstrahlung), and eventually quench the reaction. An open-ended mirror has an advantage here: ash flows out the ends along the field with the rest of the exhaust."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><rect x=\"60\" y=\"80\" width=\"180\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"150.0\" y=\"110.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">central-cell burn</text><text x=\"150.0\" y=\"126.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">D + <sup>3</sup>He</text><line x1=\"242\" y1=\"110\" x2=\"290\" y2=\"110\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"292\" y=\"80\" width=\"150\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"367.0\" y=\"110.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">products</text><text x=\"367.0\" y=\"126.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\"><sup>4</sup>He + p</text><line x1=\"444\" y1=\"110\" x2=\"492\" y2=\"110\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"494\" y=\"80\" width=\"140\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"564.0\" y=\"110.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">exhausted</text><text x=\"564.0\" y=\"126.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">out the ends</text><text x=\"350\" y=\"165\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">ash removed with axial exhaust flow</text></svg>"
+   ],
+   [
+    "p",
+    "The protons are themselves a useful product — a stream of energetic hydrogen ions — and both they and the helium-4 carry energy to the direct converter before leaving. The physics requirement is that the exhaust rate keeps the ash concentration low enough that fuel dilution and radiation stay within the power balance."
+   ],
+   [
+    "h3",
+    "Balance, not accumulation"
+   ],
+   [
+    "p",
+    "Ash exhaust competes with fuel confinement: the same end-loss channel that removes ash also removes fuel, so the plug potential and refuelling rate must be tuned to keep fuel confined while letting ash escape at a sufficient rate. This is a steady-state balance the design must maintain continuously."
+   ],
+   [
+    "p",
+    "An open geometry turns what is a difficult exhaust problem in a torus into a more natural one here, but it does not make it free — the exhausted ash carries fuel and energy with it, and the balance between removing ash and retaining fuel is maintained continuously by the plug potential and refuelling. Getting that steady state right is part of demonstrating a sustained burn."
+   ],
+   [
+    "ul",
+    [
+     "Products <sup>4</sup>He and p accumulate as ash",
+     "Ash dilutes fuel and raises bremsstrahlung",
+     "Open ends exhaust ash along the field",
+     "Exhaust rate balanced against fuel confinement"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "impurity-radiation",
+    "Impurity Radiation"
+   ],
+   [
+    "bremsstrahlung-losses",
+    "Bremsstrahlung Losses"
+   ],
+   [
+    "proton-product-physics",
+    "The Proton Product"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "impurity-radiation",
+  "title": "Impurity Radiation",
+  "cat": "the-physics",
+  "lede": "Heavy impurities from the walls radiate strongly and raise Z_eff; keeping the plasma clean is essential to the D–He-3 power balance.",
+  "body": [
+   [
+    "h2",
+    "Why cleanliness is physics, not housekeeping"
+   ],
+   [
+    "p",
+    "Impurities — wall-eroded metals, oxygen, carbon — are far more effective radiators than the fuel ions because radiated power scales with Z<sup>2</sup> and, for line radiation, even more steeply. A small concentration of a high-Z impurity can dominate the plasma's radiative losses and raise the effective charge Z<sub>eff</sub>, worsening bremsstrahlung across the board."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 195\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><line x1=\"60\" y1=\"160\" x2=\"620\" y2=\"160\" stroke=\"#6E7D8F\" stroke-width=\"1\"/><rect x=\"100\" y=\"130\" width=\"40\" height=\"30\" fill=\"#9FB1C4\"/><text x=\"120\" y=\"175\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"9.5\">fuel ions</text><rect x=\"300\" y=\"70\" width=\"40\" height=\"90\" fill=\"#D4AD5C\"/><text x=\"320\" y=\"175\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"9.5\">1% high-Z</text><text x=\"340\" y=\"55\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10.5\">radiated power &#8733; Z<sup>2</sup> (and more for lines)</text><text x=\"52\" y=\"100\" text-anchor=\"end\" fill=\"#6E7D8F\" font-size=\"10.5\">P<sub>rad</sub></text></svg>"
+   ],
+   [
+    "p",
+    "For D–<sup>3</sup>He this is especially punishing because the power balance is already tight against bremsstrahlung. Even a modest impurity influx can tip the balance from net-positive to net-negative. So the first wall, plug, and expander surfaces must be chosen and conditioned to minimise erosion, and impurities that do enter must be exhausted with the ash."
+   ],
+   [
+    "h3",
+    "The requirement"
+   ],
+   [
+    "p",
+    "Keeping Z<sub>eff</sub> near its clean value is a hard operating requirement, not a nicety. It shapes material choices, wall conditioning, and the exhaust design, and it is one reason the burner's surfaces and their maintenance receive close attention in the design."
+   ],
+   [
+    "p",
+    "Because the tolerance for impurities is so tight, the burner treats wall material selection, conditioning, and impurity exhaust as coupled requirements set by the power balance, not as independent engineering choices. A machine that could tolerate a dirtier plasma would have more design freedom; D–<sup>3</sup>He's radiation-limited balance removes that freedom and makes cleanliness a physics constraint."
+   ],
+   [
+    "ul",
+    [
+     "Radiated power &#8733; Z<sup>2</sup>; high-Z dominates",
+     "Small impurity fractions can dominate losses",
+     "D–<sup>3</sup>He balance is already bremsstrahlung-tight",
+     "Drives material choice and wall conditioning"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "bremsstrahlung-losses",
+    "Bremsstrahlung Losses"
+   ],
+   [
+    "ash-accumulation",
+    "Ash Accumulation"
+   ],
+   [
+    "power-balance-lawson",
+    "Power Balance & Lawson"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "plasma-initiation-physics",
+  "title": "Plasma Initiation & Buildup",
+  "cat": "the-physics",
+  "lede": "Starting the burner means creating a target plasma, forming the mirror-trapped populations, then building the plug potential up to confining strength.",
+  "body": [
+   [
+    "h2",
+    "From vacuum to a plugged burn"
+   ],
+   [
+    "p",
+    "Startup is a sequence, not a switch. First a low-density target plasma is created in the central cell and end regions, typically by gas breakdown and electron-cyclotron heating. Then neutral beams build the sloshing-ion and hot-electron populations at the ends. Only once those populations exist does the confining ambipolar potential begin to form."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 165\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><rect x=\"30\" y=\"90\" width=\"120\" height=\"50\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"90.0\" y=\"115.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">1. target</text><text x=\"90.0\" y=\"131.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">gas + ECH</text><line x1=\"152\" y1=\"115\" x2=\"190\" y2=\"115\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"192\" y=\"90\" width=\"130\" height=\"50\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"257.0\" y=\"115.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">2. build plug</text><text x=\"257.0\" y=\"131.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">NBI sloshing ions</text><line x1=\"324\" y1=\"115\" x2=\"362\" y2=\"115\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"364\" y=\"90\" width=\"130\" height=\"50\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"429.0\" y=\"115.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">3. raise φ</text><text x=\"429.0\" y=\"131.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">potential forms</text><line x1=\"496\" y1=\"115\" x2=\"534\" y2=\"115\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"536\" y=\"90\" width=\"100\" height=\"50\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"586.0\" y=\"115.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">4. burn</text><text x=\"586.0\" y=\"131.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">D–<sup>3</sup>He</text></svg>"
+   ],
+   [
+    "p",
+    "The order matters because confinement is bootstrapped: better confinement lets density and temperature rise, which raises the potential, which improves confinement further. This positive feedback is how the plasma climbs to its operating point — but it must be steered carefully, because the same feedback can stall if the plug populations are not built in the right sequence."
+   ],
+   [
+    "h3",
+    "A demanding trajectory"
+   ],
+   [
+    "p",
+    "Reaching the ~90 keV, high-potential operating point along a stable path, without triggering the loss-cone or MHD instabilities on the way, is itself an unproven part of the physics. Demonstrating a controlled startup to a plugged D–<sup>3</sup>He burn is among the goals of the test burner."
+   ],
+   [
+    "p",
+    "The bootstrap is also where several gates first bite: the startup must pass through lower-potential, lower-confinement states where microinstabilities and MHD modes are most dangerous, before reaching the operating point where confinement is strong. Demonstrating a repeatable, controlled path through that valley is as much a part of proving the burner as reaching the operating point itself."
+   ],
+   [
+    "ul",
+    [
+     "Target plasma from gas breakdown + ECH",
+     "NBI builds sloshing ions and hot electrons",
+     "Ambipolar potential forms and bootstraps τ",
+     "Stable trajectory to 90 keV is unproven"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "plasma-heating-methods",
+    "Plasma Heating Methods"
+   ],
+   [
+    "ambipolar-potential",
+    "The Ambipolar Potential"
+   ],
+   [
+    "test-burner-physics-roadmap",
+    "The Test Burner's Physics"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "plug-coil-stress-gate",
+  "title": "Honest Gate: Plug Coil Overstress",
+  "cat": "the-physics",
+  "lede": "At the design bore the 26.49 T plug coil is overstressed by roughly 3 to 3.9 times — infeasible as specified. This is a physics fact, stated plainly.",
+  "body": [
+   [
+    "h2",
+    "The gate, stated at full strength"
+   ],
+   [
+    "p",
+    "The burner's end plugs require a <b>26.49 T</b> field. At the design bore, the plug coil is overstressed by roughly <b>3 to 3.9 times</b> what the conductor and its structure can bear as specified. In its current form the plug magnet is <b>infeasible</b>. We state this plainly because it is a physics-and-engineering fact, not a matter of optimism."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 195\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><line x1=\"60\" y1=\"160\" x2=\"620\" y2=\"160\" stroke=\"#6E7D8F\" stroke-width=\"1\"/><line x1=\"120\" y1=\"160\" x2=\"120\" y2=\"130\" stroke=\"#9FB1C4\" stroke-width=\"1\"/><rect x=\"100\" y=\"130\" width=\"40\" height=\"30\" fill=\"#9FB1C4\"/><text x=\"120\" y=\"175\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"9.5\">limit 1×</text><rect x=\"300\" y=\"55\" width=\"40\" height=\"105\" fill=\"#D4AD5C\"/><text x=\"320\" y=\"175\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"9.5\">3×</text><rect x=\"420\" y=\"40\" width=\"40\" height=\"120\" fill=\"#D4AD5C\"/><text x=\"440\" y=\"175\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"9.5\">3.9×</text><text x=\"380\" y=\"32\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10.5\">stress at the design bore</text><text x=\"52\" y=\"100\" text-anchor=\"end\" fill=\"#6E7D8F\" font-size=\"10.5\">coil stress</text></svg>"
+   ],
+   [
+    "p",
+    "The cause is fundamental: magnetic pressure scales as B<sup>2</sup>, so a 26.49 T coil carries an enormous outward force that its winding and support structure must react. At the specified bore, no available conductor-and-structure combination keeps the stress within allowables by a factor of three to nearly four."
+   ],
+   [
+    "h3",
+    "Why we do not soften it"
+   ],
+   [
+    "p",
+    "The confining potential the burner needs requires this field; the field at this bore breaks the coil. Resolving the gap — through geometry, materials, or field-shaping — is open work, and until it closes the burner remains a design-and-simulation study. Stating the 3–3.9× overstress honestly is what makes the rest of the design trustworthy."
+   ],
+   [
+    "p",
+    "Nothing about the gate is hidden in an assumption: it follows directly from the specified field and bore and the strength of real conductor and structure. Closing it is legitimate future work — through field-shaping, graded coils, advanced conductors, or a revised geometry — but until a concrete design holds the stress within allowables, the honest statement is that the plug magnet, as specified, does not close."
+   ],
+   [
+    "ul",
+    [
+     "Plug field: 26.49 T",
+     "Coil overstressed ~3–3.9× at the design bore",
+     "Infeasible as specified",
+     "Cause: B<sup>2</sup> magnetic pressure on the winding"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "plug-field-26-tesla",
+    "The 26.49 T Plug Field"
+   ],
+   [
+    "plug-regime-gate",
+    "Gate: Plug Operating Regime"
+   ],
+   [
+    "honest-gates-summary",
+    "The Honest Gates, Together"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "plug-regime-gate",
+  "title": "Honest Gate: Plug Operating Regime",
+  "cat": "the-physics",
+  "lede": "The plug must operate 166 to 830 times beyond any built device — a regime that cannot be post-dicted from experiment today.",
+  "body": [
+   [
+    "h2",
+    "Beyond the reach of any experiment"
+   ],
+   [
+    "p",
+    "The end-plug plasma must operate in a parameter regime that sits <b>166 to 830 times</b> beyond anything any device has achieved. Because no experiment has reached these conditions, the plug's behavior <b>cannot be post-dicted</b> today — there is no data to validate the models at these parameters. This is a candid statement of where the physics stands."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 190\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><line x1=\"60\" y1=\"150\" x2=\"620\" y2=\"150\" stroke=\"#6E7D8F\" stroke-width=\"1\"/><rect x=\"90\" y=\"135\" width=\"30\" height=\"15\" fill=\"#9FB1C4\"/><text x=\"105\" y=\"168\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"9.5\">built devices</text><line x1=\"150\" y1=\"150\" x2=\"560\" y2=\"150\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" stroke-dasharray=\"6 4\" marker-end=\"url(#ah)\"/><text x=\"370\" y=\"138\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">166–830× extrapolation</text><rect x=\"560\" y=\"120\" width=\"40\" height=\"30\" fill=\"#D4AD5C\" fill-opacity=\"0.5\" stroke=\"#D4AD5C\"/><text x=\"580\" y=\"170\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"9.5\">plug regime</text></svg>"
+   ],
+   [
+    "p",
+    "The plug ties together the highest field (26.49 T), a dense fast-ion population, a high confining potential, and the microstability that keeps that population intact. Every historic mirror operated far below these values. Extrapolating confinement, stability, and potential formation across two to three orders of magnitude is not something simulation alone can close credibly."
+   ],
+   [
+    "h3",
+    "What would close it"
+   ],
+   [
+    "p",
+    "Only experiment can. A staged program — through the test burner (~2032) and beyond — would advance the achieved regime step by step, shrinking the extrapolation. Until then, any claim about plug performance at the design point is a model extrapolation, and we label it as such rather than as a demonstrated result."
+   ],
+   [
+    "p",
+    "The 166–830× range is not a single number because different plug parameters extrapolate by different factors; taken together they describe a regime no experiment has entered. Simulation can explore it, but simulation validated only at far lower parameters cannot be treated as prediction there — which is why the program's answer is staged experiment, and why claims about plug performance are labelled as extrapolations."
+   ],
+   [
+    "ul",
+    [
+     "Plug regime: 166–830× beyond any device",
+     "No experimental data at these parameters",
+     "Cannot be post-dicted today",
+     "Closed only by staged experiment, not simulation"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "plug-coil-stress-gate",
+    "Gate: Plug Coil Stress"
+   ],
+   [
+    "confinement-time-scaling",
+    "Confinement Time & Scaling"
+   ],
+   [
+    "honest-gates-summary",
+    "The Honest Gates, Together"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "helium3-supply-gate",
+  "title": "Honest Gate: Helium-3 Supply",
+  "cat": "the-physics",
+  "lede": "A commercial burner unit demands roughly 400 times the domestic helium-3 supply — which is why the breeder and lunar helium-3 matter.",
+  "body": [
+   [
+    "h2",
+    "A fuel that does not yet exist at scale"
+   ],
+   [
+    "p",
+    "Each commercial burner unit would consume roughly <b>400 times</b> the entire domestic helium-3 supply. Terrestrial helium-3 exists only in tiny quantities — mostly from tritium decay in weapons stockpiles — and is spoken for by medical, security, and cryogenic uses. The burner is therefore <b>gated on a fuel supply that does not exist at terrestrial scale</b>."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 200\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><rect x=\"80\" y=\"120\" width=\"20\" height=\"30\" fill=\"#9FB1C4\"/><text x=\"90\" y=\"168\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"9.5\">domestic supply</text><rect x=\"200\" y=\"50\" width=\"380\" height=\"100\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"1.6\"/><rect x=\"200\" y=\"50\" width=\"380\" height=\"100\" fill=\"#D4AD5C\" fill-opacity=\"0.18\"/><text x=\"390\" y=\"105\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"12\" font-weight=\"600\">~400× per commercial unit</text><text x=\"390\" y=\"180\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">annual He-3 demand vs supply</text></svg>"
+   ],
+   [
+    "p",
+    "This single fact is why the program is built as a pair. The breeder (Hyperion) makes helium-3 as a by-product: it breeds tritium, which decays to helium-3 on a fixed physical clock, producing roughly 1.97 kg/yr of helium-3 in its design class. And over the longer term, lunar regolith holds helium-3 that could be mined. The burner cannot be fueled today from Earth's standing inventory."
+   ],
+   [
+    "h3",
+    "Honest sequencing"
+   ],
+   [
+    "p",
+    "The order of the program follows from this gate: build the breeder first, accumulate a helium-3 supply, and only then field burners at scale. Claiming a near-term commercial burner fleet would ignore the fuel arithmetic. The ~400× shortfall is stated exactly because it dictates the timeline."
+   ],
+   [
+    "p",
+    "The arithmetic is unforgiving and it drives the whole program's shape: because a single commercial unit outstrips the standing terrestrial supply by roughly 400×, there is no version of a near-term burner fleet fuelled from Earth's inventory. Stating the factor exactly is what justifies building the breeder first and treating lunar helium-3 as a serious, not decorative, part of the long-term plan."
+   ],
+   [
+    "ul",
+    [
+     "~400× domestic supply per commercial unit",
+     "Terrestrial He-3 is scarce and already spoken for",
+     "Breeder breeds T → He-3 (~1.97 kg/yr class)",
+     "Lunar He-3 is the longer-term supplement"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "helium-3-scarcity",
+    "Helium-3 Scarcity"
+   ],
+   [
+    "fuel-mix-and-neutron-yield",
+    "Fuel Mix & Neutron Yield"
+   ],
+   [
+    "honest-gates-summary",
+    "The Honest Gates, Together"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "availability-gate",
+  "title": "Honest Gate: Availability Versus Tier III",
+  "cat": "the-physics",
+  "lede": "Modelled availability of 0.86 to 0.995 falls 30 to 100 times short of hyperscale Tier III's 0.99982 — not a sole Tier-III source today.",
+  "body": [
+   [
+    "h2",
+    "Uptime, stated against the standard"
+   ],
+   [
+    "p",
+    "A fixed installation's power source is judged on how rarely it is unavailable. The burner's modelled availability is <b>0.86 to 0.995</b>. Hyperscale Tier III data-center power is held to <b>0.99982</b>. Measured by downtime, the burner as modelled is <b>30 to 100 times</b> short of that standard — so it is not a sole Tier-III source today."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 190\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><line x1=\"60\" y1=\"150\" x2=\"620\" y2=\"150\" stroke=\"#6E7D8F\" stroke-width=\"1\"/><rect x=\"90\" y=\"90\" width=\"60\" height=\"60\" fill=\"#D4AD5C\" fill-opacity=\"0.4\" stroke=\"#D4AD5C\"/><text x=\"120\" y=\"80\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10.5\">0.86–0.995</text><text x=\"120\" y=\"168\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"9.5\">burner (modelled)</text><rect x=\"470\" y=\"55\" width=\"60\" height=\"95\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.6\"/><text x=\"500\" y=\"46\" text-anchor=\"middle\" fill=\"#9FB1C4\" font-size=\"10.5\">0.99982</text><text x=\"500\" y=\"168\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"9.5\">Tier III</text><text x=\"300\" y=\"110\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"11\">30–100× more downtime</text></svg>"
+   ],
+   [
+    "p",
+    "Availability is a physics-and-engineering property here, not an economic one: it reflects how often the plasma, plugs, magnets, and conversion train can be kept running without a fault-driven shutdown, and how quickly they recover. A driven plasma with an extreme plug regime has more ways to trip than a simple thermal source, and each contributes downtime."
+   ],
+   [
+    "h3",
+    "How it is used honestly"
+   ],
+   [
+    "p",
+    "The burner is positioned as a resilient, sovereign source that reduces dependence on the fuel-logistics tail — not as a drop-in sole source for the most demanding uptime tier. Paired with storage and other sources in a microgrid, its firmness is valuable; claiming standalone Tier-III reliability would misstate the modelled numbers."
+   ],
+   [
+    "p",
+    "The honest use of these numbers is comparative, not absolute: 0.86–0.995 is a respectable figure for a first-of-kind fusion source and a poor one against the single most demanding uptime tier, and both statements are true at once. Positioning the burner as a resilient, sovereign contributor within a microgrid — rather than a standalone Tier-III source — is what the modelled availability actually supports."
+   ],
+   [
+    "ul",
+    [
+     "Modelled availability: 0.86–0.995",
+     "Tier III standard: 0.99982",
+     "30–100× more downtime, by the model",
+     "Not a sole Tier-III source today"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "honest-gates-summary",
+    "The Honest Gates, Together"
+   ],
+   [
+    "plug-regime-gate",
+    "Gate: Plug Operating Regime"
+   ],
+   [
+    "q-engineering-vs-science",
+    "Q-Engineering vs Q-Science"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "honest-gates-summary",
+  "title": "The Honest Gates, Together",
+  "cat": "the-physics",
+  "lede": "Four physics gates define the burner's design stage: plug coil overstress, an unprecedented plug regime, a helium-3 shortfall, and availability short of Tier III.",
+  "body": [
+   [
+    "h2",
+    "The four gates, in one place"
+   ],
+   [
+    "p",
+    "The burner's physics is promising and its gates are real. We state all four at full strength, because honest gates are what make the promise credible. None of them is an economic claim; each is a physics-and-engineering fact about a machine that is a design-and-simulation study, not yet built."
+   ],
+   [
+    "truth",
+    [
+     [
+      "Gate",
+      "Statement",
+      "Consequence"
+     ],
+     [
+      [
+       "Plug coil",
+       "Overstressed ~3–3.9× at the design bore",
+       "Infeasible as specified"
+      ],
+      [
+       "Plug regime",
+       "166–830× beyond any device",
+       "Cannot be post-dicted today"
+      ],
+      [
+       "He-3 supply",
+       "~400× domestic supply per unit",
+       "Needs breeder-bred + lunar He-3"
+      ],
+      [
+       "Availability",
+       "0.86–0.995 vs Tier III 0.99982",
+       "30–100× short; not a sole source"
+      ]
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Two of the four — coil overstress and the plug regime — live in the end plug, the heart of the tandem mirror, and are coupled: the field that the plug needs is the field that breaks the coil, and the regime that field enables has never been tested. The other two are systemic: the fuel the machine burns does not exist at scale, and its uptime, as modelled, trails the most demanding standard."
+   ],
+   [
+    "h3",
+    "Why they are shown, not hidden"
+   ],
+   [
+    "p",
+    "A design that hides its gates cannot be trusted on anything else. By stating the 3–3.9×, 166–830×, ~400×, and 30–100× figures exactly, we make clear what must be solved before the burner is more than a study — and why the program builds the breeder first and stages the burner through a test machine (~2032) toward a commercial design (~2036)."
+   ],
+   [
+    "p",
+    "Presented together, the gates also show a path: two are magnet-and-plasma problems concentrated in the end plug that a staged experimental program can attack directly, one is a fuel-supply problem the breeder is built to solve, and one is a reliability problem that improves with maturity and pairing. None is waved away, and none is presented as already solved — which is the whole point of stating them."
+   ],
+   [
+    "ul",
+    [
+     "Plug coil overstress: ~3–3.9×",
+     "Plug regime: 166–830× beyond devices",
+     "He-3 demand: ~400× domestic supply",
+     "Availability: 0.86–0.995 vs 0.99982"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "plug-coil-stress-gate",
+    "Gate: Plug Coil Stress"
+   ],
+   [
+    "plug-regime-gate",
+    "Gate: Plug Operating Regime"
+   ],
+   [
+    "helium3-supply-gate",
+    "Gate: He-3 Supply"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "neutron-activation-shielding",
+  "title": "Neutron Activation & Shielding",
+  "cat": "the-physics",
+  "lede": "Even at 5.44%, the neutron flux activates nearby structures and demands shielding; low-neutron does not mean no shielding.",
+  "body": [
+   [
+    "h2",
+    "The consequence of not being aneutronic"
+   ],
+   [
+    "p",
+    "The 5.44% neutron fraction is small compared with D–T's ~80%, but it is not zero. The 2.45 MeV and 14.1 MeV neutrons from the D–D side reactions penetrate matter, deposit energy as heat, and transmute nuclei in the first wall, plug region, and nearby components — leaving them radioactive. The burner therefore needs neutron shielding and manages activated material over its life."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 195\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><rect x=\"40\" y=\"80\" width=\"110\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"95.0\" y=\"110.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">plasma</text><text x=\"95.0\" y=\"126.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">5.44% n</text><path d=\"M152,95 L200,90 M152,110 L200,110 M152,125 L200,130\" stroke=\"#D4AD5C\" stroke-width=\"1.4\" fill=\"none\"/><rect x=\"205\" y=\"70\" width=\"40\" height=\"80\" fill=\"#9FB1C4\" fill-opacity=\"0.3\" stroke=\"#9FB1C4\"/><text x=\"225\" y=\"165\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"9.5\">first wall</text><rect x=\"250\" y=\"60\" width=\"70\" height=\"100\" fill=\"#9FB1C4\" fill-opacity=\"0.5\" stroke=\"#9FB1C4\"/><text x=\"285\" y=\"175\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"9.5\">shield</text><text x=\"430\" y=\"110\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"11\">attenuated flux</text><path d=\"M325,105 L360,105\" stroke=\"#D4AD5C\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/></svg>"
+   ],
+   [
+    "p",
+    "The advantage over D–T is one of degree, and it is large: an order-of-magnitude lower neutron power means thinner shields, less activation, and lower heat-removal load on the blanket-equivalent structures. But the design still accounts for radiation damage to materials, activation of coolant and components, and the eventual handling of activated parts."
+   ],
+   [
+    "h3",
+    "Honest labelling"
+   ],
+   [
+    "p",
+    "Describing the burner as \"clean\" or \"radiation-free\" would be false. It is <b>low-neutron</b>: meaningfully less activating than D–T, and still a nuclear machine requiring shielding, monitoring, and disciplined material management."
+   ],
+   [
+    "p",
+    "The activation also has a time dimension: some induced isotopes decay quickly and some slowly, so the handling and monitoring of activated material is a lifecycle concern, not a single design load. A tenfold-lower neutron source than D–T makes that lifecycle far more manageable, but it does not remove the need for shielding, monitoring, and disciplined material accounting."
+   ],
+   [
+    "ul",
+    [
+     "5.44% neutrons still activate structures",
+     "Requires shielding and activation management",
+     "~10× lower neutron load than D–T",
+     "Low-neutron, not clean or aneutronic"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "low-neutron-fraction",
+    "The 5.44% Neutron Fraction"
+   ],
+   [
+    "dd-side-reactions",
+    "The D–D Side Reactions"
+   ],
+   [
+    "dt-vs-d3he-physics",
+    "D–T vs D–He-3 Physics"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "dt-vs-d3he-physics",
+  "title": "D–T Versus D–Helium-3 Physics",
+  "cat": "the-physics",
+  "lede": "Side by side: the two fuels differ in ignition difficulty, neutron output, and conversion path, and each drives a different machine.",
+  "body": [
+   [
+    "h2",
+    "Two fuels, two machines"
+   ],
+   [
+    "p",
+    "The breeder (Hyperion) runs D–T; the burner (Aegis) runs D–<sup>3</sup>He. The choice of fuel cascades into almost every design decision. The table below sets the physics side by side."
+   ],
+   [
+    "truth",
+    [
+     [
+      "Property",
+      "D–T (breeder)",
+      "D–<sup>3</sup>He (burner)"
+     ],
+     [
+      [
+       "Charge product Z<sub>1</sub>Z<sub>2</sub>",
+       "1×1",
+       "1×2"
+      ],
+      [
+       "Ignition temperature",
+       "~10–20 keV",
+       "~90 keV operating"
+      ],
+      [
+       "Neutron energy fraction",
+       "~80%",
+       "~5.44%"
+      ],
+      [
+       "Main energy carrier",
+       "14.1 MeV neutron",
+       "charged p + α"
+      ],
+      [
+       "Natural conversion",
+       "thermal blanket",
+       "direct conversion"
+      ],
+      [
+       "Fuel availability",
+       "D + bred T",
+       "D + scarce He-3"
+      ]
+     ]
+    ]
+   ],
+   [
+    "p",
+    "D–T is easier to ignite and has a larger cross-section, which is why the breeder can be the near-term machine that actually makes fuel and products. D–<sup>3</sup>He is harder in every confinement metric but offers a mostly charged output and far lower activation — the reason it is chosen for a resilient, direct-conversion generator."
+   ],
+   [
+    "h3",
+    "Why the program uses both"
+   ],
+   [
+    "p",
+    "The two are complementary. The breeder's D–T reaction breeds the tritium that decays into the helium-3 the burner needs. The burner's D–<sup>3</sup>He reaction delivers low-neutron, directly converted power. Neither fuel alone gives both fuel production and clean-ish direct-conversion power; together they close a loop."
+   ],
+   [
+    "p",
+    "The right reading of the table is that difficulty and payoff move together: D–<sup>3</sup>He asks more of confinement and fuel supply and returns a charged, directly convertible, low-activation output. Choosing it for the burner is a deliberate acceptance of the harder physics in exchange for the properties a resilient fixed-installation generator most needs."
+   ],
+   [
+    "ul",
+    [
+     "D–T: easy ignition, ~80% neutrons, thermal",
+     "D–<sup>3</sup>He: ~90 keV, ~5.44% neutrons, direct",
+     "Breeder makes the fuel the burner needs",
+     "Complementary, not competing"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "why-d3he-over-dt",
+    "Why D–He-3 Over D–T"
+   ],
+   [
+    "neutron-activation-shielding",
+    "Neutron Activation & Shielding"
+   ],
+   [
+    "helium3-supply-gate",
+    "Gate: He-3 Supply"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "q-engineering-vs-science",
+  "title": "Q-Engineering Versus Q-Science",
+  "cat": "the-physics",
+  "lede": "Scientific gain counts fusion against heating; engineering gain subtracts all recirculating power, and it is the honest test for the burner.",
+  "body": [
+   [
+    "h2",
+    "Two different questions"
+   ],
+   [
+    "p",
+    "<b>Q<sub>sci</sub></b> (scientific gain) is fusion power divided by the external heating power delivered to the plasma. <b>Q<sub>E</sub></b> (engineering gain) is net electrical output divided by total electrical input, after conversion efficiency and every recirculating draw — plug sustainment, injectors, cryogenics, and balance of plant. A machine can have Q<sub>sci</sub> above one and Q<sub>E</sub> below one."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 205\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><rect x=\"40\" y=\"60\" width=\"150\" height=\"50\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"115.0\" y=\"89.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">fusion power</text><line x1=\"192\" y1=\"85\" x2=\"235\" y2=\"85\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"237\" y=\"60\" width=\"120\" height=\"50\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"297.0\" y=\"85.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Q<sub>sci</sub></text><text x=\"297.0\" y=\"101.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">÷ heating</text><rect x=\"40\" y=\"140\" width=\"150\" height=\"50\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"115.0\" y=\"169.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">net electricity</text><line x1=\"192\" y1=\"165\" x2=\"235\" y2=\"165\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"237\" y=\"140\" width=\"120\" height=\"50\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"297.0\" y=\"165.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">Q<sub>E</sub></text><text x=\"297.0\" y=\"181.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">÷ all input</text><text x=\"430\" y=\"90\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"11\">Q<sub>sci</sub> can exceed 1</text><text x=\"430\" y=\"170\" text-anchor=\"start\" fill=\"#D4AD5C\" font-size=\"11\">Q<sub>E</sub> is the real test</text></svg>"
+   ],
+   [
+    "p",
+    "For the burner this distinction is not academic. The tandem mirror spends significant power holding its end plugs — the same power that builds the confining potential. That recirculating draw sits inside Q<sub>E</sub> but not Q<sub>sci</sub>. Direct energy conversion helps Q<sub>E</sub> by converting the charged output at high efficiency, but the plug and injector power is charged against it."
+   ],
+   [
+    "h3",
+    "The honest headline"
+   ],
+   [
+    "p",
+    "We judge the burner on Q<sub>E</sub>, because that is what a power source must satisfy. The plug-regime and coil gates directly threaten Q<sub>E</sub>: if the plug cannot be sustained efficiently at the design field, the recirculating power grows and net gain shrinks. Reporting Q<sub>sci</sub> alone would flatter the machine; we do not."
+   ],
+   [
+    "p",
+    "Because the plug power is both what confines the plasma and what erodes the engineering gain, Q<sub>E</sub> is unusually sensitive to plug performance in a tandem mirror — more so than in machines where heating and confinement are separate. That sensitivity is why the coil-stress and plug-regime gates are not abstract concerns but direct threats to whether the burner can be a net power source at all."
+   ],
+   [
+    "ul",
+    [
+     "Q<sub>sci</sub> = fusion / heating power",
+     "Q<sub>E</sub> = net electric / total electric input",
+     "Plug + injector power sits inside Q<sub>E</sub>",
+     "Q<sub>E</sub> is the honest test for a power source"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "ignition-vs-driven",
+    "Ignition Versus Driven Operation"
+   ],
+   [
+    "dec-efficiency",
+    "DEC Efficiency"
+   ],
+   [
+    "honest-gates-summary",
+    "The Honest Gates, Together"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "test-burner-physics-roadmap",
+  "title": "The Test Burner's Physics",
+  "cat": "the-physics",
+  "lede": "The ~2032 test burner exists to reduce the plug extrapolation with data, demonstrating startup, plugging, and direct conversion below commercial scale.",
+  "body": [
+   [
+    "h2",
+    "Turning extrapolation into measurement"
+   ],
+   [
+    "p",
+    "The burner is a design-and-simulation study today. The physics that most needs experimental data is the plug: its coil stress, its unprecedented operating regime, and the stability of its confining potential. The planned test burner (~2032) exists to move those from model extrapolation toward measurement, at a scale below the ~2036 commercial design."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><rect x=\"30\" y=\"80\" width=\"140\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"110.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">design & sim</text><text x=\"100.0\" y=\"126.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">now</text><line x1=\"172\" y1=\"110\" x2=\"215\" y2=\"110\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"217\" y=\"80\" width=\"150\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"292.0\" y=\"110.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">test burner</text><text x=\"292.0\" y=\"126.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">~2032</text><line x1=\"369\" y1=\"110\" x2=\"412\" y2=\"110\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"414\" y=\"80\" width=\"150\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"489.0\" y=\"110.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">commercial</text><text x=\"489.0\" y=\"126.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">~2036</text><text x=\"292\" y=\"160\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">each step shrinks the plug extrapolation</text></svg>"
+   ],
+   [
+    "p",
+    "A test machine cannot reach the full 166–830× regime in one jump, but it can advance the achieved parameters, validate the models that predict plug behavior, and demonstrate the operational sequence: controlled startup, sloshing-ion plug formation, a sustained ambipolar potential, a low-neutron D–<sup>3</sup>He burn, and direct energy conversion of the charged output."
+   ],
+   [
+    "h3",
+    "What it would prove, and what it would not"
+   ],
+   [
+    "p",
+    "Success would shrink the extrapolation and retire risk on the plug physics and conversion train. It would not, by itself, resolve the fuel-supply gate — that depends on the breeder producing helium-3 — nor guarantee Tier-III availability. The test burner is a physics milestone, honestly scoped, not a claim that the machine is finished."
+   ],
+   [
+    "p",
+    "Scoping the test burner honestly means being clear that it is a step, not a finish line: it narrows the plug extrapolation and demonstrates the operating sequence, and it leaves the fuel-supply and availability gates to be closed by the breeder and by fleet maturity respectively. Naming what each stage does and does not prove is how the program stays credible from design study to commercial machine."
+   ],
+   [
+    "ul",
+    [
+     "Test burner ~2032, commercial ~2036",
+     "Advances the plug regime toward the design point",
+     "Demonstrates startup, plugging, burn, and DEC",
+     "Does not by itself close the fuel or uptime gates"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "plug-regime-gate",
+    "Gate: Plug Operating Regime"
+   ],
+   [
+    "plasma-initiation-physics",
+    "Plasma Initiation & Buildup"
+   ],
+   [
+    "honest-gates-summary",
+    "The Honest Gates, Together"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "proton-product-physics",
+  "title": "The Proton Product",
+  "cat": "the-physics",
+  "lede": "The 14.7 MeV proton from D–He-3 carries most of the reaction energy and, as a charged particle, is the burner's primary conversion channel.",
+  "body": [
+   [
+    "h2",
+    "The particle that carries the energy"
+   ],
+   [
+    "p",
+    "Of the 18.35 MeV released by D + <sup>3</sup>He, the proton carries 14.7 MeV and the helium-4 nucleus 3.6 MeV — by momentum conservation the lighter proton takes the larger share. Because the proton is charged, its energy is available to direct conversion; this single particle is the main reason D–<sup>3</sup>He suits a direct-conversion machine."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><rect x=\"60\" y=\"80\" width=\"140\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"130.0\" y=\"110.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">D + <sup>3</sup>He</text><text x=\"130.0\" y=\"126.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">18.35 MeV</text><line x1=\"202\" y1=\"95\" x2=\"245\" y2=\"80\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><line x1=\"202\" y1=\"125\" x2=\"245\" y2=\"140\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"247\" y=\"55\" width=\"170\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"332.0\" y=\"77.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">p 14.7 MeV</text><text x=\"332.0\" y=\"93.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">fast, charged</text><rect x=\"247\" y=\"115\" width=\"170\" height=\"44\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"332.0\" y=\"137.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\"><sup>4</sup>He 3.6 MeV</text><text x=\"332.0\" y=\"153.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">charged</text><line x1=\"419\" y1=\"77\" x2=\"462\" y2=\"77\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><line x1=\"419\" y1=\"137\" x2=\"462\" y2=\"137\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" marker-end=\"url(#ah)\"/><rect x=\"464\" y=\"80\" width=\"160\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#9FB1C4\" stroke-width=\"1.5\"/><text x=\"544.0\" y=\"110.0\" text-anchor=\"middle\" fill=\"#E6ECF2\" font-size=\"13\" font-weight=\"600\">direct converter</text><text x=\"544.0\" y=\"126.0\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">both collected</text></svg>"
+   ],
+   [
+    "p",
+    "The proton's high energy is a benefit and a design constraint. It deposits some energy back into the plasma (helping sustain the burn) before it escapes, and it arrives at the direct converter as the highest-energy particle in the spectrum, setting the deepest collector voltage. Its interaction with the first wall and converter surfaces must be managed."
+   ],
+   [
+    "h3",
+    "Not a neutron"
+   ],
+   [
+    "p",
+    "The contrast with D–T is stark: there, the energy leaves in a 14.1 MeV neutron that cannot be steered or collected electrically and must be caught as heat. Here, the comparable-energy particle is a proton — charged, magnetically guided, and directly convertible. That difference is the physics behind the whole burner concept."
+   ],
+   [
+    "p",
+    "The proton stream is also a product in its own right — a flux of energetic hydrogen ions that carries information about the burn and can, in principle, be put to use downstream. But its primary role in the physics is as the dominant charged-energy carrier, the particle that makes direct conversion of D–<sup>3</sup>He worthwhile and that fixes the top of the converter's voltage ladder."
+   ],
+   [
+    "ul",
+    [
+     "Proton carries 14.7 MeV of the 18.35 MeV",
+     "Charged → available to direct conversion",
+     "Sets the deepest converter collector voltage",
+     "Contrast: D–T energy leaves as an uncatchable neutron"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "d3he-reaction-fundamentals",
+    "The D–He-3 Reaction"
+   ],
+   [
+    "charged-particle-spectrum",
+    "The Charged-Particle Spectrum"
+   ],
+   [
+    "direct-energy-conversion-principle",
+    "Direct Energy Conversion"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "heat-flux-end-walls",
+  "title": "End-Wall Heat Flux",
+  "cat": "the-physics",
+  "lede": "Plasma leaving along the field concentrates enormous heat flux at the ends; the expander and converter geometry must spread it to survivable levels.",
+  "body": [
+   [
+    "h2",
+    "The most loaded surfaces"
+   ],
+   [
+    "p",
+    "In a closed torus the exhaust is spread around a divertor; in an open mirror it all leaves through two ends. Without mitigation, the power streaming out of a 17 T throat would land on the end structures at a heat flux far beyond what any material survives. Managing this is a defining engineering problem of the geometry."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 660 205\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:660px;height:auto;margin:14px 0;font-family:ui-monospace,monospace\"><defs><marker id=\"ah\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#D4AD5C\"/></marker></defs><line x1=\"60\" y1=\"110\" x2=\"160\" y2=\"110\" stroke=\"#D4AD5C\" stroke-width=\"3\"/><text x=\"110\" y=\"95\" text-anchor=\"middle\" fill=\"#D4AD5C\" font-size=\"10\">concentrated</text><path d=\"M160,100 L340,50 M160,120 L340,170\" stroke=\"#D4AD5C\" stroke-width=\"1.6\" fill=\"none\"/><line x1=\"340\" y1=\"50\" x2=\"340\" y2=\"170\" stroke=\"#9FB1C4\" stroke-width=\"4\"/><text x=\"340\" y=\"190\" text-anchor=\"middle\" fill=\"#6E7D8F\" font-size=\"10.5\">spread over large end area</text><text x=\"250\" y=\"55\" text-anchor=\"start\" fill=\"#6E7D8F\" font-size=\"10.5\">expansion lowers flux</text></svg>"
+   ],
+   [
+    "p",
+    "The remedy is the same magnetic expansion that serves conversion: fanning the field out drops the power density by the field-strength ratio, so a large end area receives a survivable flux. The direct converter is built to accept this expanded stream, absorbing charged-particle energy as collected current rather than as raw heat wherever possible."
+   ],
+   [
+    "h3",
+    "A coupled problem"
+   ],
+   [
+    "p",
+    "Heat flux, direct conversion, and end-loss confinement are one linked design: the expansion needed to protect the walls is also what makes conversion and electron confinement work. Getting the geometry right at reactor power is demanding engineering, though — unlike the plug — not an open physics gate."
+   ],
+   [
+    "p",
+    "The reassuring part of this problem is that it is engineering, not open physics: the magnetic expansion that solves it is well understood, and the loads, while severe, are quantifiable and can be designed against with material and geometry choices. Unlike the plug gates, the end-wall heat flux does not depend on an unmeasured regime — it depends on getting a known geometry built at scale."
+   ],
+   [
+    "ul",
+    [
+     "All exhaust leaves through two ends",
+     "Raw flux from the throat is unsurvivable",
+     "Magnetic expansion drops power density",
+     "Coupled to conversion and electron confinement"
+    ]
+   ]
+  ],
+  "related": [
+   [
+    "expander-region-physics",
+    "The Expander Region"
+   ],
+   [
+    "direct-energy-conversion-principle",
+    "Direct Energy Conversion"
+   ],
+   [
+    "throat-field-17-tesla",
+    "The 17 T Throat Field"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ }
+]
